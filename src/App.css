@@ -31,3 +31,8 @@
     transform: rotate(360deg);
   }
 }
+
+.headshot {
+  float: left;
+  margin-left: 20px;
+}
