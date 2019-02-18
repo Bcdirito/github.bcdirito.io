@@ -34,5 +34,9 @@
 
 .headshot {
   float: left;
-  margin-left: 20px;
+  margin-left: 100px;
+}
+
+.homeText {
+  margin-right: 150px;
 }
