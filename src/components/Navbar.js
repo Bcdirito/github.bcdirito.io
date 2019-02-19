@@ -5,11 +5,11 @@ export default class NavBar extends Component {
   render() {
     return (
       <div className="header">
-        <NavLink exact to="/">Home</NavLink>
-        <NavLink exact to="/about">About</NavLink>
+        <NavLink exact to="/" className="leftLink">Home</NavLink>
+        <NavLink exact to="/about" className="leftLink">About</NavLink>
         Brian DiRito - Full Stack Developer
-        <NavLink exact to="/projects">Projects</NavLink>
-        <NavLink exact to="/contact">Contact</NavLink>
+        <NavLink exact to="/projects" className="rightLink">Projects</NavLink>
+        <NavLink exact to="/contact" className="rightLink">Contact</NavLink>
       </div>
     )
   }

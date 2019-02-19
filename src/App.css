@@ -13,4 +13,16 @@
   background-color: black;
   color: white;
   text-align: center;
+  font-size: 25px;
+}
+
+
+.header a:link, a:visited {
+  background-color: black;
+  color: white;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
 }
