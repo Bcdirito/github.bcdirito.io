@@ -3,7 +3,6 @@ import {Route, Switch, withRouter} from 'react-router-dom'
 import { connect } from "react-redux"
 import Home from "./components/Home"
 import About from "./components/About"
-import NoMatch from "./components/NoMatch"
 import './App.css';
 
 class App extends Component {
@@ -18,7 +17,7 @@ class App extends Component {
           <Route exact path="/about" render={(props) => (
             <About {...props}/>
           )}/>
-          <Route component={NoMatch} />
+          <Route component={Home} />
         </Switch>
       </div>
     );
