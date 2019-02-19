@@ -5,6 +5,7 @@ import Home from "./components/Home"
 import About from "./components/About"
 import Contact from "./components/Contact"
 import ProjectContainer from "./components/ProjectContainer"
+import Navbar from "./components/Navbar"
 import './App.css';
 
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
     return (
       <div>
         <div className="App">
-          <h2 className="header">Brian DiRito - Full Stack Developer</h2>
+        <Navbar />
           <Switch>
             <Route exact path="/" render={(props) => (
               <Home {...props}/>
