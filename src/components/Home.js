@@ -8,7 +8,7 @@ class Home extends Component {
         <img className="headshot" src={headshot} alt="headshot" />
         <div className="homeText">
         <h3>Welcome!</h3>
-        <p>This is the home page. Where people will land first.</p>
+        <p>I'm so happy you're here! Take a look around!</p>
         </div>
       </div>
     )
