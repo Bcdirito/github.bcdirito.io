@@ -22,3 +22,7 @@
     width: 75vw;
 }
 
+.resume {
+  overflow: scroll;
+}
+

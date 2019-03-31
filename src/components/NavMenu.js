@@ -18,6 +18,7 @@ class NavMenu extends Component {
           <ul id="menu">
             <a href="/"><li>Home</li></a>
             <a href="/about"><li>About</li></a>
+            <a href="/resume"><li>Resume</li></a>
             <a href="/projects"><li>Projects</li></a>
             <a href="/contact"><li>Contact</li></a>
           </ul>
