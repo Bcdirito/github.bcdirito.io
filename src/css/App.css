@@ -1,0 +1,24 @@
+.App {
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+}
+
+.headshot {
+  float: left;
+  margin-left: 150px;
+}
+
+.homeText {
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  color: black;
+  font-size: 20px;
+  margin: 50px;
+}
+
+.homeContent {
+    margin-top: 11vh;
+    width: 75vw;
+}
+

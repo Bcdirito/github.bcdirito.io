@@ -4,11 +4,11 @@ import headshot from "../media/website_headshot.jpg"
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="homeContent">
         <img className="headshot" src={headshot} alt="headshot" />
         <div className="homeText">
-        <h3>Welcome!</h3>
-        <p>I'm so happy you're here! Take a look around!</p>
+          <h3>Welcome!</h3>
+          <p>My name is Brian DiRito, and I'm a Full Stack Developer. I'm so happy you're here! Since you're visiting, please feel free to take a look around!</p>
         </div>
       </div>
     )

@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import {Route, Switch, withRouter} from 'react-router-dom'
-import { connect } from "react-redux"
+import {Route, Switch} from 'react-router-dom'
+import NavMenu from "./components/NavMenu"
 import Home from "./components/Home"
 import About from "./components/About"
 import Contact from "./components/Contact"
 import ProjectContainer from "./components/ProjectContainer"
-import Navbar from "./components/Navbar"
-import './App.css';
+import './css/App.css';
+import "./css/menu.css"
 
 class App extends Component {
   render() {
     return (
       <div>
         <div className="App">
-        <Navbar />
+        <NavMenu />
           <Switch>
             <Route exact path="/" render={(props) => (
               <Home {...props}/>
@@ -36,5 +36,5 @@ class App extends Component {
 }
 
 
-export default withRouter(App);
+export default App;
 
