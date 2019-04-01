@@ -12,9 +12,8 @@ import './css/menu.css';
 class App extends Component {
   render() {
     return (
-      <div>
         <div className="App">
-        <NavMenu />
+        <NavMenu/>
           <Switch>
             <Route exact path="/" render={(props) => (
               <Home {...props}/>
@@ -33,7 +32,6 @@ class App extends Component {
             )}/>
             <Route component={Home} />
           </Switch>
-        </div>
       </div>
     );
   }

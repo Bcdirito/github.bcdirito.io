@@ -12,8 +12,9 @@
 }
 
 .homeContent {
-    margin-top: 11vh;
-    width: 75vw;
+    /* margin-top: 11vh; */
+    width: 100vw;
+    height: 100vh;
 }
 
 a:link {
