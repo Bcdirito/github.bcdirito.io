@@ -20,14 +20,25 @@ export default class Contact extends Component {
   render() {
     return (
       <div>
-        This is where all contact information will go.
-        Need to set up mailer function.
-        <form onSubmit={e => this.handleSubmit(e)}>
-          <input type="text" name="name" onChange={e => this.handleChange(e)}/>
-          <input type="text" name="email" onChange={e => this.handleChange(e)}/>
-          <textarea name="content" onChange={e => this.handleChange(e)}/>
-          <input type="submit" name="submit"/>
-        </form>
+        <h1>Contact</h1>
+        <div className="contactForm">
+          <form onSubmit={e => this.handleSubmit(e)}>
+            Name:
+            <br/>
+            <input type="text" name="name" label="name" onChange={e => this.handleChange(e)}/>
+            <br/>
+            <br/>
+            Email:
+            <br/>
+            <input type="text" name="email" onChange={e => this.handleChange(e)}/>
+            <br/>
+            <br/>
+            Message:
+            <br/>
+            <textarea name="content" onChange={e => this.handleChange(e)}/>
+            <input type="submit" name="submit"/>
+          </form>
+        </div>
       </div>
     )
   }

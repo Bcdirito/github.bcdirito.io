@@ -7,7 +7,7 @@ import Resume from "./components/Resume"
 import ProjectContainer from "./components/ProjectContainer"
 import Contact from "./components/Contact"
 import './css/App.css';
-import "./css/menu.css"
+import './css/menu.css';
 
 class App extends Component {
   render() {

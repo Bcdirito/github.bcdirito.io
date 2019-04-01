@@ -1,0 +1,29 @@
+.resumeContent {
+    margin-top: 2%;
+}
+  
+.resumeRender {
+    margin-left: 7%;
+    overflow: scroll;
+    height: 75vh;
+}
+
+.resumeText {
+    margin-top: 5px;
+    text-align: center;
+}
+
+a:link {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+    text-decoration: underline;
+}

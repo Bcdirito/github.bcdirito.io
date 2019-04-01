@@ -1,0 +1,32 @@
+.headshot {
+    float: left;
+    margin-left: 150px;
+}
+  
+.homeText {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+    font-size: 20px;
+    margin: 50px;
+}
+
+.homeContent {
+    margin-top: 11vh;
+    width: 75vw;
+}
+
+a:link {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+    text-decoration: underline;
+}

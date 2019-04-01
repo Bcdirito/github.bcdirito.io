@@ -4,50 +4,9 @@
   width: 100vw;
 }
 
-.headshot {
-  float: left;
-  margin-left: 150px;
-}
-
-.homeText {
+h1 {
   text-align: center;
-  font-family: 'Fira Sans', sans-serif;
-  color: black;
-  font-size: 20px;
-  margin: 50px;
 }
 
-.homeContent {
-    margin-top: 11vh;
-    width: 75vw;
-}
 
-.resumeContent {
-  margin-top: 2%;
-  margin-left: 8%;
-}
-
-.resumeRender {
-  overflow: scroll;
-  height: 80vh;
-}
-
-.resumeText {
-  margin-top: 5px;
-}
-
-.resumeText a {
-  color: blue;
-  text-decoration: underline;
-}
-
-.resumeText a:hover {
-  color: purple;
-  text-decoration: none;
-}
-
-.resumeText a:visited {
-  color: purple;
-  text-decoration: underline;
-}
 
