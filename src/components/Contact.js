@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 
 export default class Contact extends Component {
   state = {
-    name: "",
-    body: ""
+    email: "bdirito.dev@gmail.com"
   }
 
   handleSubmit = (e) => {
@@ -11,35 +10,18 @@ export default class Contact extends Component {
     console.log("Submitted")
   }
 
-  handleChange = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value
-    })
-  }
-
   render() {
     return (
       <div>
         <h1>Contact</h1>
-        <div className="contactForm">
-          <form onSubmit={e => this.handleSubmit(e)}>
-            Name:
-            <br/>
-            <input type="text" name="name" label="name" onChange={e => this.handleChange(e)}/>
-            <br/>
-            <br/>
-            Email:
-            <br/>
-            <input type="text" name="email" onChange={e => this.handleChange(e)}/>
-            <br/>
-            <br/>
-            Message:
-            <br/>
-            <textarea name="content" onChange={e => this.handleChange(e)}/>
-            <input type="submit" name="submit"/>
-          </form>
+         Check out my LinkedIn <a href="https://www.linkedin.com/in/brian-dirito-7a7174145/" target="_blank" rel="noopener noreferrer">here</a>
+         <br/>
+         You can check out my Github <a href="https://github.com/Bcdirito" target="_blank" rel="noopener noreferrer">here</a>
+         <br/>
+        Phone Number: (954)-234-1748
+        <br/>
+        Email: <a href={`mailto:${this.state.email}`}>{this.state.email}</a>
         </div>
-      </div>
     )
   }
 }

@@ -1,25 +1,24 @@
-/* body
+#menu a:link
 {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw; 
-  background: #232323;
-  color: #232323;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-} */
-
-#menu a:link a:visited
-{
-  text-decoration: none;
-  color: #232323 !important;
+  color: white !important;
   
   transition: color 0.3s ease;
+  text-decoration: underline;
+
 }
 
-a:hover
+#menu a:hover
 {
-  color: purple !important;
+  color: white !important;
+  text-decoration: none;
+
+}
+
+#menu a:visited {
+  color: white !important;
+  
+  transition: color 0.3s ease;
+  text-decoration: underline;
 }
 
 #menuToggle
@@ -34,6 +33,7 @@ a:hover
   
   -webkit-user-select: none;
   user-select: none;
+
 }
 
 #menuToggle input
@@ -51,6 +51,8 @@ a:hover
   z-index: 2;
   
   -webkit-touch-callout: none;
+  color: white !important;
+
 }
 
 #menuToggle span
@@ -68,9 +70,11 @@ a:hover
   
   transform-origin: 4px 0px;
   
+
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
+
 }
 
 #menuToggle span:first-child
@@ -106,11 +110,12 @@ a:hover
 {
   position: absolute;
   width: 125px;
+  height: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   
-  background: #232323ad;
+  background: #000000;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
