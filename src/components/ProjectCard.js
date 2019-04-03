@@ -4,11 +4,11 @@ export default class ProjectCard extends Component {
   render() {
     return (
       <div>
-        Project cards will have a video demo image.
-        Above the image is the title of the project
+        {this.props.name}
+        <img src={this.props.card} alt="projectImage"/>
         When you hover over them, the name appears.
         Clicking on it will make it modal and open a video player
-        Underneath will be a one sentence description
+        {this.props.description}
       </div>
     )
   }

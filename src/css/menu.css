@@ -110,8 +110,8 @@
 {
   position: absolute;
   width: 125px;
-  height: 100vh;
-  margin: -100px 0 0 -50px;
+  /* height: 100vh; */
+  margin: -100px -50px;
   padding: 50px;
   padding-top: 125px;
   

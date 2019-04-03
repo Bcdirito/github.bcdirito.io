@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import ProjectCard from "./ProjectCard"
+import myBrewsCard from "../media/myBrews_card.jpg"
 
 export default class ProjectContainer extends Component {
   render() {
@@ -9,6 +11,9 @@ export default class ProjectContainer extends Component {
           This is where projects will go.
           <br/>
           Button for Projects. Button for Publishings
+          <br></br>
+          <ProjectCard name="myBrews"card={myBrewsCard}/>
+          A CLI app for Coffee
         </div>
       </div>
     )
