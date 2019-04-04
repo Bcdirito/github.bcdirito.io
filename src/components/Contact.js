@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import contactPhoto from "../media/contact_photo.jpeg"
 export default class Contact extends Component {
   state = {
     email: "bdirito.dev@gmail.com"
@@ -14,6 +14,7 @@ export default class Contact extends Component {
     return (
       <div>
         <h1>Contact Info:</h1>
+          <img src={contactPhoto} alt="contactPhoto"/>
           <div className="contactInfo">
             LinkedIn <a href="https://www.linkedin.com/in/brian-dirito-7a7174145/" target="_blank" rel="noopener noreferrer">here</a>
             <br/>
