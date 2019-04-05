@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import headshot from "../media/website_headshot.jpg"
+import headshot from "../media/photos/website_headshot.jpg"
 import "../css/home.css"
 import "../css/menu.css"
 

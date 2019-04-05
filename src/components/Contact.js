@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import contactPhoto from "../media/contact_photo.jpeg"
+import contactPhoto from "../media/photos/contact_photo.jpeg"
+
 export default class Contact extends Component {
   state = {
     email: "bdirito.dev@gmail.com"

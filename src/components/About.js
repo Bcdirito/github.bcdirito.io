@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import aboutMePhoto from "../media/about_me_photo.jpg"
+import aboutMePhoto from "../media/photos/about_me_photo.jpg"
 import "../css/about.css"
 
 export default class About extends Component {
