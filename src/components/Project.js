@@ -4,6 +4,21 @@ import myBrewsDemo from "../media/videos/myBrews_demo.mp4"
 import goodWorkDemo from "../media/videos/good_work_demo.mp4"
 
 export default class Project extends Component {
+  state = {
+    project: this.props.project
+  }
+
+  renderMyBrews = () => {
+
+  }
+
+  renderMet = () => {
+
+  }
+
+  renderGoodWork = () => {
+    
+  }
   render() {
     return (
       <div>
