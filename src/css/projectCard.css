@@ -1,0 +1,18 @@
+.projectCard {
+    background-color: black;
+    color: white;
+    width: 27vw;
+    height: 30vw;
+    display: inline-grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    text-align: center
+}
+
+img {
+    border-style: solid;
+    border-color: white;
+    float: center;
+}

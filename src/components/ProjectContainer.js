@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import ProjectCard from "./ProjectCard"
 import Project from "./Project"
+import Publication from "./Publication"
+
 import myBrewsCard from "../media/photos/myBrews_card.jpg"
 import virtualMetCard from "../media/photos/virtual_met_card.jpg"
 import goodWorkCard from "../media/photos/good_work_card.jpg"

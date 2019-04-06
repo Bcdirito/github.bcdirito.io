@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import "../css/projectCard.css"
 
 export default class ProjectCard extends Component {
   render() {
     return (
-      <div>
+      <div className="projectCard">
         <h3>{this.props.name}</h3>
         <br/>
         <img name={this.props.name} src={this.props.card} onClick={e => this.props.select(e)} alt="projectImage"/>
