@@ -19,13 +19,14 @@ export default class Project extends Component {
   renderGoodWork = () => {
     
   }
+  
   render() {
     return (
       <div>
         <video controls>
-          {/* <source src={metDemo} type="video/mp4" /> */}
-          <source src={myBrewsDemo} type="video/mp4" />
-          {/* <source src={goodWorkDemo} type="video/mp4" /> */}
+          {this.state.project === "virtualMet" ? <source src={metDemo} type="video/mp4" /> : null}
+          {this.state.project === "myBrews" ? <source src={myBrewsDemo} type="video/mp4" /> : null}
+          {this.state.project === "goodWork" ? <source src={goodWorkDemo} type="video/mp4" /> : null}
         </video>
       </div>
     )

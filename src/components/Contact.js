@@ -11,11 +11,6 @@ export default class Contact extends Component {
     email: "bdirito.dev@gmail.com"
   }
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Submitted")
-  }
-
   render() {
     return (
       <div>

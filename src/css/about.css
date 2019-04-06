@@ -1,3 +1,9 @@
-.aboutText {
-    overflow: scroll
+.aboutContent {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    overflow: scroll;
+    text-align: center;
 }
