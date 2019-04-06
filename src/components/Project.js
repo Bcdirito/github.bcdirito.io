@@ -3,6 +3,8 @@ import metDemo from "../media/videos/virtual_met_demo.mp4"
 import myBrewsDemo from "../media/videos/myBrews_demo.mp4"
 import goodWorkDemo from "../media/videos/good_work_demo.mp4"
 import githubIcon from "../media/icons/github_icon.png"
+import metIcon from "../media/icons/met_icon.png"
+
 import "../css/project.css"
 
 export default class Project extends Component {
@@ -27,11 +29,9 @@ export default class Project extends Component {
         <p><i>Virtual Met</i> is a web application allowing users to take procured tours of the prestigious Met 5th Ave Museum. Having been constructed with a JavaScript front end, Ruby on Rails back end, and integrating The Met Collection API, visiters may view various works in up to 6 different departments, accompanied by a thematic playist, and learn as much as they want from the Met Museum's website and archives!</p>
         Built With: <i>JavaScipt, Ruby on Rails</i>
         <br/>
-        Deployed: <i>Heroku</i>
+        <img src={metIcon} alt="metIcon" className="icon" />Click <a href="https://virtual-met-front.herokuapp.com/" target="_blank" rel="noopener noreferrer">here</a> to check it out!
         <br/>
-        Click <a href="https://virtual-met-front.herokuapp.com/" target="_blank" rel="noopener noreferrer">here</a> to check it out!
-        <br/>
-        <img src={githubIcon} alt="githubIcon" className="icon" /><a href="https://github.com/Bcdirito/virtual_met_front" target="_blank" rel="noopener noreferrer">Front</a> | <a href="https://github.com/Bcdirito/virtual_met_back" target="_blank" rel="noopener noreferrer">Back</a>
+        <a href="https://github.com/Bcdirito/virtual_met_front" target="_blank" rel="noopener noreferrer">Front</a> | <a href="https://github.com/Bcdirito/virtual_met_back" target="_blank" rel="noopener noreferrer">Back</a>
       </div>
       )
   }
