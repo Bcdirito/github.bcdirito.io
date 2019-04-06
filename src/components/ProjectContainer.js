@@ -79,10 +79,12 @@ export default class ProjectContainer extends Component {
     return (
       <div>
         <h1>Projects and Publications</h1>
+        <div className="buttons">
+          <button onClick={e => this.featureHandler(e)} name="projects">Projects</button>
+          <button onClick={e => this.featureHandler(e)} name="publications">Publications</button>
+        </div>
+        <br/>
         <div className="projectContainer">
-            <button onClick={e => this.featureHandler(e)} name="projects">Projects</button>
-            <button onClick={e => this.featureHandler(e)} name="publications">Publications</button>
-            <br/>
             {this.state.projects === true && (this.state.featuredClick === false && this.state.publications === false) ? this.renderDemoProjects() : null}
             {this.state.publications === true && (this.state.featuredClick === false && this.state.projects === false) ? this.renderPublications() : null}
             {this.state.featuredClick === true && (this.state.publications === false && this.state.projects === false) ? this.renderSelectedProject() : null}

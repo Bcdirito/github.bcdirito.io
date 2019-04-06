@@ -1,0 +1,25 @@
+.publication {
+    background-color: black;
+    color: white;
+    display: grid;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    color: white;
+    text-decoration: none; 
+}
+
+h2 {
+    font-style: italic;
+}
