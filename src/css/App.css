@@ -1,8 +1,13 @@
 .App {
-  background-color: whitesmoke;
-  height: 100vh;
-  width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  /* animation: fadein 1.5s */
 }
+
+/* @keyframes fadein {
+  from {opacity: 0}
+  to {opacity: 1}
+} */
 
 h1 {
   text-align: center;

@@ -1,5 +1,23 @@
+.contactContent {
+    animation: fadein 1.5s;
+}
+
 .contactForm {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+}
+
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
 }

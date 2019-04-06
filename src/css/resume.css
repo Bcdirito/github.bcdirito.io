@@ -1,5 +1,6 @@
 .resumeContent {
     margin-top: 2%;
+    animation: fadein 1.5s
 }
   
 .resumeRender {
@@ -13,17 +14,18 @@
     text-align: center;
 }
 
-a:link {
-    color: blue;
+a:link, a:visited {
+    color: black;
     text-decoration: underline;
 }
 
-a:hover {
-    color: purple;
+a:hover, a:active {
+    background-color: black;
+    color: white !important;
     text-decoration: none;
 }
 
-a:visited {
-    color: purple;
-    text-decoration: underline;
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
 }

@@ -52,6 +52,8 @@
   
   -webkit-touch-callout: none;
   color: white !important;
+  border-style: solid;
+  border-color: white !important;
 
 }
 
@@ -110,7 +112,7 @@
 {
   position: absolute;
   width: 125px;
-  /* height: 100vh; */
+  height: 81vh;
   margin: -100px -50px;
   padding: 50px;
   padding-top: 125px;
@@ -135,4 +137,11 @@
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+@media only screen and (max-width: 425px) {
+  #menu {
+    width: 75px;
+    height: 79.5vh;
+  }
 }

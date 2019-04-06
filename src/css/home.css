@@ -15,19 +15,22 @@
     /* margin-top: 11vh; */
     width: 100vw;
     height: 100vh;
+    animation: fadein 1.5s
 }
 
-a:link {
-    color: blue;
-    text-decoration: underline;
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
-a:hover {
-    color: purple;
-    text-decoration: none;
-}
+@media only screen and (max-width: 425px){
+    /* for mobile phones */
+    .headshot {
+        float: left;
+    }
 
-a:visited {
-    color: purple;
-    text-decoration: underline;
+    .homeText {
+        font-size: 18px;
+        text-align: justify;
+    }
 }

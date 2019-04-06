@@ -25,3 +25,12 @@ button:hover {
     color: white;
     text-decoration: underline;
 }
+
+.buttons {
+    animation: fadein 1.5s
+}
+
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
+}
