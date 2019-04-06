@@ -64,8 +64,8 @@ export default class ProjectContainer extends Component {
   renderPublications = () => {
     return (
       <div className="contentCards">
-        <ProjectCard name="Kindling the Fire" card={kindlingCard} blurb="Staying Inspired During the Job Search Marathon" select={this.featureSelectedProject}/>
-        <ProjectCard name="Call Me 'The Exterminator'" card={exterminatorCard} blurb="Take digital tours of the Met 5th Ave Museum" select={this.featureSelectedProject}/>
+        <ProjectCard name="Kindling the Fire" card={kindlingCard} blurb="Staying Inspired during the Job Search Marathon" select={this.featureSelectedProject}/>
+        <ProjectCard name="Call Me 'The Exterminator'" card={exterminatorCard} blurb="Becoming the Champion Debugger" select={this.featureSelectedProject}/>
     </div>
     )
   }

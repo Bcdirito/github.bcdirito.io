@@ -1,10 +1,44 @@
+.projectContent {
+    animation: fadein 1s;
+    background-color: black;
+    color: white;
+}
+
 .player {
     width: 50vw;
+    /* height: 40vh; */
     float: center;
+    border-style: solid;
+    border-color: white;
 }
 
 .description {
     overflow: scroll;
     float: center;
-    text-align: justify
+    text-align: justify;
+    font-size: 16px;
+}
+
+.icon {
+    background-color: white;
+}
+
+a:link, a:visited {
+    color: white !important;
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    background-color: white;
+    color: black !important;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
 }

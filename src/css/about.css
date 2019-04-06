@@ -1,6 +1,11 @@
 .aboutPage {
     max-width: 75vw;
     max-height: 100vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
 
 .aboutContent {
@@ -11,7 +16,8 @@
     align-items: center;
     text-align: justify;
     overflow: scroll;
-    max-height: 80vh;
+    /* max-height: 80vh; */
+    max-width: 75vw;
     animation: fadein 1.5s
 }
 

@@ -26,7 +26,7 @@ button:hover {
     text-decoration: underline;
 }
 
-.buttons {
+.buttons, .contentCards {
     animation: fadein 1.5s
 }
 

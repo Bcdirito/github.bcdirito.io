@@ -2,24 +2,30 @@
     background-color: black;
     color: white;
     display: grid;
-    display: grid;
     align-items: center;
     align-content: center;
     justify-content: center;
     justify-items: center;
     text-align: center;
-}
-
-a:link, a:visited {
-    color: white;
-    text-decoration: underline;
+    animation: fadein 1s;
+    margin-left: 12%;
+    margin-right: 10%;
+    width: 75vw;
 }
 
 a:hover, a:active {
-    color: white;
-    text-decoration: none; 
+    background-color: black;
 }
 
 h2 {
     font-style: italic;
+}
+
+.publicationContent p {
+    font-size: 20px;
+}
+
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
 }
