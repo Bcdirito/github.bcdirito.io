@@ -6,7 +6,7 @@ export default class ProjectCard extends Component {
       <div>
         <h3>{this.props.name}</h3>
         <br/>
-        <img src={this.props.card} alt="projectImage"/>
+        <img name={this.props.name} src={this.props.card} onClick={e => this.props.select(e)} alt="projectImage"/>
         {/* When you hover over them, the name appears.
         Clicking on it will make it modal and open a video player */}
         <br/>

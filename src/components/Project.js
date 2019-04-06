@@ -5,7 +5,7 @@ import goodWorkDemo from "../media/videos/good_work_demo.mp4"
 
 export default class Project extends Component {
   state = {
-    project: this.props.project
+    project: this.props.name
   }
 
   renderMyBrews = () => {
@@ -24,9 +24,9 @@ export default class Project extends Component {
     return (
       <div>
         <video controls>
-          {this.state.project === "virtualMet" ? <source src={metDemo} type="video/mp4" /> : null}
+          {this.state.project === "Virtual Met" ? <source src={metDemo} type="video/mp4" /> : null}
           {this.state.project === "myBrews" ? <source src={myBrewsDemo} type="video/mp4" /> : null}
-          {this.state.project === "goodWork" ? <source src={goodWorkDemo} type="video/mp4" /> : null}
+          {this.state.project === "Good Work" ? <source src={goodWorkDemo} type="video/mp4" /> : null}
         </video>
       </div>
     )

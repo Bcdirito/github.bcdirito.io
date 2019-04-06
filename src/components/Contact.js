@@ -17,11 +17,11 @@ export default class Contact extends Component {
         <h1>Contact Info:</h1>
           <img src={contactPhoto} alt="contactPhoto"/>
           <div className="contactInfo">
-            <a href="https://www.linkedin.com/in/brian-dirito-7a7174145/" target="_blank" rel="noopener noreferrer"><img src={linkedInIcon} alt="linkedInIcon"/></a>
+            <a href="https://www.linkedin.com/in/brian-dirito-7a7174145/" target="_blank" rel="noopener noreferrer"><img src={linkedInIcon} alt="linkedInIcon"/>LinkedIn</a>
             <br/>
-            <a href="https://github.com/Bcdirito" target="_blank" rel="noopener noreferrer"><img src={gitHubIcon} alt="gitHubIcon"/></a>
+            <a href="https://github.com/Bcdirito" target="_blank" rel="noopener noreferrer"><img src={gitHubIcon} alt="gitHubIcon"/>Github</a>
             <br/>
-            <a href="https://medium.com/@bdirito91" target="_blank" rel="noopener noreferrer"><img src={mediumIcon} alt="mediumIcon"/></a>
+            <a href="https://medium.com/@bdirito91" target="_blank" rel="noopener noreferrer"><img src={mediumIcon} alt="mediumIcon"/>Medium</a>
             <br/>
             <img src={phoneIcon} alt="phoneIcon"/>(954)-234-1748
             <br/>
