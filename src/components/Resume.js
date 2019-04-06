@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import resume from "../media/pdfs/resume.pdf"
-import pic from "../media/photos/resume_pic_reduced.jpg"
+import pic from "../media/photos/resume_pic.jpg"
 import "../css/resume.css"
 
 export default class Resume extends Component {

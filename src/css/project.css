@@ -1,0 +1,10 @@
+.player {
+    width: 50vw;
+    float: center;
+}
+
+.description {
+    overflow: scroll;
+    float: center;
+    text-align: justify
+}

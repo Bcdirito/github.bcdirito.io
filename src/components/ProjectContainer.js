@@ -5,7 +5,7 @@ import myBrewsCard from "../media/photos/myBrews_card.jpg"
 import virtualMetCard from "../media/photos/virtual_met_card.jpg"
 import goodWorkCard from "../media/photos/good_work_card.jpg"
 import kindlingCard from "../media/photos/kindling_card.jpeg"
-
+import exterminatorCard from "../media/photos/exterminator_card.jpg"
 import "../css/projectContainer.css"
 
 export default class ProjectContainer extends Component {
@@ -47,7 +47,7 @@ export default class ProjectContainer extends Component {
       featuredWork: e.target.name,
       publications: false,
       projects: false,
-    }, () => console.log(this.state))
+    })
   }
 
   renderDemoProjects = () => {
@@ -63,7 +63,7 @@ export default class ProjectContainer extends Component {
     return (
       <div className="contentCards">
         <ProjectCard name="Kindling the Fire" card={kindlingCard} blurb="Staying Inspired During the Job Search Marathon" select={this.featureSelectedProject}/>
-        <ProjectCard name="Call Me 'The Exterminator'" card={virtualMetCard} blurb="Take digital tours of the Met 5th Ave Museum" select={this.featureSelectedProject}/>
+        <ProjectCard name="Call Me 'The Exterminator'" card={exterminatorCard} blurb="Take digital tours of the Met 5th Ave Museum" select={this.featureSelectedProject}/>
     </div>
     )
   }
