@@ -14,13 +14,13 @@
     text-align: center;
 }
 
-a:link, a:visited {
-    color: black;
+.resumeText a:link, a:visited {
+    color: black !important;
     text-decoration: underline;
 }
 
-a:hover, a:active {
-    background-color: black;
+.resumeText a:hover, a:active {
+    background-color: black !important;
     color: white !important;
     text-decoration: none;
 }

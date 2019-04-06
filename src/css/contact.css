@@ -9,11 +9,12 @@
 }
 
 a:link, a:visited {
-    color: black;
+    color: black !important;
     text-decoration: underline;
 }
 
 a:hover, a:active {
+    background-color: rgba(0, 0, 0, 0) !important;
     text-decoration: none;
 }
 

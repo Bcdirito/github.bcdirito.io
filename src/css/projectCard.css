@@ -11,7 +11,7 @@
     text-align: center
 }
 
-img {
+.projectCard img {
     border-style: solid;
     border-color: white;
     float: center;

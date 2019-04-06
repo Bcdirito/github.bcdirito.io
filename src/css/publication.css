@@ -13,11 +13,11 @@
     width: 75vw;
 }
 
-a:hover, a:active {
+.publicationContent a:hover, a:active {
     background-color: black;
 }
 
-h2 {
+.publication h2 {
     font-style: italic;
 }
 

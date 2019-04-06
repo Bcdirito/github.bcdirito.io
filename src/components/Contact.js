@@ -5,6 +5,7 @@ import mediumIcon from "../media/icons/medium_icon.png"
 import gitHubIcon from "../media/icons/github_icon.png"
 import phoneIcon from "../media/icons/phone_icon.png"
 import emailIcon from "../media/icons/email_icon.png"
+
 import "../css/contact.css"
 
 export default class Contact extends Component {
