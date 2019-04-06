@@ -24,7 +24,7 @@ export default class Project extends Component {
   render() {
     return (
       <div>
-        <h2>{this.state.project}</h2>
+        <h2 >{this.state.project}</h2  >
         <video className="player" controls>
           {this.state.project === "Virtual Met" ? <source src={metDemo} type="video/mp4" /> : null}
           {this.state.project === "myBrews" ? <source src={myBrewsDemo} type="video/mp4" /> : null}

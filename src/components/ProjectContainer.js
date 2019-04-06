@@ -71,7 +71,8 @@ export default class ProjectContainer extends Component {
   }
 
   renderSelectedProject  = () => {
-    return <Project name={this.state.featuredWork}/>
+    if (this.state.featuredWork === "Kindling the Fire" || this.state.featuredWork === "Call Me 'The Exterminator'") return <Publication name={this.state.featuredWork}/>
+    else return <Project name={this.state.featuredWork}/>
   }
   
   render() {
