@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import "../css/menu.css"
 
 class NavMenu extends Component {
+  
+  state = {
+    clicked: false
+  }
+
   render() {
     return (
       <div className="navMenu">
@@ -9,14 +14,14 @@ class NavMenu extends Component {
       <nav role="navigation">
         <div id="menuToggle">
           
-          <input type="checkbox"/>
+          <input type="checkbox" onClick={() => this.setState({clicked: true})}/>
           
           <span></span>
           <span></span>
           <span></span>
           
         
-          <ul id="menu">
+          <ul id="menu" className={this.state.clicked === true ? "clicked" : "unclicked"}>
             <a href="/"><li>Home</li></a>
             <a href="/about"><li>About</li></a>
             <a href="/resume"><li>Résumé</li></a>
