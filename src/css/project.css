@@ -21,6 +21,7 @@
 
 .icon {
     background-color: white;
+    cursor: pointer;
 }
 
 .descriptionContent a:link, .descriptionContent a:visited {

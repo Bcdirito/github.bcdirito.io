@@ -1,21 +1,47 @@
 .headshot {
     float: left;
-    margin-left: 150px;
+    margin-left: 125px;
 }
   
 .homeText {
-    text-align: center;
     font-family: 'Fira Sans', sans-serif;
     color: black;
     font-size: 20px;
-    margin: 50px;
+    margin-left: 500px;
+    padding-left: 50px;
+}
+
+.icons {
+    margin-left: 550px;
+    text-align: center;
+    font-style: italic;
+}
+
+.icons p {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+}
+
+.icons img {
+    cursor: pointer;
+}
+
+.homeText h3 {
+    text-align: center;
+}
+
+.homeText p {
+    text-align: justify;
 }
 
 .homeContent {
     /* margin-top: 11vh; */
-    width: 100vw;
+    width: 75vw;
     height: 100vh;
-    animation: fadein 1.5s
+    animation: fadein 1.5s;
+    margin-left: 55px;
+    margin-right: 50px;
 }
 
 @keyframes fadein {
