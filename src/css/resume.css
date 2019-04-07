@@ -4,7 +4,7 @@
 }
   
 .resumeRender {
-    margin-left: 7%;
+    margin-left: 5%;
     overflow: scroll;
     height: 75vh;
 }
@@ -15,14 +15,19 @@
 }
 
 .resumeText a:link, a:visited {
-    color: black !important;
+    color: white;
     text-decoration: underline;
 }
 
 .resumeText a:hover, a:active {
-    background-color: black !important;
-    color: white !important;
+    background-color: white !important;
+    color: black !important;
     text-decoration: none;
+}
+
+.resumePage h1 {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 @keyframes fadein {

@@ -6,7 +6,7 @@ import "../css/resume.css"
 export default class Resume extends Component {
   render() {
     return (
-        <div>
+        <div className="resumePage">
             <h1>Résumé</h1>
             <div className="resumeContent">
             

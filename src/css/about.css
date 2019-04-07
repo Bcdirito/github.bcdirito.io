@@ -21,7 +21,7 @@
     max-width: 75vw;
     max-height: 75vh;
     margin-left: 250px;
-    animation: fadein 1.5s
+    animation: fadein 1.75s
 }
 
 @keyframes fadein {
