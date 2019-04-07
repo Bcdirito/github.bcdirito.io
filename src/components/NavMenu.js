@@ -4,7 +4,7 @@ import "../css/menu.css"
 class NavMenu extends Component {
   render() {
     return (
-      <div>
+      <div className="navMenu">
         
       <nav role="navigation">
         <div id="menuToggle">
