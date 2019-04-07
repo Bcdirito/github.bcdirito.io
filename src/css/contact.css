@@ -1,5 +1,7 @@
 .contactContent {
     animation: fadein 1.5s;
+    margin-left: 350px;
+    /* height: 80vh; */
 }
 
 .contactForm {
@@ -17,11 +19,35 @@ a:hover, a:active {
     text-decoration: none;
 }
 
-@keyframes fadein {
-    from {opacity: 0}
-    to {opacity: 1}
+.contactPage h1 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.icons {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 200px;
+    /* margin-right: 600px; */
+    /* padding-right: 450px; */
+}
+
+.icons p {
+    text-align: center;
+    margin-left: -150px;
+    margin-right: 400px;
+}
+
+.icons img {
+    background-color: white;
 }
 
 .contactContent img {
     filter: grayscale(100%)
+}
+
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
 }

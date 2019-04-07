@@ -18,19 +18,17 @@
 }
 
 .icons {
-    margin-left: 550px;
-    text-align: center;
-    font-style: italic;
+    margin-left: 225px;
 }
 
-.icons img {
-    background-color: white;
-}
 
 .icons p {
+    margin-left: 550px;
     color: white;
     background-color: black;
     font-size: 20px;
+    text-align: center;
+    font-style: italic;
 }
 
 .icons img {
@@ -48,7 +46,7 @@
 .homeContent {
     /* margin-top: 11vh; */
     width: 75vw;
-    height: 100vh;
+    /* height: 100vh; */
     margin-left: 55px;
     margin-right: 50px;
     padding-top: 25px;

@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import contactPhoto from "../media/photos/contact_photo.jpeg"
 import linkedInIcon from "../media/icons/linkedin_icon.png"
-import mediumIcon from "../media/icons/medium_icon.png"
-import gitHubIcon from "../media/icons/github_icon.png"
 import phoneIcon from "../media/icons/phone_icon.png"
 import emailIcon from "../media/icons/email_icon.png"
 
@@ -10,25 +8,35 @@ import "../css/contact.css"
 
 export default class Contact extends Component {
   state = {
-    email: "bdirito.dev@gmail.com"
+    link: ""
+  }
+
+  enterHandler = e => {
+    this.setState({link: e.target.name})
+  }
+
+  leaveHandler = () => {
+    this.setState({link: ""})
+  }
+
+  renderLinkMessage = () => {
+    if (this.state.link === "linkedIn") return "Click here to connect with me on LinkedIn"
+    else if (this.state.link === "phone") return "My mobile number is (954)-234-1748"
+    else if (this.state.link === "email") return "Click here to open your mailer or you can email me at bdirito.dev@gmail.com "
   }
 
   render() {
     return (
-      <div>
+      <div className="contactPage">
         <h1>Contact Info:</h1>
           <div className="contactContent">
             <img src={contactPhoto} alt="contactPhoto"/>
-            <div className="contactInfo">
-              <a href="https://www.linkedin.com/in/brian-dirito-7a7174145/" target="_blank" rel="noopener noreferrer"><img src={linkedInIcon} alt="linkedInIcon"/>LinkedIn</a>
+            <br/>
+            <br/>
+            <div className="icons">
+              <a href="https://www.linkedin.com/in/brian-dirito-7a7174145/" target="_blank" rel="noopener noreferrer"><img src={linkedInIcon} alt="linkedInIcon" name="linkedIn" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a> <img src={phoneIcon} alt="phoneIcon" name="phone" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /> <a href="mailto:bdirito.dev@gmail.com"><img src={emailIcon} alt="emailIcon" name="email" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a>
               <br/>
-              <a href="https://github.com/Bcdirito" target="_blank" rel="noopener noreferrer"><img src={gitHubIcon} alt="gitHubIcon"/>Github</a>
-              <br/>
-              <a href="https://medium.com/@bdirito91" target="_blank" rel="noopener noreferrer"><img src={mediumIcon} alt="mediumIcon"/>Medium</a>
-              <br/>
-              <img src={phoneIcon} alt="phoneIcon"/>(954)-234-1748
-              <br/>
-              <a href="mailto:bdirito.dev@gmail.com"><img src={emailIcon} alt="emailIcon"/>{this.state.email}</a>
+              <p>{this.state.link !== "" ? this.renderLinkMessage() : null}</p>
             </div>
           </div>
       </div>

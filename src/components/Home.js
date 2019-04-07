@@ -21,7 +21,7 @@ class Home extends Component {
     else if (this.state.link === "met") window.open("https://virtual-met-front.herokuapp.com")
   }
 
-  hoverHandler = e => {
+  enterHandler = e => {
     this.setState({link: e.target.name})
   }
 
@@ -49,7 +49,7 @@ class Home extends Component {
                   <p>My name is Brian DiRito, and I'm a Full Stack Developer. I'm so happy you're here! Since you're visiting, please feel free to take a look around! Thanks for stopping by!</p>
                 </div>
                 <div className="icons">
-                  <img src={githubIcon} alt="githubIcon" onMouseEnter={e => this.hoverHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={() => this.clickHandler()} name="github"/> <img src={linkedInIcon} alt="linkedInIcon" onMouseEnter={e => this.hoverHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={e => this.clickHandler(e)} name="linkedIn"/> <img src={mediumIcon} alt="mediumIcon" name="medium" onMouseEnter={e => this.hoverHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={e => this.clickHandler(e)}/> <img src={metIcon} alt="metIcon" name="met" onMouseEnter={e => this.hoverHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={() => this.clickHandler()} />
+                  <img src={githubIcon} alt="githubIcon" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={() => this.clickHandler()} name="github"/> <img src={linkedInIcon} alt="linkedInIcon" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={e => this.clickHandler(e)} name="linkedIn"/> <img src={mediumIcon} alt="mediumIcon" name="medium" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={e => this.clickHandler(e)}/> <img src={metIcon} alt="metIcon" name="met" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={() => this.clickHandler()} />
                   <br/>
                   <br/>
                   <p>{this.state.link !== "" ? this.renderLinkMessage() : null}</p>
