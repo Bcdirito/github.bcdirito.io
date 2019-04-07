@@ -8,6 +8,7 @@ import virtualMetCard from "../media/photos/virtual_met_card.jpg"
 import goodWorkCard from "../media/photos/good_work_card.jpg"
 import kindlingCard from "../media/photos/kindling_card.jpeg"
 import exterminatorCard from "../media/photos/exterminator_card.jpg"
+
 import "../css/projectContainer.css"
 
 export default class ProjectContainer extends Component {
@@ -52,6 +53,15 @@ export default class ProjectContainer extends Component {
     })
   }
 
+  renderButtons = () => {
+    return (
+      <div className="buttons">
+          <button onClick={e => this.featureHandler(e)} name="projects">Projects</button>
+          <button onClick={e => this.featureHandler(e)} name="publications">Publications</button>
+      </div>
+    )
+  }
+
   renderDemoProjects = () => {
     return (<div className="contentCards">
               <ProjectCard name="myBrews"card={myBrewsCard} blurb="A CLI companion app for coffee" select={this.featureSelectedProject}/>
@@ -77,18 +87,17 @@ export default class ProjectContainer extends Component {
   
   render() {
     return (
-      <div>
+      <div className="projectsPage">
         <h1>Projects and Publications</h1>
-        <div className="buttons">
-          <button onClick={e => this.featureHandler(e)} name="projects">Projects</button>
-          <button onClick={e => this.featureHandler(e)} name="publications">Publications</button>
-        </div>
+        {this.state.featuredClick === false ? this.renderButtons() : null}
         <br/>
         <div className="projectContainer">
             {this.state.projects === true && (this.state.featuredClick === false && this.state.publications === false) ? this.renderDemoProjects() : null}
             {this.state.publications === true && (this.state.featuredClick === false && this.state.projects === false) ? this.renderPublications() : null}
             {this.state.featuredClick === true && (this.state.publications === false && this.state.projects === false) ? this.renderSelectedProject() : null}
         </div>
+        <br/>
+        {this.state.featuredClick === true ? this.renderButtons() : null}
       </div>
     )
   }

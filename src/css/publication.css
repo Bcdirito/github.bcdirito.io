@@ -1,6 +1,6 @@
 .publication {
-    background-color: black;
-    color: white;
+    background-color: rgb(245, 245, 245);
+    color: black;
     display: grid;
     align-items: center;
     align-content: center;
@@ -8,13 +8,9 @@
     justify-items: center;
     text-align: center;
     animation: fadein 1s;
-    margin-left: 12%;
+    margin-left: 11%;
     margin-right: 10%;
     width: 75vw;
-}
-
-.publicationContent a:hover, a:active {
-    background-color: black;
 }
 
 .publication h2 {
@@ -23,6 +19,21 @@
 
 .publicationContent p {
     font-size: 20px;
+}
+
+.publicationContent .articleImage {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.publicationContent .hoverText {
+    font-style: italic;
+    font-size: 18px;
+}
+
+#kindling {
+    position: inherit
 }
 
 @keyframes fadein {

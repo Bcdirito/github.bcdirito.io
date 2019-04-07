@@ -1,15 +1,19 @@
 .projectContent {
     animation: fadein 1s;
-    background-color: black;
-    color: white;
+    color: black;
+    background-color :rgb(245, 245, 245);
+    width: 75vw;
+    margin-left: 125px;
 }
 
 .player {
     width: 50vw;
-    /* height: 40vh; */
-    float: center;
-    /* border-style: solid;
-    border-color: white; */
+    margin-left: 13vw;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .description {
@@ -17,26 +21,20 @@
     float: center;
     text-align: justify;
     font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.icon {
-    background-color: white;
+.projectContent img {
     cursor: pointer;
-}
-
-.descriptionContent a:link, .descriptionContent a:visited {
-    color: white !important;
-    text-decoration: underline;
-}
-
-.descriptionContent a:hover, .descriptionContent a:active {
-    background-color: white !important;
-    color: black !important;
-    text-decoration: none;
 }
 
 .projectContent h2 {
     font-style: italic;
+}
+
+.description .detailMessage {
+    font-style: italic
 }
 
 @keyframes fadein {

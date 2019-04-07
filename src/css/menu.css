@@ -110,11 +110,12 @@
   height: 81vh;
   margin: -100px;
   padding: 50px;
-  padding-top: 125px;
+  padding-left: 95px;
+  padding-top: 150px;
   
   background-color: rgb(245, 245, 245) !important;
 
-  text-align: center;
+  text-align: justify;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */

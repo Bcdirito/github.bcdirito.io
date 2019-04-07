@@ -1,6 +1,6 @@
 .projectCard {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     width: 27vw;
     height: 30vw;
     display: inline-grid;
@@ -13,6 +13,8 @@
 
 .projectCard img {
     border-style: solid;
-    border-color: white;
+    border-color: black;
+    border-width: 2px;
+    cursor: pointer;
     float: center;
 }

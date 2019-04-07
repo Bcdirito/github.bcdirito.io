@@ -30,6 +30,13 @@ button:hover {
     animation: fadein 1.5s
 }
 
+.projectsPage h1 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+
 @keyframes fadein {
     from {opacity: 0}
     to {opacity: 1}
