@@ -2,7 +2,7 @@
   "name": "personal_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Bcdirito.github.io/bdirito-portfolio",
+  "homepage": "https://bdirito.dev",
   "engines": {
     "npm": "6.4.1",
     "node": "11.2.0"
