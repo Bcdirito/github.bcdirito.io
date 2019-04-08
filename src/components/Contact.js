@@ -22,7 +22,7 @@ export default class Contact extends Component {
   renderLinkMessage = () => {
     if (this.state.link === "linkedIn") return "Click here to connect with me on LinkedIn"
     else if (this.state.link === "phone") return "My mobile number is (954)-234-1748"
-    else if (this.state.link === "email") return "Click here to open your mailer or you can email me at bdirito.dev@gmail.com "
+    else if (this.state.link === "email") return "Click here to open your mailer or you can email me at: bdirito.dev@gmail.com "
   }
 
   render() {
@@ -33,10 +33,10 @@ export default class Contact extends Component {
             <img src={contactPhoto} alt="contactPhoto"/>
             <br/>
             <br/>
-            <div className="icons">
+            <div className="contactIcons">
               <a href="https://www.linkedin.com/in/brian-dirito-7a7174145/" target="_blank" rel="noopener noreferrer"><img src={linkedInIcon} alt="linkedInIcon" name="linkedIn" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a> <img src={phoneIcon} alt="phoneIcon" name="phone" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /> <a href="mailto:bdirito.dev@gmail.com"><img src={emailIcon} alt="emailIcon" name="email" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a>
               <br/>
-              <p>{this.state.link !== "" ? this.renderLinkMessage() : null}</p>
+              <p className="linkMessage">{this.state.link !== "" ? this.renderLinkMessage() : <br/>}</p>
             </div>
           </div>
       </div>

@@ -17,21 +17,23 @@
     padding-top: 100px;
 }
 
-.icons {
-    margin-left: 225px;
+.homeIcons {
+    margin-left: 71.75%;
 }
 
 
-.icons p {
-    margin-left: 550px;
+.homeIcons p {
+    /* margin-left: 550px; */
+    margin-left: -35%;
+    margin-right: 10%;
     color: white;
-    background-color: black;
+    /* background-color: black; */
     font-size: 20px;
     text-align: center;
     font-style: italic;
 }
 
-.icons img {
+.homeIcons img {
     cursor: pointer;
 }
 

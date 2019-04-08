@@ -9,41 +9,31 @@
     justify-content: center;
 }
 
-a:link, a:visited {
-    color: white !important;
-    text-decoration: underline;
-}
-
-a:hover, a:active {
-    text-decoration: none;
-}
 
 .contactPage h1 {
     padding-left: 0px;
     padding-right: 0px;
 }
 
-.icons {
+.contactIcons {
     display: block;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 200px;
-    /* margin-right: 600px; */
-    /* padding-right: 450px; */
 }
 
-.icons p {
+.contactIcons p {
     text-align: center;
-    margin-left: -150px;
-    margin-right: 400px;
-}
-
-.icons img {
-    background-color: white;
+    margin-left: -40%;
+    margin-right: 300px;
 }
 
 .contactContent img {
     filter: grayscale(100%)
+}
+
+.linkMessage {
+    font-style: italic;
 }
 
 @keyframes fadein {

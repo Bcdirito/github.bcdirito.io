@@ -48,9 +48,8 @@ class Home extends Component {
                   <h3>Welcome!</h3>
                   <p>My name is Brian DiRito, and I'm a Full Stack Developer. I'm so happy you're here! Since you're visiting, please feel free to take a look around! Thanks for stopping by!</p>
                 </div>
-                <div className="icons">
+                <div className="homeIcons">
                   <img src={githubIcon} alt="githubIcon" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={() => this.clickHandler()} name="github"/> <img src={linkedInIcon} alt="linkedInIcon" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={e => this.clickHandler(e)} name="linkedIn"/> <img src={mediumIcon} alt="mediumIcon" name="medium" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={e => this.clickHandler(e)}/> <img src={metIcon} alt="metIcon" name="met" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={() => this.clickHandler()} />
-                  <br/>
                   <br/>
                   <p>{this.state.link !== "" ? this.renderLinkMessage() : null}</p>
                 </div>
