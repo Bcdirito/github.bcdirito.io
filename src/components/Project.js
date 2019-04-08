@@ -36,7 +36,7 @@ export default class Project extends Component {
   renderMyBrews = () => {
     return (
     <div className="descriptionContent">
-      <p><i>myBrews</i> is a CLI application for the coffee addict in all of us. Utilizing Ruby and the ActiveRecord gem, it allows users to track coffees they've consumed, rate them, make notes,and even get randomized selections utilizing Ruby's Faker Gem. If you like coffee, this app is for you!</p>
+      <p><i>myBrews</i> is a CLI application for the coffee addict in all of us. Utilizing Ruby and the ActiveRecord gem, it allows users to track coffees they've consumed, rate them, make notes, and even get randomized selections utilizing Ruby's Faker Gem. If you like coffee, this app is for you!</p>
       <div className="detailMessage">
       <a href="https://github.com/Bcdirito/myBrews" target="_blank" rel="noopener noreferrer"><img src={rubyIcon} alt="rubyIcon" name="Ruby" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a>
       <br/>
@@ -47,7 +47,7 @@ export default class Project extends Component {
   renderMet = () => {
     return (
       <div className="descriptionContent">
-        <p><i>Virtual Met</i> is a web application allowing users to take procured tours of the prestigious Met 5th Ave Museum. Having been constructed with a JavaScript front end, Ruby on Rails back end, and integrating The Met Collection API, visiters may view various works in up to 6 different departments, accompanied by a thematic playist, and learn as much as they want from the Met Museum's website and archives!</p>
+        <p><i>Virtual Met</i> is a web application allowing users to take procured tours of the prestigious Met 5th Ave Museum. Having been constructed with a JavaScript front end, a Ruby on Rails back end, and integrating the Met Collection API, visiters may view various works of up to 6 different departments - accompanied by a thematic playist) - and learn as much as they want from the Met Museum's website and archives!</p>
         <br/>
         <div className="detailMessage">
           <a href="https://github.com/Bcdirito/virtual_met_back" target="_blank" rel="noopener noreferrer"><img src={railsIcon} alt="railsIcon" name="Ruby on Rails" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a><a href="https://github.com/Bcdirito/virtual_met_front" target="_blank" rel="noopener noreferrer"><img src={javaScriptIcon} alt="railsIcon" name="JavaScript" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a><a href="https://virtual-met-front.herokuapp.com" target="_blank" rel="noopener noreferrer"> <img src={metIcon}alt="metIcon" name="Heroku" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a>
@@ -61,7 +61,7 @@ export default class Project extends Component {
   renderGoodWork = () => {
     return (
       <div className="descriptionContent">
-        <p><i>Good Work</i> is a web application designed to help reduce stress and anxiety through goal tracking and partner accountability. Built with a Ruby on Rails back end and React/Redux front end, a <i>Good Work</i> allows users to create and manage goals while integrating a partner for every step of their journey. Any time a goal, list, or task is completed, the app sends out an email congratulating the user and alerting their repsective partner of their accomplishment!</p>
+        <p><i>Good Work</i> is a web application designed to help reduce stress and anxiety through goal tracking and partner accountability. Built with a Ruby on Rails back end and React/Redux front end, <i>Good Work</i> allows users to create and manage goals while connecting them with a partner for every step of their journey. Any time a goal, list, or task is completed, the app sends out an email congratulating the user and alerting their repsective partner of their accomplishment!</p>
         <br/>
         <div className="detailMessage">
           <a href="https://github.com/Bcdirito/good_work_front" target="_blank" rel="noopener noreferrer"> <img src={railsIcon} alt="railsIcon" name="Ruby on Rails" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a><a href="https://github.com/Bcdirito/good_work_back" target="_blank" rel="noopener noreferrer"> <img src={reactIcon} alt="reactIcon" name="React" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a>
