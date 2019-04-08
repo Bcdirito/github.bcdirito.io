@@ -1,6 +1,6 @@
 #  Brian DiRito Portfolio
 
-Click [here](bdirito.dev) to view it!
+Click [here](https://bdirito.dev) to view it!
 
 ## This Portfolio Was Built With:
  React,
