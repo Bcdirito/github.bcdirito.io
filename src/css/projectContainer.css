@@ -1,33 +1,44 @@
 .projectContainer {
     overflow: scroll;
     height: 70vh;
+    width: 35vw;
+    margin-left: 34%
+}
+
+.projectContainerClicked {
+    overflow: scroll;
+    height: 70vh;
+    /* width: 70vw; */
+    /* margin-left: 15% */
 }
 
 .buttons {
-    display: grid;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
+   margin-left: 29%
 }
 
 button {
     background-color: white;
     color: black;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     height: 6vh;
     width: 15vw;
+    margin-left: 5%;
 }
 
 button:hover {
     background-color: black;
     color: white;
-    text-decoration: underline;
+    font-style: italic;
 }
 
 .buttons, .contentCards {
     animation: fadein 1.5s
+}
+
+.contentCards {
+    display: grid;
+
 }
 
 .projectsPage h1 {

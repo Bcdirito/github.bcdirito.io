@@ -91,7 +91,7 @@ export default class ProjectContainer extends Component {
         <h1>Projects and Publications</h1>
         {this.state.featuredClick === false ? this.renderButtons() : null}
         <br/>
-        <div className="projectContainer">
+        <div className={this.state.featuredClick === true ? "projectContainerClicked": "projectContainer"}>
             {this.state.projects === true && (this.state.featuredClick === false && this.state.publications === false) ? this.renderDemoProjects() : null}
             {this.state.publications === true && (this.state.featuredClick === false && this.state.projects === false) ? this.renderPublications() : null}
             {this.state.featuredClick === true && (this.state.publications === false && this.state.projects === false) ? this.renderSelectedProject() : null}

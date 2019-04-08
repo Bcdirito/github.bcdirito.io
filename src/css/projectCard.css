@@ -2,13 +2,17 @@
     background-color: white;
     color: black;
     width: 27vw;
-    height: 30vw;
+    height: 50vh;
     display: inline-grid;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center;
-    text-align: center
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .projectCard img {
