@@ -1,4 +1,4 @@
-#menu a:link
+#menu li
 {
   color: black !important;
   transition: color 0.3s ease;
@@ -6,7 +6,7 @@
 
 }
 
-#menu a:hover
+#menu li:hover
 {
   color: black !important;
   text-decoration: none;

@@ -10,8 +10,13 @@ import './css/App.css';
 import './css/menu.css';
 
 class App extends Component {
+
+  state = {
+    component: ""
+  }
+
+
   render() {
-    console.log(process.env)
     return (
         <div className="App">
         <NavMenu/>
