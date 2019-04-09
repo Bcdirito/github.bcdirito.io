@@ -11,6 +11,7 @@ import './css/menu.css';
 
 class App extends Component {
   render() {
+    console.log(process.env)
     return (
         <div className="App">
         <NavMenu/>
