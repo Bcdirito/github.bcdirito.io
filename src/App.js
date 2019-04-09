@@ -24,7 +24,7 @@ class App extends Component {
             <Route exact path="/" render={(props) => (
               <Home {...props}/>
               )}/>
-            <Route exact path="/about" render={(props) => (
+            <Route exact path="/about"render={(props) => (
               <About {...props}/>
             )}/>
             <Route exact path="/resume" render={(props) => (
