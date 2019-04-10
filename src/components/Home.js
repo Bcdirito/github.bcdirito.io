@@ -9,11 +9,11 @@ import "../css/home.css"
 import "../css/menu.css"
 
 class Home extends Component {
-  
+
   state = {
     link: ""
   }
-
+  
   clickHandler = () => {
     if (this.state.link === "github") window.open("https://github.com/Bcdirito")
     else if (this.state.link === "linkedIn") window.open("https://www.linkedin.com/in/brian-dirito-7a7174145/")
@@ -41,9 +41,12 @@ class Home extends Component {
   render() {
     return (
         <div className="homePage">
-          <h1>Brian DiRito - Full Stack Developer</h1>
+          <h1>{window.screen.orientation.type.includes("landscape") && window.screen.height >= 800 ? "Brian DiRito - Full Stack Developer" : null}
+          {window.screen.orientation.type.includes("landscape") && window.screen.height < 800 ? "Brian DiRito - Developer" : null}
+          {window.screen.orientation.type.includes("portrait") ? "Home" : null}
+          </h1>
             <div className="homeContent">
-              <img className="headshot" src={headshot} alt="headshot" />
+              {<img className="headshot" src={headshot} alt="headshot" />}
                 <div className="homeText">
                   <h3>Welcome!</h3>
                   <p>My name is Brian DiRito, and I'm a Full Stack Developer. I'm so happy you're here! Since you're visiting, please feel free to take a look around! Thanks for stopping by!</p>
