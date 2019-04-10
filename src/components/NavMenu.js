@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import {Link} from "react-router-dom"
+
 import "../css/menu.css"
 
 class NavMenu extends Component {
@@ -22,11 +24,11 @@ class NavMenu extends Component {
           
         
           <ul id="menu" className={this.state.clicked === true ? "clicked" : "unclicked"}>
-            <a href="/"><li>Home</li></a>
-            <a href="/about"><li>About</li></a>
-            <a href="/resume"><li>Résumé</li></a>
-            <a href="/projects"><li>Projects</li></a>
-            <a href="/contact"><li>Contact</li></a>
+            <Link to={"/"}><a><li>Home</li></a></Link>
+            <Link to={"/about"}><a><li>About</li></a></Link>
+            <Link to={"/resume"}><a><li>Résumé</li></a></Link>
+            <Link to={"/projects"}><a><li>Projects</li></a></Link>
+            <Link to={"/contact"}><a><li>Contact</li></a></Link>
           </ul>
         </div>
       </nav>

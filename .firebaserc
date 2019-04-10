@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "bdirito-porfolio"
+    "default": "bdirito-porfolio",
+    "deployment": "bdirito-porfolio"
   }
 }
