@@ -19,7 +19,7 @@
     display: block;
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 200px;
+    margin-left: 245px;
 }
 
 .contactIcons p {
@@ -39,4 +39,351 @@
 @keyframes fadein {
     from {opacity: 0}
     to {opacity: 1}
+}
+
+/* iPhone X */
+@media screen and (width: 375px) and (height: 812px) and (orientation:portrait){
+  .contactPage {
+      height: 70vh;
+  }
+
+  .contactPage h1 {
+      margin-left: 40px;
+      text-align: center;
+      font-size: 24px;
+      margin-top: 25px;
+  }
+
+  .mobileDirections {
+    margin-top: 100px;
+    margin-left: -255px;
+    width: 175px;
+    text-align: center;
+    font-size: 20px;
+    padding-right: 0px;
+  }
+
+  .contactIcons {
+      margin-left: -200px;
+  }
+
+  .contactIcons p {
+        margin-left: -80px;
+        margin-right: -100px;
+        width: 225px;
+    }
+}
+
+@media screen and (max-width: 812px) and (max-height: 375px) and (orientation:landscape){
+    .contactPage {
+        height: 75vh;
+    }
+  
+    .contactPage h1 {
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .contactContent #contactPhoto {
+        margin-left: -205px;
+    }
+  
+    .mobileDirections {
+      margin-top: 100px;
+      margin-left: -255px;
+      width: 175px;
+      text-align: center;
+      font-size: 20px;
+      padding-right: 0px;
+    }
+  
+    .contactIcons {
+        margin-left: 25px;
+    } 
+
+    .contactIcons p {
+        margin-left: -430px;
+        margin-right: -100px;
+    }
+}
+
+/* iPhone 6/7/8 */
+
+@media screen and (width: 667px) and (height: 375px) and (orientation:landscape){
+    .contactPage {
+        height: 75vh;
+    }
+  
+    .contactPage h1 {
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .contactContent #contactPhoto {
+        margin-left: -275px;
+    }
+  
+    .mobileDirections {
+      margin-top: 100px;
+      margin-left: -255px;
+      width: 175px;
+      text-align: center;
+      font-size: 20px;
+      padding-right: 0px;
+    }
+  
+    .contactIcons {
+        margin-left: -50px;
+    } 
+    
+    .contactIcons p {
+        margin-left: -360px;
+        margin-right: -100px;
+    }
+}
+
+@media screen and (width: 375px) and (height: 667px) and (orientation:portrait) {
+    .contactPage {
+        height: 70vh;
+    }
+  
+    .contactPage h1 {
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .contactContent #contactPhoto {
+        margin-left: -275px;
+    }
+  
+    .mobileDirections {
+      margin-top: 100px;
+      margin-left: -255px;
+      width: 175px;
+      text-align: center;
+      font-size: 20px;
+      padding-right: 0px;
+    }
+  
+    .contactIcons {
+        margin-left: -195px;
+    } 
+
+    .contactIcons p {
+        margin-left: -73px;
+        margin-right: 55px;
+    }
+}
+
+/* iPhone 6/7/8 Plus */
+
+@media screen and (width: 736px) and (height: 414px) and (orientation:landscape){
+    .contactPage {
+        height: 75vh;
+        /* overflow: hidden; */
+    }
+  
+    .contactPage h1 {
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .contactContent #contactPhoto {
+        margin-left: -240px;
+    }
+  
+    .mobileDirections {
+      margin-top: 100px;
+      margin-left: -255px;
+      width: 175px;
+      text-align: center;
+      font-size: 20px;
+      padding-right: 0px;
+    }
+  
+    .contactIcons {
+        margin-left: -10px;
+    }
+
+    .contactIcons p {
+        margin-left: -390px;
+        margin-right: -100px;
+    }
+}
+
+@media screen and (width: 414px) and (height: 736px) and (orientation:portrait) {
+    .contactPage {
+        height: 70vh;
+    }
+  
+    .contactPage h1 {
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contactContent #contactPhoto {
+        margin-left: -275px;
+    }
+  
+    .mobileDirections {
+      margin-top: 100px;
+      margin-left: -235px;
+      width: 175px;
+      text-align: center;
+      font-size: 20px;
+      padding-right: 0px;
+    }
+  
+    .contactIcons {
+        margin-left: -175px;
+    }
+
+    .contactIcons p {
+        margin-left: -65px;
+        margin-right: 55px;
+    }
+}
+
+/* iPad */
+
+@media screen and (width: 1024px) and (height: 768px) and (orientation:landscape){
+    .contactPage {
+        height: 75vh;
+    }
+  
+    .contactPage h1 {
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .contactContent #contactPhoto {
+        margin-left: -110px;
+    }
+  
+    .mobileDirections {
+      margin-top: 100px;
+      margin-left: -255px;
+      width: 175px;
+      text-align: center;
+      font-size: 20px;
+      padding-right: 0px;
+    }
+  
+    .contactIcons {
+        margin-left: 130px;
+    }
+
+    .contactIcons p {
+        margin-left: -250px;
+        margin-right: 185px;
+    }
+}
+
+@media screen and (width: 768px) and (height: 1024px) and (orientation:portrait){
+    .contactPage {
+        height: 80vh;
+    }
+  
+    .contactPage h1 {
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contactContent #contactPhoto {
+        margin-left: -240px;
+    }
+  
+    .mobileDirections {
+      margin-top: 100px;
+      margin-left: -235px;
+      width: 175px;
+      text-align: center;
+      font-size: 20px;
+      padding-right: 0px;
+    }
+  
+    .contactIcons {
+        margin-left: 0px;
+    }
+
+    .contactIcons p {
+        margin-left: -250px;
+        margin-right: 60px;
+    }
+}
+
+/* iPad Pro */
+
+@media screen and (width: 1366px) and (height: 1024px) and (orientation:landscape){
+    .contactPage {
+        height: 75vh;
+    }
+  
+    .contactPage h1 {
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .contactContent #contactPhoto {
+        margin-left: 50px;
+    }
+  
+    .mobileDirections {
+      margin-top: 100px;
+      margin-left: -255px;
+      width: 175px;
+      text-align: center;
+      font-size: 20px;
+      padding-right: 0px;
+    }
+  
+    .contactIcons {
+        margin-left: 300px;
+    }
+
+    .contactIcons p {
+        margin-left: -305px;
+        /* margin-right: 185px; */
+    }
+}
+
+@media screen and (width: 1024px) and (height: 1366px) and (orientation:portrait){
+    .contactPage {
+        height: 80vh;
+    }
+  
+    .contactPage h1 {
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contactContent #contactPhoto {
+        margin-left: -100px;
+    }
+  
+    .mobileDirections {
+      margin-top: 100px;
+      margin-left: -235px;
+      width: 175px;
+      text-align: center;
+      font-size: 20px;
+      padding-right: 0px;
+    }
+  
+    .contactIcons {
+        margin-left: 130px;
+    }
+
+    .contactIcons p {
+        margin-left: -137px;
+    }
 }
