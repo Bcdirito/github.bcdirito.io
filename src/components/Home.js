@@ -41,12 +41,12 @@ class Home extends Component {
   render() {
     return (
         <div className="homePage">
-          <h1>{window.screen.orientation.type.includes("landscape") && window.screen.height >= 800 ? "Brian DiRito - Full Stack Developer" : null}
-          {window.screen.orientation.type.includes("landscape") && window.screen.height < 800 ? "Brian DiRito - Developer" : null}
-          {window.screen.orientation.type.includes("portrait") ? "Home" : null}
+          <h1>{(window.screen.orientation.type.includes("landscape") && window.screen.height >= 768)  || (window.screen.orientation.type.includes("portrait") && window.screen.width >= 768)? "Brian DiRito - Full Stack Developer" : null}
+          {window.screen.orientation.type.includes("landscape") && window.screen.height < 768 ? "Brian DiRito - Developer" : null}
+          {window.screen.orientation.type.includes("portrait") && window.screen.width < 768 ? "Home" : null}
           </h1>
             <div className="homeContent">
-              {window.screen.orientation.type.includes("landscape") ? <img className="headshot" src={headshot} alt="headshot" /> : null}
+              {window.screen.orientation.type.includes("landscape") || (window.screen.width >= 768) ? <img className="headshot" src={headshot} alt="headshot" /> : null}
                 <div className="homeText">
                   <h3>Welcome!</h3>
                   <p>My name is Brian DiRito, and I'm a Full Stack Developer. I'm so happy you're here! Since you're visiting, please feel free to take a look around! Thanks for stopping by!</p>

@@ -52,3 +52,32 @@ h1 {
     margin-top: 65px;
   }
 }
+
+/* iPad */
+@media screen and (width:1024px) and (height: 768px) and (orientation:landscape){
+  .App {
+    margin-top: 75px;
+  }
+}
+
+@media screen and (width:768px) and (height: 1024px) and (orientation:portrait){
+  .App {
+    margin-top: 75px;
+  }
+}
+
+/* iPad Pro */
+@media screen and (width:1366px) and (height: 1024px) and (orientation:landscape){
+  .App {
+    margin-top: 150px;
+    height: 75vh;
+  }
+}
+
+@media screen and (width:1024px) and (height: 1366px) and (orientation:portrait){
+  .App {
+    margin-top: 125px;
+    height: 65vh;
+  }
+}
+

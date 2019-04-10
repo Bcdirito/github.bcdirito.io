@@ -56,25 +56,52 @@
 
 /* iphone X */
 @media screen and (width: 375px) and (height: 812px) and (orientation:portrait){
-
+  
+    .homePage {
+        margin-top: 50px;
+        margin-left: 0px;
+        height: 75vh;
+    }
+  
     .homePage h1 {
-        margin-left: -200px;
-        font-size: 18px;
+        padding-top: 0px;
         text-align: center;
+        font-size: 26px;
+        margin-right: 0px;
+        margin-left: -225px;
+        margin-top: -25px;
     }
-    .headshot {
-        margin-left: -175px;
+  
+    .homeContent {
+        margin-top: -40px;
+        width: 67vw;
+        height: 250px;
+        margin-bottom: -0px;
+        margin-left: 55px;
     }
-
+  
     .homeText {
         font-size: 16px;
-        margin-top: 400px;
-        margin-left: 75px;
+        margin-left: 163px;
+        margin-top: 0px; 
     }
-
+  
+    .homeText h3 {
+        text-align: center;
+        padding-right: 22px;
+        margin-left: -190px;
+    }
+  
+    .homeText p {
+        text-align: justify;
+        margin-left: -200px;
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+  
     .homeIcons {
-        margin-left: 150px;
-        padding-bottom: 15px;
+        margin-left: 50px;
+        padding-bottom: 0px;
     }
 }
 
@@ -272,7 +299,7 @@
   }
 
   .homeContent {
-      margin-top: -75px;
+      margin-top: -50px;
       width: 67vw;
       height: 250px;
       margin-bottom: -0px;
@@ -302,4 +329,167 @@
       padding-bottom: 0px;
   }
 }
+
+  /* iPad */
+
+  @media screen and (width: 1024px) and (height: 768px) and (orientation:landscape){
+    .homePage {
+        margin-left: 0px;
+    }
+
+    .homePage h1 {
+        text-align: center;
+        width: 700px;
+        margin-left: -150px;
+    }
+
+    .homeText {
+        width: 300px;
+    }
+
+    .homeText h3 {
+        text-align: center;
+        margin-left: 25px;
+    }
+
+    .homeIcons {
+        margin-left: 640px;
+        margin-right: 0px;
+        width: 30%;
+    }
+  }
+
+  @media screen and (width: 768px) and (height: 1024px) and (orientation:portrait){
+    .Home {
+        max-height: 80vh;
+    }
+
+    .homePage {
+        margin-top: 75px;
+        margin-left: 0px;
+        height: 80vh;
+    }
   
+    .homePage h1 {
+        text-align: center;
+        font-size: 26px;
+        margin-right: 0px;
+        margin-left: -250px;
+        margin-top: -50px;
+        width: 500px;
+    }
+  
+    .homeContent {
+        margin-top: 0px;
+        width: 67vw;
+        height: 250px;
+        margin-bottom: 0px;
+    }
+  
+    .homeText {
+        font-size: 16px;
+        margin-left: 163px; 
+    }
+  
+    .homeText h3 {
+        text-align: center;
+        padding-right: 22px;
+        margin-top: 425px;
+        margin-left: -100px;
+    }
+  
+    .homeText p {
+        text-align: justify;
+        margin-left: -100px;
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+  
+    .homeIcons {
+        margin-left: 225px;
+        padding-bottom: 0px;
+    }
+  }
+
+  /* iPad Pro */
+
+  @media screen and (width: 1366px) and (height: 1024px) and (orientation:landscape){
+
+    .homePage {
+        margin-left: 0px;
+    }
+
+    .homePage h1 {
+        text-align: center;
+        width: 700px;
+        margin-left: 0px;
+    }
+
+    .homeContent {
+        margin-left: 150px
+    }
+
+    .homeText {
+        width: 450px;
+    }
+
+    .homeText h3 {
+        text-align: center;
+        margin-left: 25px;
+    }
+
+    .homeIcons {
+        margin-left: 710px;
+        margin-right: 0px;
+        width: 30%;
+    }
+  }
+
+  @media screen and (width: 1024px) and (height: 1366px) and (orientation:portrait){
+
+    .homePage {
+        margin-top: 75px;
+        margin-left: 0px;
+    }
+  
+    .homePage h1 {
+        text-align: center;
+        font-size: 26px;
+        margin-right: 0px;
+        margin-left: -100px;
+        margin-top: -50px;
+        width: 500px;
+    }
+  
+    .homeContent {
+        margin-top: 0px;
+        width: 67vw;
+        height: 250px;
+        margin-left: 200px;
+        margin-bottom: 0px;
+    }
+  
+    .homeText {
+        font-size: 16px;
+        margin-left: 0px; 
+    }
+  
+    .homeText h3 {
+        text-align: center;
+        padding-right: 22px;
+        margin-top: 425px;
+        margin-left: -100px;
+    }
+  
+    .homeText p {
+        text-align: justify;
+        margin-left: 50px;
+        padding-left: 0px;
+        padding-right: 30px;
+        width: 40vw;
+    }
+  
+    .homeIcons {
+        margin-left: 235px;
+    }
+  }
