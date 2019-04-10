@@ -6,12 +6,13 @@
 .resumeRender {
     margin-left: 5%;
     overflow: scroll;
-    height: 75vh;
+    height: 70vh;
 }
 
 .resumeText {
     margin-top: 5px;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .resumeText a:link, a:visited {

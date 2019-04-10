@@ -106,8 +106,8 @@
 #menu
 {
   position: absolute;
-  width: 125px;
-  height: 81vh;
+  width: 150%;
+  height: 2492%;
   margin: -100px;
   padding: 50px;
   padding-left: 95px;
@@ -146,9 +146,48 @@
   opacity: 0
 }
 
-@media only screen and (max-width: 425px) {
+
+
+@media only screen and (width: 375px) and (height: 667px) and (orientation:portrait) {
+  #menuToggle {
+    left: 25px;
+  }
+
+  #menuToggle a {
+    /* padding-left: 15px; */
+  }
+
   #menu {
-    width: 75px;
-    height: 79.5vh;
+    height: 63vh;
+  }
+}
+
+@media only screen and (width: 667px) and (height: 375px) and (orientation:landscape) {
+  #menuToggle {
+    left: 25px;
+  }
+
+
+  #menu {
+    height: 3225%;
+    width: 200%;
+  }
+}
+
+@media screen and (width: 736px) and (height: 414px) and (orientation:landscape) {
+  #menu {
+    height: 3060%
+  }
+}
+
+@media only screen and (width: 812px) and (height: 375px) and (orientation:landscape) {
+  #menu {
+    height: 3175%
+  }
+}
+
+@media screen and (orientation:portrait){
+  #menuToggle {
+    left: 25px;
   }
 }

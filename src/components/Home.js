@@ -46,7 +46,7 @@ class Home extends Component {
           {window.screen.orientation.type.includes("portrait") ? "Home" : null}
           </h1>
             <div className="homeContent">
-              {<img className="headshot" src={headshot} alt="headshot" />}
+              {window.screen.orientation.type.includes("landscape") ? <img className="headshot" src={headshot} alt="headshot" /> : null}
                 <div className="homeText">
                   <h3>Welcome!</h3>
                   <p>My name is Brian DiRito, and I'm a Full Stack Developer. I'm so happy you're here! Since you're visiting, please feel free to take a look around! Thanks for stopping by!</p>
