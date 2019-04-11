@@ -26,7 +26,6 @@ class NavMenu extends Component {
           <ul id="menu" className={this.state.clicked === true ? "clicked" : "unclicked"}>
             <Link to={"/"}><a><li>Home</li></a></Link>
             <Link to={"/about"}><a><li>About</li></a></Link>
-            <Link to={"/resume"}><a><li>Résumé</li></a></Link>
             <Link to={"/projects"}><a><li>Projects</li></a></Link>
             <Link to={"/contact"}><a><li>Contact</li></a></Link>
           </ul>

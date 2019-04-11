@@ -8,7 +8,7 @@ export default class About extends Component {
       <div className="aboutPage">
         <h1>About Me</h1>
         <div className="aboutContent">
-          <img src={aboutMePhoto} alt="aboutMePhoto"/>
+        {window.screen.orientation.type.includes("landscape") || window.screen.width >= 768 ? <img src={aboutMePhoto} alt="aboutMePhoto"/> : null}
           <div className="aboutText">
             <p>Born in Connecticut, but raised in South Florida, Brian spent most of his childhood singing, dancing, acting, and playing various instruments. He caught the performance bug quite early on and wanted to spend the rest of his life onstage. After attending University of Miami, where he received a Bachelor of Fine Arts, he moved to New York to chase those Broadway dreams!</p>
 

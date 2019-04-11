@@ -192,14 +192,20 @@
 
 @media screen and (width:375px) and (height: 812px) and (orientation:portrait){
   #menu {
-    height: 3000%
+    height: 3100%
   }
 }
 
 /* iPad */
 @media only screen and (width: 768px) and (height: 1024px) and (orientation:portrait) {
   #menu {
-    height: 3500%
+    height: 3550%
+  }
+}
+
+@media only screen and (width: 1024px) and (height: 768px) and (orientation:landscape) {
+  #menu {
+    height: 2715%
   }
 }
 
@@ -207,7 +213,7 @@
 
 @media screen and (width: 1366px) and (height:1024px) and (orientation:landscape) {
   #menu{
-    height: 3000%
+    height: 3425%
   }
 
   #menu.clicked li {
@@ -217,7 +223,7 @@
 
 @media screen and (width: 1024px) and (height:1366px) and (orientation:portrait) {
   #menu{
-    height: 3475%;
+    height: 3560%;
     width: 150px;
   }
 
@@ -225,6 +231,8 @@
     margin-top: 10px;
   }
 }
+
+/* general mobile */
 
 @media screen and (orientation:portrait){
   #menuToggle {
