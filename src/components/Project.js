@@ -40,7 +40,9 @@ export default class Project extends Component {
       <div className="detailMessage">
       <a href="https://github.com/Bcdirito/myBrews" target="_blank" rel="noopener noreferrer"><img src={rubyIcon} alt="rubyIcon" name="Ruby" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a>
       <br/>
-      {this.state.language !== "" ? this.renderDetailMessage() : <br/>}</div>
+      {this.state.language !== "" ? this.renderDetailMessage() : <br/>}
+      {navigator.userAgent.includes("Mobile") ? "- Tap an icon to view the Github Repo" : null}
+      </div>
     </div>)
   }
 
@@ -50,9 +52,10 @@ export default class Project extends Component {
         <p><i>Virtual Met</i> is a web application allowing users to take procured tours of the prestigious Met 5th Ave Museum. Having been constructed with a JavaScript front end, a Ruby on Rails back end, and integrating the Met Collection API, visiters may view various works of up to 6 different departments - accompanied by a thematic playist) - and learn as much as they want from the Met Museum's website and archives!</p>
         <br/>
         <div className="detailMessage">
-          <a href="https://github.com/Bcdirito/virtual_met_back" target="_blank" rel="noopener noreferrer"><img src={railsIcon} alt="railsIcon" name="Ruby on Rails" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a><a href="https://github.com/Bcdirito/virtual_met_front" target="_blank" rel="noopener noreferrer"><img src={javaScriptIcon} alt="railsIcon" name="JavaScript" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a><a href="https://virtual-met-front.herokuapp.com" target="_blank" rel="noopener noreferrer"> <img src={metIcon}alt="metIcon" name="Heroku" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a>
+          <a href="https://github.com/Bcdirito/virtual_met_back" target="_blank" rel="noopener noreferrer"><img src={railsIcon} alt="railsIcon" name="Ruby on Rails" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a><a href="https://github.com/Bcdirito/virtual_met_front" target="_blank" rel="noopener noreferrer"><img src={javaScriptIcon} alt="railsIcon" name="JavaScript" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a>{!navigator.userAgent.includes("Mobile") ? <a href="https://virtual-met-front.herokuapp.com" target="_blank" rel="noopener noreferrer"> <img src={metIcon}alt="metIcon" name="Heroku" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a> : null}
           <br/>
           {this.state.language !== "" ? this.renderDetailMessage() : <br/>}
+          {navigator.userAgent.includes("Mobile") ? "- Tap an icon to view the Github Repo" : null}
         </div>
       </div>
       )
@@ -66,7 +69,8 @@ export default class Project extends Component {
         <div className="detailMessage">
           <a href="https://github.com/Bcdirito/good_work_front" target="_blank" rel="noopener noreferrer"> <img src={railsIcon} alt="railsIcon" name="Ruby on Rails" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a><a href="https://github.com/Bcdirito/good_work_back" target="_blank" rel="noopener noreferrer"> <img src={reactIcon} alt="reactIcon" name="React" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a>
           <br/>
-          {this.state.language !== "" ? this.renderDetailMessage() : <br/>}
+          {this.state.language !== "" ? this.renderDetailMessage() : null}
+          {navigator.userAgent.includes("Mobile") ? "- Tap an icon to view the Github Repo" : null}
         </div>
       </div>
       )

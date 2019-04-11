@@ -22,3 +22,126 @@
     cursor: pointer;
     float: center;
 }
+
+/* iPhone 6/7/8 */
+@media screen and (max-width: 667px) and (min-height: 375px) and (orientation:landscape){
+    .projectCard {
+        width: 300px;
+        height: 300px;
+        margin-left: 0px;
+    }
+
+    .projectCard img {
+        width: 198px;
+        margin-left: 0px;
+    }
+
+    .projectCard h3 {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-height: 667px){
+    .projectCard {
+        width: 250px;
+        height: 300px;
+        margin-left: 50px;
+    }
+
+    .projectCard img {
+        width: 198px;
+        margin-left: 0px;
+    }
+
+    .projectCard h3 {
+        margin-left: 0px;
+    }
+}
+
+
+/* iPhone 6/7/8 Plus */
+@media screen and (max-width: 736px) and (min-width: 668px) and (min-height: 414px) and (orientation:landscape){
+    .projectCard {
+        width: 300px;
+        height: 300px;
+        margin-left: 0px;
+    }
+
+    .projectCard img {
+        width: 198px;
+        margin-left: 0px;
+    }
+
+    .projectCard h3 {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 414px) and (min-height: 668px) and (max-height: 736px) {
+    .projectCard {
+        width: 275px;
+        height: 275px;
+        margin-left: 0px;
+    }
+
+    .projectCard img {
+        width: 198px;
+        margin-left: 0px;
+    }
+
+    .projectCard h3 {
+        margin-left: 0px;
+    }
+}
+
+/* iPhone X */
+
+@media screen and (min-width: 375px) and (min-height: 737px) and (max-height: 812px) {
+    .projectCard {
+        width: 325px;
+        height: 325px;
+    }
+
+    .projectCard img {
+        width: 250px;
+        margin-left: 15px;
+    }
+
+    .projectCard h1 {
+        text-align: center;
+        margin-left: 
+    }
+}
+
+@media screen and (max-width: 812px) and (min-width: 737px) and (min-height: 375px) {
+    .projectCard {
+        width: 300px;
+        height: 300px;
+    }
+
+    .projectCard h3 {
+        text-align: center;
+    }
+
+    .projectCard img {
+        width: 250px;
+        margin-top: -20px;
+    }
+}
+
+/* iPad */
+@media screen and (max-width: 1024px) and (min-width: 813px) and (min-height: 768px) {
+    .projectCard {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/* iPad Pro */
+
+@media screen and (max-width: 1366px) and (min-width: 1025px) and (min-height: 1024px) {
+    .projectCard {
+        height: 375px;
+        width: 375px;
+    }
+}

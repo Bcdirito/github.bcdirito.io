@@ -55,7 +55,7 @@
 }
 
 /* iphone X */
-@media screen and (width: 375px) and (height: 812px) and (orientation:portrait){
+@media screen and (min-width: 375px) and (max-height: 812px) and (orientation:portrait){
   
     .homePage {
         margin-top: 50px;
@@ -73,11 +73,17 @@
     }
   
     .homeContent {
-        margin-top: -40px;
+        margin-top: -20px;
         width: 67vw;
         height: 250px;
         margin-bottom: -0px;
         margin-left: 55px;
+    }
+
+    .homeContent .headshot {
+        height: 350px;
+        margin-bottom: 25px;
+        margin-left: 0px;
     }
   
     .homeText {
@@ -110,13 +116,21 @@
     }
 }
 
-@media screen and (max-width: 812px) and (max-height: 375px) and (orientation:landscape){
+@media screen and (max-width: 812px) and (min-height: 375px) and (orientation:landscape){
     .headshot {
         margin-left: 182px;
     }
 
+    .homePage h1 {
+        margin-top: 20px;
+        margin-left: -25px;
+    }
+
     .homeContent {
-        margin-left: 53px;
+        margin-left: 45px;
+        overflow: scroll;
+        height: 85vh;
+        width: 75vw;
     }
 
     .homeText {
@@ -209,10 +223,14 @@
     }
 
     .homeContent {
-        margin-top: -75px;
+        margin-top: -30px;
         width: 67vw;
         height: 250px;
         margin-bottom: -0px;
+    }
+
+    .headshot {
+        width: 225px;
     }
 
     .homeText {
@@ -365,9 +383,14 @@
 
   /* iPad */
 
-  @media screen and (width: 1024px) and (height: 768px) and (orientation:landscape){
+  @media screen and (max-width: 1024px) and (min-height: 768px) and (orientation:landscape){
+    .Home {
+        height: 85vh;
+    }
+
     .homePage {
         margin-left: 0px;
+        height: 85vh;
     }
 
     .homePage h1 {

@@ -42,7 +42,7 @@
 }
 
 /* iPhone X */
-@media screen and (width: 375px) and (height: 812px) and (orientation:portrait){
+@media screen and (min-width: 375px) and (max-height: 812px) and (orientation:portrait){
   .contactPage {
       height: 70vh;
   }
@@ -52,6 +52,13 @@
       text-align: center;
       font-size: 24px;
       margin-top: 25px;
+  }
+
+  .contactPage #contactPhoto {
+    margin-left: -285px;
+    margin-top: 125px;
+    margin-bottom: 25px;
+    width: 225px;
   }
 
   .mobileDirections {
@@ -325,7 +332,7 @@
 
 /* iPad Pro */
 
-@media screen and (width: 1366px) and (height: 1024px) and (orientation:landscape){
+@media screen and (max-width: 1366px) and (min-height: 1024px) and (orientation:landscape){
     .contactPage {
         height: 75vh;
     }
@@ -359,9 +366,9 @@
     }
 }
 
-@media screen and (width: 1024px) and (height: 1366px) and (orientation:portrait){
+@media screen and (min-width: 1024px) and (max-height: 1366px) and (orientation:portrait){
     .contactPage {
-        height: 80vh;
+        /* height: 80vh; */
     }
   
     .contactPage h1 {

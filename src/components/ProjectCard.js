@@ -4,14 +4,14 @@ import "../css/projectCard.css"
 export default class ProjectCard extends Component {
   render() {
     return (
-      <div className="projectCard">
-        <h3>{this.props.name}</h3>
+      <div className="projectCard" data-name={this.props.name} onClick={e => this.props.select(e)}>
+        <h3 data-name={this.props.name}>{this.props.name}</h3>
         <br/>
-        <img name={this.props.name} src={this.props.card} onClick={e => this.props.select(e)} alt="projectImage"/>
+        <img data-name={this.props.name} src={this.props.card} alt="projectImage"/>
         {/* When you hover over them, the name appears.
         Clicking on it will make it modal and open a video player */}
         <br/>
-        {this.props.blurb}
+        {!navigator.userAgent.includes("Mobile") ? this.props.blurb : null}
       </div>
     )
   }

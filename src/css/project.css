@@ -43,3 +43,81 @@
     from {opacity: 0}
     to {opacity: 1}
 }
+
+/* iPhone 6/7/8 */
+
+@media screen and (max-width: 667px) and (min-height: 375px) and (orientation:landscape){
+    .projectContent {
+        margin-left: 75px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-height: 667px){
+    .Project {
+        margin-left: -125px;
+    }
+}
+
+/* iPhone 6/7/8 Plus */
+@media screen and (max-width: 736px) and (min-width: 668px) and (min-height: 414px) and (orientation:landscape){
+   .projectContent {
+       margin-left: 75px;
+   }
+   
+   .projectContent h2 {
+       text-align: center;
+       margin-left: 3px;
+   }
+}
+
+@media screen and (min-width: 414px) and (min-height: 668px) and (max-height: 736px) {
+    .projectContent {
+        margin-left: 40px;
+    }
+    
+    .projectContent h2 {
+        text-align: center;
+        margin-left: 3px;
+    }
+ }
+
+ /* iPhone X */
+ @media screen and (min-width: 375px) and (min-height: 737px) and (max-height: 812px) {
+    .projectContent {
+        margin-left: 25px;
+    }
+    
+    .projectContent h2 {
+        text-align: center;
+        margin-left: 3px;
+    }
+ }
+
+ @media screen and (max-width: 812px) and (min-width: 737px) and (min-height: 375px) {
+     .projectContent {
+         margin-left: 100px;
+     }
+ }
+
+ /* iPad */
+ @media screen and (min-width: 768px) and (min-height: 813px) and (max-height: 1024px){
+     .projectContent {
+         margin-left: 75px;
+         margin-top: 75px;
+     }
+ }
+
+ @media screen and (max-width: 1024px) and (min-width: 813px) and (min-height: 768px) {
+     .projectContent {
+         margin-left: 100px;
+     }
+ }
+
+ /* iPad Pro */
+
+ @media screen and (max-width: 1366px) and (min-width: 1025px) and (min-height: 1024px) {
+     .projectContent {
+         margin-left: 150px;
+         margin-top: 0px;
+     }
+ }

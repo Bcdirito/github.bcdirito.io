@@ -47,7 +47,7 @@ export default class ProjectContainer extends Component {
   featureSelectedProject = (e) => {
     this.setState({
       featuredClick: true,
-      featuredWork: e.target.name,
+      featuredWork: e.target.dataset.name,
       publications: false,
       projects: false,
     })
@@ -55,7 +55,7 @@ export default class ProjectContainer extends Component {
 
   renderButtons = () => {
     return (
-      <div className="buttons">
+      <div className={!navigator.userAgent.includes("Mobile") ? "desktopButtons" : "buttons"}>
           <button onClick={e => this.featureHandler(e)} name="projects">Projects</button>
           <button onClick={e => this.featureHandler(e)} name="publications">Publications</button>
       </div>
@@ -88,16 +88,16 @@ export default class ProjectContainer extends Component {
   render() {
     return (
       <div className="projectsPage">
-        <h1>Projects and Publications</h1>
+        <h1>{window.screen.orientation.type.includes("landscape") || window.screen.width >= 768 ? "Projects and Publications" : "Works"}</h1>
         {this.state.featuredClick === false ? this.renderButtons() : null}
         <br/>
-        <div className={this.state.featuredClick === true ? "projectContainerClicked": "projectContainer"}>
+        <div className={this.state.featuredClick === true ? "projectContainerClicked" : "projectContainer"}>
             {this.state.projects === true && (this.state.featuredClick === false && this.state.publications === false) ? this.renderDemoProjects() : null}
             {this.state.publications === true && (this.state.featuredClick === false && this.state.projects === false) ? this.renderPublications() : null}
             {this.state.featuredClick === true && (this.state.publications === false && this.state.projects === false) ? this.renderSelectedProject() : null}
         </div>
         <br/>
-        {this.state.featuredClick === true ? this.renderButtons() : null}
+        {this.state.featuredClick === true ? <div className={!navigator.userAgent.includes("Mobile") ? "underFeatureButtons" : null}>{this.renderButtons()}</div>: null}
       </div>
     )
   }
