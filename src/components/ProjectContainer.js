@@ -88,7 +88,7 @@ export default class ProjectContainer extends Component {
   render() {
     return (
       <div className="projectsPage">
-        <h1>{window.screen.orientation.type.includes("landscape") || window.screen.width >= 768 ? "Projects and Publications" : "Works"}</h1>
+        <h1>{window.screen.width >= 768 ? "Projects and Publications" : "Works"}</h1>
         {this.state.featuredClick === false ? this.renderButtons() : null}
         <br/>
         <div className={this.state.featuredClick === true ? "projectContainerClicked" : "projectContainer"}>
