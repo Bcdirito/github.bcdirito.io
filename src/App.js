@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Route, Switch} from 'react-router-dom'
+import {Route, Switch, withRouter} from 'react-router-dom'
 import NavMenu from "./components/NavMenu"
 import Home from "./components/Home"
 import About from "./components/About"
@@ -40,5 +40,5 @@ class App extends Component {
 }
 
 
-export default App;
+export default withRouter(App);
 

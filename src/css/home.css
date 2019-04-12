@@ -593,59 +593,59 @@
 
   /* iPad */
 
-  /* @media only screen and (max-width: 992px) {
-    .Home {
-        max-height: 80vh;
-    }
+    /* @media only screen and (max-width: 992px) {
+        .Home {
+            max-height: 80vh;
+        }
 
-    .homePage {
-        margin-top: 75px;
-        margin-left: 0px;
-        height: 80vh;
-    }
-  
-    .homePage h1 {
-        text-align: center;
-        font-size: 26px;
-        margin-right: 0px;
-        margin-left: -250px;
-        margin-top: -50px;
-        width: 500px;
-    }
-  
-    .homeContent {
-        margin-top: 0px;
-        width: 67vw;
-        height: 250px;
-        margin-bottom: 0px;
-    }
-  
-    .homeText {
-        font-size: 16px;
-        margin-left: 163px; 
-    }
-  
-    .homeText h3 {
-        text-align: center;
-        padding-right: 22px;
-        margin-top: 425px;
-        margin-left: -100px;
-    }
-  
-    .homeText p {
-        text-align: justify;
-        margin-left: -100px;
-        padding-left: 0px;
-        padding-right: 30px;
-    }
-  
-    .homeIcons {
-        margin-left: 225px;
-        padding-bottom: 0px;
-    }
+        .homePage {
+            margin-top: 75px;
+            margin-left: 0px;
+            height: 80vh;
+        }
+    
+        .homePage h1 {
+            text-align: center;
+            font-size: 26px;
+            margin-right: 0px;
+            margin-left: -250px;
+            margin-top: -50px;
+            width: 500px;
+        }
+    
+        .homeContent {
+            margin-top: 0px;
+            width: 67vw;
+            height: 250px;
+            margin-bottom: 0px;
+        }
+    
+        .homeText {
+            font-size: 16px;
+            margin-left: 163px; 
+        }
+    
+        .homeText h3 {
+            text-align: center;
+            padding-right: 22px;
+            margin-top: 425px;
+            margin-left: -100px;
+        }
+    
+        .homeText p {
+            text-align: justify;
+            margin-left: -100px;
+            padding-left: 0px;
+            padding-right: 30px;
+        }
+    
+        .homeIcons {
+            margin-left: 225px;
+            padding-bottom: 0px;
+        }
 
-    .homeIcons p {
-        margin-left: -40%;
-        margin-right: 10%;
-    }
-  } */
+        .homeIcons p {
+            margin-left: -40%;
+            margin-right: 10%;
+        }
+    } */

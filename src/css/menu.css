@@ -242,21 +242,15 @@
 
 /* phones */
 
-@media only screen and (max-width: 812px) {
+@media only screen and (device-max-width: 812px) {
   #menu {
     height: 3200%;
   }
 }
 
-@media only screen and (max-width: 812px) and (orientation: landscape){
+@media only screen and (device-max-width: 812px) and (orientation: landscape){
   #menu {
     height: 2300%
   }
-}
-
-/* tablets */
-
-@media only screen and (max-width: 992px) {
-  
 }
 
