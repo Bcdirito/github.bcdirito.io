@@ -119,7 +119,7 @@ h1 {
 
 @media only screen and (max-width: 812px) and (orientation: landscape){
   .App {
-    margin-top: 20px;
+    margin-top: 0px;
     height: 90vh;
   }
 }
