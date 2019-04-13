@@ -247,6 +247,10 @@
 
 @media only screen and (max-width: 823px) and (orientation:landscape) {
     .publication {
-        height: 200%
+        height: 260%
+    }
+
+    .articleImage {
+        width: 75%;
     }
 }
