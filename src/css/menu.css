@@ -210,20 +210,9 @@
 }
 
 /* iPad Pro */
-
-@media screen and (max-width: 1366px) and (min-height:1024px) and (orientation:landscape) {
-  #menu{
-    height: 3700%
-  }
-
-  #menu.clicked li {
-    margin-top: 10px;
-  }
-}
-
 @media screen and (min-width: 1024px) and (min-height:1025px) and (max-height:1366px) and (orientation:portrait) {
   #menu{
-    height: 3800%;
+    height: 4400%;
     width: 150px;
   }
 
