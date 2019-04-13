@@ -2,7 +2,7 @@
     overflow: scroll;
     height: 70vh;
     width: 35vw;
-    margin-left: 34%
+    margin-left: 34%;
 }
 
 .projectContainerClicked {
@@ -169,8 +169,30 @@ button:hover {
     }
 
     button {
-        margin-left: 15px;
+        width: 110px;
+        margin-left: 25px;
         margin-bottom: 10px;
+    }
+
+    .projectContainer {
+        width: 250px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 568px) and (min-height: 320px) and (orientation:landscape) {
+    .buttons {
+        margin-left: 127px;
+    }
+
+    button {
+        width: 110px;
+        height: 40px;
+    }
+
+    .projectContainer {
+        width: 300px;
+        margin-left: 110px;
     }
 }
 
@@ -193,7 +215,7 @@ button:hover {
     
     .projectContainer {
         width: 300px;
-        margin-left: -5px;
+        margin-left: 50px;
     }
 
     .projectContainerClicked {
@@ -201,14 +223,14 @@ button:hover {
     }
 }
 
-@media only screen and (max-device-width: 667px) and (min-device-height: 375px) and (orientation:landscape){
+@media only screen and (max-width: 667px) and (min-height: 375px) and (orientation:landscape){
 
     .projectsPage h1 {
-        margin-left: 50px;
+        margin-left: 35px;
     }
 
     .buttons {
-        margin-left: 180px;
+        margin-left: 175px;
     }
 
     button {
@@ -220,7 +242,7 @@ button:hover {
     
     .projectContainer {
         width: 300px;
-        margin-left: 160px;
+        margin-left: 180px;
     }
 }
 
@@ -271,10 +293,10 @@ button:hover {
 }
 
 /* iPhone X */
-@media screen and (min-width: 375px) and (min-height: 737px) and (max-height: 812px) {
+@media screen and (min-width: 375px) and (min-height: 737px) and (max-height: 812px) and (orientation:portrait){
     .projectContainer {
-        width: 325px;
-        margin-left: -10px;
+        width: 310px;
+        margin-left: 0px;
     }
 
     button {
@@ -290,7 +312,7 @@ button:hover {
 
 }
 
-@media screen and (max-width: 812px) and (min-width: 737px) and (min-height: 375px){
+@media screen and (max-width: 812px) and (min-width: 737px) and (min-height: 375px) and (orientation:landscape){
     .projectsPage h1 {
         margin-left: 60px;
     }
@@ -305,12 +327,12 @@ button:hover {
 
     .projectContainer {
         width: 350px;
-        margin-left: 205px;
+        margin-left: 235px;
     }
 }
 
 /* iPad */
-@media screen and (min-width: 768px) and (min-height: 813px) and (max-height: 1024px) {
+@media only screen and (min-width: 768px) and (max-height: 1024px) and (orientation:portrait) {
     .ProjectContainer {
         height: 85vh;
     }
@@ -320,33 +342,24 @@ button:hover {
     }
 
     .buttons {
-        margin-left: 220px;
-    }
-}
-
-@media screen and (max-width: 1024px) and (min-width: 813px) and (min-height: 768px) {
-    button {
-        height: 50px;
-    }
-
-    .buttons {
-        margin-left: 355px;
+        margin-left: 215px;
     }
 
     .projectContainer {
-        margin-left: 305px;
         width: 400px;
-    }
-
-    .projectsPage h1 {
-        margin-left: 15px;
+        margin-left: 180px;
     }
 }
 
 /* iPad Pro */
-@media screen and (min-width:1024px) and (min-height: 1025px) and (max-height:1366px) {
+@media screen and (min-width:1024px) and (min-height: 1025px) and (max-height:1366px) and (orientation: portrait) {
+    .projectsPage h1 {
+        margin-left: 15px;
+    }
     .projectContainer {
-        height: 50vh;
+        height: 55vh;
+        width: 37vw;
+        margin-left: 305px;
     }
 
     .projectContainerClicked {
@@ -354,20 +367,6 @@ button:hover {
     }
 
     .buttons {
-        margin-left: 295px;
-    }
-}
-
-@media only screen and (max-device-width: 1366px) and (min-device-width: 1025px) and (max-device-height: 1024px) {
-    .buttons {
-        margin-left: 405px;
-    }
-
-    .projectContainer {
-        margin-left: 36%;
-    }
-
-    .projectContainerClicked {
-        margin-bottom: -75px;
+        margin-left: 290px;
     }
 }

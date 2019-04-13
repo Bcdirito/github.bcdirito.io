@@ -248,7 +248,7 @@
 
   /* iPhone x */
 
-  @media only screen and (max-height: 812px) and (min-width: 375px) {
+  @media only screen and (max-height: 812px) and (min-width: 375px) and (orientation:portrait) {
   
     .homePage {
         margin-top: 50px;
