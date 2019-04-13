@@ -54,56 +54,20 @@ h1 {
   }
 }
 
-/* iPhone X */
-@media only screen and (max-height: 812px){
+/* phones */
+
+@media only screen and (max-width: 992px) {
   .App {
-    margin-top: 45px;
-    height: 100vh;
+    margin-top: 12%;
+    margin-bottom: 0%;
+    height: 85vh;
   }
 }
 
-@media only screen and (max-width:812px) and (orientation:landscape){
+@media only screen and (max-width: 992px) and (orientation:landscape){
   .App {
-    margin-top: 20px;
-    height: 90vh;
-  }
-
-  h1, h2 {
-    text-align: center;
-  }
-
-  h1 {
-    padding-left: 200px;
-    padding-right: 0px;
-  }
-}
-
-/* iPhone 6/7/8 */
-@media only screen and (max-height: 667px){
-  .App {
-    margin-top: 35px;
-    height: 90vh;
-  }
-}
-
-@media only screen and (max-width: 667px) and (orientation:landscape){
-  .App {
-    margin-top: 20px;
-    height: 90vh;
-  }
-}
-
-/* iPhone 6/7/8 Plus*/
-@media only screen and (max-height: 736px) {
-  .App {
-    margin-top: 40px;
-    height: 90vh;
-  }
-}
-
-@media only screen and (max-width: 736px) and (orientation:landscape){
-  .App {
-    margin-top: 25px;
-    height: 90vh;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    height: 85vh;
   }
 }

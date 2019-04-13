@@ -6,7 +6,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="aboutPage">
-        <h1>About Me</h1>
+        <h1>{window.screen.width <= 320 ? "About" : "About Me"}</h1>
         <div className="aboutContent">
         <img src={aboutMePhoto} alt="aboutMePhoto"/>
           <div className="aboutText">

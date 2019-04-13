@@ -54,238 +54,6 @@
     padding-top: 25px;
 }
 
-
-  /* iphone 6/7/8 */
-
-  @media screen and (width: 667px) and (height: 375px) and (orientation:landscape){
-      .homePage {
-          margin-left: 0px;
-      }
-
-      .homePage h1 {
-          padding-top: 10px;
-          text-align: center;
-          font-size: 24px;
-          width: 80%;
-          margin-left: -225px;
-      }
-
-      .homeContent {
-          margin-left: 40px;
-      }
-
-      .headshot {
-        margin-left: 115px;
-      }
-
-      .homeText {
-          font-size: 16px;
-          margin-left: 50px;
-      }
-
-      .homeText h3 {
-          text-align: center;
-          padding-right: 22px;
-      }
-
-      .homeText p {
-          text-align: justify;
-          padding-left: 15px;
-          padding-right: 50px;
-      }
-
-      .homeIcons {
-          margin-left: 217px;
-      }
-
-      .homeIcons p {
-        margin-left: -44%;
-        margin-right: 10%;
-        font-size: 18px;
-    }
-
-  }
-
-  @media screen and (width: 375px) and (height: 667px) and (orientation:portrait) {
-
-    .Home {
-        max-height: 75vh;
-    }
-
-    .homePage {
-        margin-top: 50px;
-        margin-left: 0px;
-        height: 75vh;
-    }
-
-    .homePage h1 {
-        padding-top: 0px;
-        text-align: left;
-        font-size: 26px;
-        margin-right: 0px;
-        margin-left: -220px;
-        margin-top: -25px;
-    }
-
-    .homeContent {
-        margin-top: -30px;
-        width: 67vw;
-        height: 250px;
-        margin-bottom: -0px;
-    }
-
-    .headshot {
-        width: 225px;
-    }
-
-    .homeText {
-        font-size: 16px;
-        margin-left: 140px;
-        margin-top: 0px; 
-    }
-
-    .homeText h3 {
-        text-align: center;
-        padding-right: 22px;
-        margin-left: -190px;
-    }
-
-    .homeText p {
-        text-align: justify;
-        margin-left: -200px;
-        padding-left: 0px;
-        padding-right: 30px;
-    }
-
-    .homeIcons {
-        margin-left: 40px;
-        padding-top: 5px;
-    }
-
-    .homeIcons p {
-        margin-left: -25%;
-        margin-right: 10%;
-    }
-  }
-
-  /* iphone 6/7/8 Plus */
-
-  @media screen and (width: 736px) and (height: 414px) and (orientation:landscape){
-    .Home {
-        max-height: 75vh;
-        margin-top: -25px;
-    }
-
-    .homePage {
-        margin-left: -5px;
-        margin-top: 0px;
-    }
-
-    .homePage h1 {
-        padding-top: 12px;
-        text-align: left;
-        font-size: 24px;
-        margin-left: -125px;
-        width: 300px;
-    }
-
-    .homeContent {
-        margin-left: -5px;
-    }
-
-    .headshot {
-      margin-left: 190px;
-      padding-bottom: 15px;
-    }
-
-    .homeText {
-        font-size: 16px;
-        margin-left: 165px;
-    }
-
-    .homeText h3 {
-        text-align: center;
-        padding-right: 22px;
-    }
-
-    .homeText p {
-        text-align: justify;
-        width: 325px;
-        margin-left: -25px;
-        padding-left: 10px;
-        padding-right: 20px;
-    }
-
-    .homeIcons {
-        margin-left: 300px;
-    }
-
-    .homeIcons p {
-        margin-left: -37%;
-        margin-right: 10%;
-        font-size: 18px;
-    }
-}
-
-@media screen and (width: 414px) and (height: 736px) and (orientation:portrait) {
-
-  .Home {
-      max-height: 75vh;
-  }
-
-  .homePage {
-      margin-top: 50px;
-      margin-left: 0px;
-      height: 75vh;
-  }
-
-  .homePage h1 {
-      padding-top: 0px;
-      text-align: center;
-      font-size: 26px;
-      margin-right: 0px;
-      margin-left: -225px;
-      margin-top: -25px;
-  }
-
-  .homeContent {
-      margin-top: -50px;
-      width: 67vw;
-      height: 250px;
-      margin-bottom: -0px;
-  }
-
-  .homeText {
-      font-size: 16px;
-      margin-left: 163px;
-      margin-top: 0px; 
-  }
-
-  .homeText h3 {
-      text-align: center;
-      padding-right: 22px;
-      margin-left: -190px;
-  }
-
-  .homeText p {
-      text-align: justify;
-      margin-left: -200px;
-      padding-left: 0px;
-      padding-right: 30px;
-  }
-
-  .homeIcons {
-      margin-left: 60px;
-      padding-bottom: 0px;
-  }
-
-  .homeIcons p {
-        margin-left: -25%;
-        margin-right: 10%;
-        font-size: 18px;
-    }
-}
-
   /* iPad */
 
   @media screen and (max-width: 1024px) and (min-height: 768px) and (orientation:landscape){
@@ -478,10 +246,9 @@
     }
   }
 
-  
   /* iPhone x */
 
-  @media only screen and (max-width: 812px) {
+  @media only screen and (max-height: 812px) and (min-width: 375px) {
   
     .homePage {
         margin-top: 50px;
@@ -503,7 +270,7 @@
         width: 67vw;
         height: 250px;
         margin-bottom: -0px;
-        margin-left: 55px;
+        margin-left: 50px;
     }
 
     .homeContent .headshot {
@@ -542,7 +309,7 @@
     }
 }
 
-@media only screen and (max-width: 812px) and (orientation:landscape){
+@media only screen and (max-width: 812px) and (min-height: 375px) and (orientation:landscape){
     .Home {
         height: 85vh;
     }
@@ -553,12 +320,12 @@
 
     .homePage h1 {
         margin-top: -25px;
-        margin-left: -100px;
+        margin-left: -50px;
         margin-right: 0px;
     }
 
     .homeContent {
-        margin-left: 150px;
+        margin-left: 130px;
         overflow: scroll;
         height: 85vh;
         width: 65vw;
@@ -590,5 +357,332 @@
     .homeIcons p {
         margin-left: -49%;
         margin-right: 10%;
+    }
+}
+
+/* iphone 6/7/8 */
+
+@media screen and (max-device-width: 667px) and (min-device-height: 375px) and (orientation:landscape){
+    .homePage {
+        margin-left: 0px;
+    }
+
+    .homePage h1 {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 24px;
+        width: 80%;
+        margin-left: -225px;
+    }
+
+    .homeContent {
+        margin-left: -40px;
+    }
+
+    .headshot {
+      margin-left: 115px;
+    }
+
+    .homeText {
+        font-size: 16px;
+        margin-left: 60px;
+    }
+
+    .homeText h3 {
+        text-align: center;
+        padding-right: 22px;
+    }
+
+    .homeText p {
+        text-align: justify;
+        padding-left: 15px;
+        padding-right: 50px;
+    }
+
+    .homeIcons {
+        margin-left: 217px;
+    }
+
+    .homeIcons p {
+      margin-left: -44%;
+      margin-right: 10%;
+      font-size: 18px;
+  }
+
+}
+
+@media screen and (width: 375px) and (height: 667px) and (orientation:portrait) {
+
+  .Home {
+      max-height: 75vh;
+  }
+
+  .homePage {
+      margin-top: 50px;
+      margin-left: 0px;
+      height: 75vh;
+  }
+
+  .homePage h1 {
+      padding-top: 0px;
+      text-align: left;
+      font-size: 26px;
+      margin-right: 0px;
+      margin-left: -220px;
+      margin-top: -25px;
+  }
+
+  .homeContent {
+      margin-top: -30px;
+      width: 67vw;
+      height: 250px;
+      margin-bottom: -0px;
+  }
+
+  .headshot {
+      width: 225px;
+  }
+
+  .homeText {
+      font-size: 16px;
+      margin-left: 140px;
+      margin-top: 0px; 
+  }
+
+  .homeText h3 {
+      text-align: center;
+      padding-right: 22px;
+      margin-left: -190px;
+  }
+
+  .homeText p {
+      text-align: justify;
+      margin-left: -200px;
+      padding-left: 0px;
+      padding-right: 30px;
+  }
+
+  .homeIcons {
+      margin-left: 40px;
+      padding-top: 5px;
+  }
+
+  .homeIcons p {
+      margin-left: -25%;
+      margin-right: 10%;
+  }
+}
+
+/* iphone 6/7/8 Plus */
+
+@media screen and (width: 736px) and (height: 414px) and (orientation:landscape){
+  .Home {
+      max-height: 75vh;
+      margin-top: -25px;
+  }
+
+  .homePage {
+      margin-left: -5px;
+      margin-top: 0px;
+  }
+
+  .homePage h1 {
+      padding-top: 12px;
+      text-align: left;
+      font-size: 24px;
+      margin-left: -125px;
+      width: 300px;
+  }
+
+  .homeContent {
+      margin-left: -5px;
+  }
+
+  .headshot {
+    margin-left: 190px;
+    padding-bottom: 15px;
+  }
+
+  .homeText {
+      font-size: 16px;
+      margin-left: 165px;
+  }
+
+  .homeText h3 {
+      text-align: center;
+      padding-right: 22px;
+  }
+
+  .homeText p {
+      text-align: justify;
+      width: 325px;
+      margin-left: -25px;
+      padding-left: 10px;
+      padding-right: 20px;
+  }
+
+  .homeIcons {
+      margin-left: 300px;
+  }
+
+  .homeIcons p {
+      margin-left: -37%;
+      margin-right: 10%;
+      font-size: 18px;
+  }
+}
+
+@media screen and (width: 414px) and (height: 736px) and (orientation:portrait) {
+
+.Home {
+    max-height: 75vh;
+}
+
+.homePage {
+    margin-top: 50px;
+    margin-left: 0px;
+    height: 75vh;
+}
+
+.homePage h1 {
+    padding-top: 0px;
+    text-align: center;
+    font-size: 26px;
+    margin-right: 0px;
+    margin-left: -225px;
+    margin-top: -25px;
+}
+
+.homeContent {
+    margin-top: -50px;
+    width: 67vw;
+    height: 250px;
+    margin-bottom: -0px;
+}
+
+.homeText {
+    font-size: 16px;
+    margin-left: 163px;
+    margin-top: 0px; 
+}
+
+.homeText h3 {
+    text-align: center;
+    padding-right: 22px;
+    margin-left: -190px;
+}
+
+.homeText p {
+    text-align: justify;
+    margin-left: -200px;
+    padding-left: 0px;
+    padding-right: 30px;
+}
+
+.homeIcons {
+    margin-left: 60px;
+    padding-bottom: 0px;
+}
+
+.homeIcons p {
+      margin-left: -25%;
+      margin-right: 10%;
+      font-size: 18px;
+  }
+}
+
+/* Galaxy S5 */
+
+@media only screen and (max-width: 640px) {
+    .Home {
+        max-height: 75vh;
+    }
+    
+    .homePage {
+        margin-top: 50px;
+        margin-left: 0px;
+        height: 75vh;
+    }
+
+    .homeContent .headshot {
+        width: 225px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .homePage h1 {
+        padding-top: 0px;
+        text-align: center;
+        font-size: 26px;
+        margin-right: 0px;
+        margin-left: -225px;
+        margin-top: -25px;
+    }
+    
+    .homeContent {
+        margin-top: -25px;
+        width: 50vw;
+        height: 250px;
+        margin-bottom: -0px;
+    }
+    
+    .homeText {
+        font-size: 16px;
+        margin-left: 185px;
+        margin-top: 0px; 
+    }
+    
+    .homeText h3 {
+        text-align: center;
+        padding-right: 22px;
+        margin-left: -190px;
+    }
+    
+    .homeText p {
+        text-align: justify;
+        margin-left: -200px;
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+    
+    .homeIcons {
+        margin-left: 55px;
+        margin-right: -20px;
+        padding-bottom: 0px;
+    }
+    
+    .homeIcons p {
+          margin-left: -25%;
+          margin-right: 10%;
+          font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:640px) and (orientation:landscape){
+    .homePage h1 {
+        margin-left: -50px;
+    }
+
+    .homePage .headshot {
+        margin-left: 30px;
+    }
+
+    .homeText {
+        font-size: 16px;
+        margin-left: 200px;
+        margin-top: 0px;
+        padding-left: 0px; 
+    }
+
+    .homeContent {
+        margin-top: -25px;
+        width: 50vw;
+        height: 250px;
+        margin-bottom: -0px;
+        margin-left: 165px;
+    }
+
+    .homeIcons {
+        margin-left: 75px;
     }
 }

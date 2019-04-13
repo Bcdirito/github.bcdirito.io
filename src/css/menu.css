@@ -240,17 +240,17 @@
   }
 }
 
-/* phones */
+/* Galaxy */
 
-/* @media only screen and (device-max-width: 812px) {
+@media only screen and (max-width: 640px) {
   #menu {
-    height: 3200%;
+    height: 3100%;
   }
 }
 
-@media only screen and (device-max-width: 812px) and (orientation: landscape){
+@media only screen and (max-width: 640px) and (orientation: landscape){
   #menu {
     height: 2300%
   }
-} */
+}
 

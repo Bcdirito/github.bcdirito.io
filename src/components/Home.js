@@ -42,7 +42,8 @@ class Home extends Component {
     return (
         <div className="homePage">
           <h1>{window.screen.width >= 768 ? "Brian DiRito - Full Stack Developer" : null}
-          {window.screen.width < 667 ? "Home" : "Brian DiRito - Developer"}
+          {window.screen.width < 768 && window.screen.width >= 640 ? "Brian DiRito - Developer" : null}
+          {window.screen.width < 640 ? "Home" : null}
           </h1>
             <div className="homeContent">
               <img className="headshot" src={headshot} alt="headshot" />
