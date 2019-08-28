@@ -906,3 +906,28 @@
         margin-right: 0%
     }
 }
+
+@media only screen and (min-width: 823px) and (min-height: 411px) and (orientation: landscape){
+    .homePage h1 {
+        padding: 0%;
+        padding-left: 33%
+    }
+
+    .homeContent {
+        margin: auto;
+    }
+
+    .homeText {
+        margin: auto;
+        padding: 0%;
+        margin-left: 80%;
+        margin-top: 15%;
+        width: 36%;
+    }
+
+    .homeIcons {
+        margin: auto;
+        margin-left: 90%;
+        margin-right: -7%;
+    }
+}
