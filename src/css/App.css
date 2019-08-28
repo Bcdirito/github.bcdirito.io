@@ -7,7 +7,7 @@
   margin-left: 25px;
   margin-right: 25px;
   animation: fadein 1.75s;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 h1, h2 {
@@ -29,6 +29,7 @@ h1 {
   .App {
     margin-top: 45px;
     height: 89vh;
+    overflow-y: scroll;
   }
 }
 
@@ -43,6 +44,13 @@ h1 {
 @media only screen and (min-width: 1024px) and (orientation:portrait){
   .App {
     margin-top: 165px;
+    height: 80vh;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (orientation:landscape){
+  .App {
+    margin-top: 8%;
     height: 80vh;
   }
 }

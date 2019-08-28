@@ -19,7 +19,6 @@
 }
 
 .description {
-    overflow: scroll;
     float: center;
     text-align: justify;
     font-size: 16px;

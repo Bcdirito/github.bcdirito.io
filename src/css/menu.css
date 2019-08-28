@@ -140,6 +140,7 @@
 #menu.clicked {
   margin-top: -150px;
   margin-bottom: -100px;
+  height: 96vh;
 }
 
 #menu.unclicked {
@@ -221,6 +222,11 @@
   }
 }
 
+@media screen and (min-width: 1366px) and (orientation: landscape){
+  #menu.clicked {
+    height: 69vh;
+  }
+}
 /* general mobile */
 
 @media screen and (orientation:portrait){

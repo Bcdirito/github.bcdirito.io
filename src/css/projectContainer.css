@@ -1,12 +1,12 @@
 .projectContainer {
-    overflow: scroll;
+    overflow-y: scroll;
     height: 70vh;
     width: 35vw;
     margin-left: 34%;
 }
 
 .projectContainerClicked {
-    overflow: scroll;
+    overflow-y: scroll;
     height: 70vh;
 }
 
@@ -45,7 +45,7 @@ button:hover {
 }
 
 .underFeatureButtons {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 
