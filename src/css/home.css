@@ -836,6 +836,8 @@
     .homePage {
         margin-left: 0%;
         display: grid;
+        overflow-x: hidden;
+        max-width: 80vw;
     }
 
     .headshot {
