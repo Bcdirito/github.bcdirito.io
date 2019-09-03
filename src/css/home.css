@@ -115,7 +115,7 @@
 
     .homePage {
         margin-top: 75px;
-        margin-left: 0px;
+        margin-left: 0px !important;
     }
   
     .homePage h1 {
@@ -134,10 +134,17 @@
         margin-left: 200px;
         margin-bottom: 0px;
     }
+
+    .headshot {
+        height: 50vh;
+        margin-left: 10%;
+    }
   
     .homeText {
         font-size: 16px;
-        margin-left: 0px; 
+        margin: auto !important;
+        margin-top: 100% !important;
+        margin-left: 8% !important;
     }
   
     .homeText h3 {
@@ -149,18 +156,18 @@
   
     .homeText p {
         text-align: justify;
-        margin-left: 50px;
+        margin-left: 40px;
         padding-left: 0px;
         padding-right: 30px;
         width: 40vw;
     }
   
     .homeIcons {
-        margin-left: 260px;
+        margin-left: 260px !important;
     }
 
     .homeIcons p {
-        margin-left: -65%;
+        margin-left: -70%;
         margin-right: 10%;
     }
   }
