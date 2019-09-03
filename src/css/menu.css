@@ -220,6 +220,10 @@
   #menu.clicked li {
     margin-top: 10px;
   }
+
+  #menu.clicked {
+    height: 74vh;
+  }
 }
 
 @media screen and (min-width: 1366px) and (orientation: landscape){

@@ -54,7 +54,7 @@ class Home extends Component {
                 <div className="homeIcons">
                   <img src={githubIcon} alt="githubIcon" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={() => this.clickHandler()} name="github"/> <img src={linkedInIcon} alt="linkedInIcon" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={e => this.clickHandler(e)} name="linkedIn"/> <img src={mediumIcon} alt="mediumIcon" name="medium" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={e => this.clickHandler(e)}/> {!navigator.userAgent.includes("Mobile") ? <img src={metIcon} alt="metIcon" name="met" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} onClick={() => this.clickHandler()} /> : null}
                   <br/>
-                  <p>{this.state.link !== "" ? this.renderLinkMessage() : null}</p>
+                  <p>{this.state.link !== "" && !navigator.userAgent.includes("Mobile") ? this.renderLinkMessage() : null}</p>
                 </div>
             </div>
         </div>
