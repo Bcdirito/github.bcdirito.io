@@ -3,11 +3,11 @@ import ProjectCard from "./ProjectCard"
 import Project from "./Project"
 import Publication from "./Publication"
 
-import myBrewsCard from "../media/photos/myBrews_card.jpg"
-import virtualMetCard from "../media/photos/virtual_met_card.jpg"
-import goodWorkCard from "../media/photos/good_work_card.jpg"
-import kindlingCard from "../media/photos/kindling_card.jpeg"
-import exterminatorCard from "../media/photos/exterminator_card.jpg"
+import publicationData from "../db/publications"
+
+import myBrewsCard from "../media/photos/projects/myBrews_card.jpg"
+import virtualMetCard from "../media/photos/projects/virtual_met_card.jpg"
+import goodWorkCard from "../media/photos/projects/good_work_card.jpg"
 
 import "../css/projectContainer.css"
 
@@ -63,6 +63,8 @@ export default class ProjectContainer extends Component {
   }
 
   renderDemoProjects = () => {
+    const images = require.context("../media/photos/projects")
+    console.log(images)
     return (<div className="contentCards">
               <ProjectCard name="myBrews"card={myBrewsCard} blurb="A CLI companion app for coffee" select={this.featureSelectedProject}/>
               <ProjectCard name="Virtual Met" card={virtualMetCard}blurb="Take digital tours of the Met 5th Ave Museum" select={this.featureSelectedProject}/>
@@ -72,10 +74,12 @@ export default class ProjectContainer extends Component {
   }
 
   renderPublications = () => {
+    const publications = publicationData.map(pub => {
+      return <ProjectCard name={pub.name} card={pub.card} blurb={pub.blurb} select={this.featureSelectedProject} />
+    })
     return (
       <div className="contentCards">
-        <ProjectCard name="Kindling the Fire" card={kindlingCard} blurb="Staying Inspired during the Job Search Marathon" select={this.featureSelectedProject}/>
-        <ProjectCard name="Call Me 'The Exterminator'" card={exterminatorCard} blurb="Becoming the Champion Debugger" select={this.featureSelectedProject}/>
+        {publications}
     </div>
     )
   }

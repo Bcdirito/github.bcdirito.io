@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import exterminatorPhoto from "../media/photos/exterminator_photo.jpg"
-import kindlingPhoto from "../media/photos/reduced_kindling_photo.jpg"
+import exterminatorPhoto from "../media/photos/publications/exterminator_photo.jpg"
+import kindlingPhoto from "../media/photos/publications/reduced_kindling_photo.jpg"
 import mediumIcon from "../media/icons/medium_icon.png"
 import "../css/publication.css"
 
