@@ -44,7 +44,7 @@ export default class Home extends Component {
                 </div>
                 <div className="homeIcons">
                   <a href="https://github.com/Bcdirito" target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="githubIcon" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} message="Click here to check out my GitHub and repos!" name="github"/></a> <a href="https://www.linkedin.com/in/brian-dirito-7a7174145/" target="_blank" rel="noopener noreferrer"><img src={linkedInIcon} alt="linkedInIcon" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} message="Click here to check out my LinkedIn profile!" name="linkedIn"/></a> <a href="https://medium.com/@bdirito91" target="_blank" rel="noopener noreferrer"><img src={mediumIcon} alt="mediumIcon" message="Click here to check out my Medium articles!" name="medium" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()}/></a> {!navigator.userAgent.includes("Mobile") ? <a href="https://virtual-met-front.herokuapp.com" target="_blank" rel="noopener noreferrer"><img src={metIcon} alt="metIcon" message="Click here to explore my Virtual Met app!" name="met" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a> : null}
-                  <br/>
+                  <br/> 
                   <p>{this.state.link !== "" && !navigator.userAgent.includes("Mobile") ? this.state.message : null}</p>
                 </div>
             </div>
