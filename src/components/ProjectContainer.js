@@ -4,10 +4,7 @@ import Project from "./Project"
 import Publication from "./Publication"
 
 import publicationData from "../db/publications"
-
-import myBrewsCard from "../media/photos/projects/myBrews_card.jpg"
-import virtualMetCard from "../media/photos/projects/virtual_met_card.jpg"
-import goodWorkCard from "../media/photos/projects/good_work_card.jpg"
+import projectData from "../db/projects"
 
 import "../css/projectContainer.css"
 
@@ -63,14 +60,15 @@ export default class ProjectContainer extends Component {
   }
 
   renderDemoProjects = () => {
-    const images = require.context("../media/photos/projects")
-    console.log(images)
-    return (<div className="contentCards">
-              <ProjectCard name="myBrews"card={myBrewsCard} blurb="A CLI companion app for coffee" select={this.featureSelectedProject}/>
-              <ProjectCard name="Virtual Met" card={virtualMetCard}blurb="Take digital tours of the Met 5th Ave Museum" select={this.featureSelectedProject}/>
-              <ProjectCard name="Good Work" 
-              card={goodWorkCard} blurb="Goal tracking with partner accountability for reducing stress and anxiety" select={this.featureSelectedProject}/>
-      </div>)
+    const projects = projectData.map(proj => {
+      return <ProjectCard key={proj.name} data={proj} name={proj.name} card={proj.card} blurb={proj.blurb} select={this.featureSelectedProject} />
+    })
+
+    return (
+      <div className="contentCards">
+          {projects}
+        </div>
+      )
   }
 
   renderPublications = () => {
@@ -87,7 +85,7 @@ export default class ProjectContainer extends Component {
 
   renderSelectedProject  = () => {
     if (this.state.featuredWork.type === "publication") return <Publication data={this.state.featuredWork}/>
-    else return <Project name={this.state.featuredWork}/>
+    else return <Project data={this.state.featuredWork}/>
   }
   
   render() {

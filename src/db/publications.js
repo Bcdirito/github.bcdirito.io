@@ -1,4 +1,4 @@
-let images = require.context("../media/photos/publications")
+let images = require.context("../media/photos/publications", true)
 
 const publicationData = [
     {
