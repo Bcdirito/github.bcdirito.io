@@ -3,11 +3,8 @@ import ProjectCard from "./ProjectCard"
 import Project from "./Project"
 import Publication from "./Publication"
 
-import myBrewsCard from "../media/photos/myBrews_card.jpg"
-import virtualMetCard from "../media/photos/virtual_met_card.jpg"
-import goodWorkCard from "../media/photos/good_work_card.jpg"
-import kindlingCard from "../media/photos/kindling_card.jpeg"
-import exterminatorCard from "../media/photos/exterminator_card.jpg"
+import publicationData from "../db/publications"
+import projectData from "../db/projects"
 
 import "../css/projectContainer.css"
 
@@ -44,10 +41,10 @@ export default class ProjectContainer extends Component {
     })
   }
 
-  featureSelectedProject = (e) => {
+  featureSelectedProject = (obj) => {
     this.setState({
       featuredClick: true,
-      featuredWork: e.target.dataset.name,
+      featuredWork: obj,
       publications: false,
       projects: false,
     })
@@ -63,26 +60,32 @@ export default class ProjectContainer extends Component {
   }
 
   renderDemoProjects = () => {
-    return (<div className="contentCards">
-              <ProjectCard name="myBrews"card={myBrewsCard} blurb="A CLI companion app for coffee" select={this.featureSelectedProject}/>
-              <ProjectCard name="Virtual Met" card={virtualMetCard}blurb="Take digital tours of the Met 5th Ave Museum" select={this.featureSelectedProject}/>
-              <ProjectCard name="Good Work" 
-              card={goodWorkCard} blurb="Goal tracking with partner accountability for reducing stress and anxiety" select={this.featureSelectedProject}/>
-      </div>)
+    const projects = projectData.map(proj => {
+      return <ProjectCard key={proj.name} data={proj} name={proj.name} card={proj.card} blurb={proj.blurb} select={this.featureSelectedProject} />
+    })
+
+    return (
+      <div className="contentCards">
+          {projects}
+        </div>
+      )
   }
 
   renderPublications = () => {
+    const publications = publicationData.map(pub => {
+      return <ProjectCard key={pub.name} data={pub} name={pub.name} card={pub.card} blurb={pub.blurb} select={this.featureSelectedProject} />
+    })
+
     return (
       <div className="contentCards">
-        <ProjectCard name="Kindling the Fire" card={kindlingCard} blurb="Staying Inspired during the Job Search Marathon" select={this.featureSelectedProject}/>
-        <ProjectCard name="Call Me 'The Exterminator'" card={exterminatorCard} blurb="Becoming the Champion Debugger" select={this.featureSelectedProject}/>
+        {publications}
     </div>
     )
   }
 
   renderSelectedProject  = () => {
-    if (this.state.featuredWork === "Kindling the Fire" || this.state.featuredWork === "Call Me 'The Exterminator'") return <Publication name={this.state.featuredWork}/>
-    else return <Project name={this.state.featuredWork}/>
+    if (this.state.featuredWork.type === "publication") return <Publication data={this.state.featuredWork}/>
+    else return <Project data={this.state.featuredWork}/>
   }
   
   render() {

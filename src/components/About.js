@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import aboutMePhoto from "../media/photos/about_me_photo.jpg"
 import "../css/about.css"
 
-export default class About extends Component {
-  render() {
+const About = () => {
     return (
       <div className="aboutPage">
         <h1>{window.screen.width <= 320 ? "About" : "About Me"}</h1>
@@ -19,5 +18,6 @@ export default class About extends Component {
         </div>
       </div>
     )
-  }
 }
+
+export default About
