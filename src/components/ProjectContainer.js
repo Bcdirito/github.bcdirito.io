@@ -44,10 +44,10 @@ export default class ProjectContainer extends Component {
     })
   }
 
-  featureSelectedProject = (e) => {
+  featureSelectedProject = (obj) => {
     this.setState({
       featuredClick: true,
-      featuredWork: e.target.dataset.name,
+      featuredWork: obj,
       publications: false,
       projects: false,
     })
@@ -75,8 +75,9 @@ export default class ProjectContainer extends Component {
 
   renderPublications = () => {
     const publications = publicationData.map(pub => {
-      return <ProjectCard name={pub.name} card={pub.card} blurb={pub.blurb} select={this.featureSelectedProject} />
+      return <ProjectCard key={pub.name} data={pub} name={pub.name} card={pub.card} blurb={pub.blurb} select={this.featureSelectedProject} />
     })
+
     return (
       <div className="contentCards">
         {publications}
@@ -85,7 +86,7 @@ export default class ProjectContainer extends Component {
   }
 
   renderSelectedProject  = () => {
-    if (this.state.featuredWork === "Kindling the Fire" || this.state.featuredWork === "Call Me 'The Exterminator'") return <Publication name={this.state.featuredWork}/>
+    if (this.state.featuredWork.type === "publication") return <Publication data={this.state.featuredWork}/>
     else return <Project name={this.state.featuredWork}/>
   }
   
