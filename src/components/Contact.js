@@ -36,7 +36,9 @@ export default class Contact extends Component {
             <br/>
             <br/>
             <div className="contactIcons">
-              <a href="https://www.linkedin.com/in/brian-dirito-7a7174145/" target="_blank" rel="noopener noreferrer"><img src={linkedInIcon} alt="linkedInIcon" message="Click here to connect with me on LinkedIn" name="linkedIn" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a><a href={resume} target="_blank" rel="noopener noreferrer"><img src={resumeIcon} alt="resumeIcon" message="Click here to view and download my Résumé" name="resume" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()}/></a><a href="mailto:bdirito.dev@gmail.com"><img src={emailIcon} message="Click here to open your mailer or you can email me at: bdirito.dev@gmail.com" alt="emailIcon" name="email" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a>
+              <a href="https://www.linkedin.com/in/brian-dirito-7a7174145/" target="_blank" rel="noopener noreferrer"><img src={linkedInIcon} alt="linkedInIcon" message="Click here to connect with me on LinkedIn" name="linkedIn" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a>
+              <a href={resume} target="_blank" rel="noopener noreferrer"><img src={resumeIcon} alt="resumeIcon" message="Click here to view and download my Résumé" name="resume" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()}/></a>
+              <a href="mailto:bdirito.dev@gmail.com"><img src={emailIcon} message="Click here to open your mailer or you can email me at: bdirito.dev@gmail.com" alt="emailIcon" name="email" onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a>
               <br/>
               <p className="linkMessage">{this.state.link !== "" && !navigator.userAgent.includes("Mobile")? this.state.message : <br/>}</p>
             </div>
