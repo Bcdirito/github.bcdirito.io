@@ -510,6 +510,20 @@
     }
 }
 
+@media only screen and (min-width: 1366px) and (orientation: landscape) {
+    .contactContent {
+        margin-left: 20%;
+    }
+
+    #contactPhoto {
+        width: 70%;
+    }
+
+    .contactIcons {
+        margin-left: 34%;
+    }
+}
+
 /* phones */
 
 @media only screen and (max-width: 823px) {
