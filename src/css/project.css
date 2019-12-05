@@ -67,6 +67,12 @@
      }
  }
 
+ @media only screen and (min-width: 1366px) and (orientation: landscape) {
+     .projectContent {
+        margin-top: 0%;
+     }
+ }
+
  /* phones */
 
  @media only screen and (max-width: 823px) and (orientation: portrait) {
