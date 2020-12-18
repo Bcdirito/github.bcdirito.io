@@ -6,7 +6,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./media/photos/subway_desktop_background.jpg");
   max-height: 100vh;
   max-width: 100vw;
 }
