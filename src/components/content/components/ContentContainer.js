@@ -5,7 +5,9 @@ export default class ContentContainer extends Component {
     render() {
         return (
             <div id="contentContainer">
-                contentContainer
+                <div id="portfolioContent">
+                    contentContainer
+                </div>
             </div>
         )
     }
