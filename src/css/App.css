@@ -2,19 +2,9 @@
   height: 100vh;
   max-height: 100vh;
   max-width: 100vw;
-  /* background-color: black; */
   color: white;
   animation: fadein 1.75s;
   overflow-y: scroll;
-}
-
-h1, h2 {
-  text-align: center;
-}
-
-h1 {
-  padding-left: 350px;
-  padding-right: 50px;
 }
 
 @keyframes fadein {

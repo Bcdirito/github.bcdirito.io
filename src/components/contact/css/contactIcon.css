@@ -1,0 +1,16 @@
+#contactInfo {
+    text-align: right;
+    padding: 1%;
+    height: 35vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#contactInfo a {
+    cursor: pointer;
+}
+
+#contactInfo a:hover {
+    border: solid white 2px;
+    border-radius: 5px;
+}

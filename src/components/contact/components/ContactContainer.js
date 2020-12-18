@@ -1,13 +1,36 @@
 import React, { Component } from 'react'
+import PhotoContainer from "./PhotoContainer"
+import ContactIcon from "./ContactIcon"
 import "../css/contactContainer.css"
-import ninPhoto from "../../../media/photos/nin_photo.jpg"
+import ninPhoto from "../media/photos/nin_photo.jpg"
+
+import iconData from "../../../db/icons"
+import resume from "../../../media/pdfs/resume.pdf"
 
 export default class ContactContainer extends Component {
+    renderContactIcons() {
+        const icons = []
+
+        for (const key in iconData){ 
+            let icon = iconData[key]
+            if (key === 'resume') icons.push(<ContactIcon key={icon.name} link={resume} image={icon.image} alt={icon.alt}/>)
+            else icons.push(<ContactIcon key={icon.name} link={icon.linkStr} image={icon.image} alt={icon.alt}/>)
+        }
+
+        return (
+            <div id="contactInfo">
+                <h1 id="contactInfoHeader">Brian DiRito</h1>
+                <h2 id="subHeader">Full-Stack Developer</h2>
+                {icons}
+            </div>
+        )        
+    }
     render() {
         return (
             <div id="contactContainer">
-                <img src={ninPhoto} />
-                <span>Photo by Matthew Dain</span>
+                <PhotoContainer photo={ninPhoto} />
+                {this.renderContactIcons()}
+                <span className="photoCredit">&#169; Photo by Matthew Dain</span>
             </div>
         )
     }
