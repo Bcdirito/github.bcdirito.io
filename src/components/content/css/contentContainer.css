@@ -4,3 +4,13 @@
     width: 65vw;
     float: right;
 }
+
+#portfolioContent {
+    animation: fadein 1.75s;
+    overflow-y: scroll;
+}
+
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
