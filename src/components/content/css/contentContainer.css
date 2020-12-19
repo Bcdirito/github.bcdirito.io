@@ -8,6 +8,39 @@
 #portfolioContent {
     animation: fadein 1.75s;
     overflow-y: scroll;
+    padding: 5%;
+}
+
+#displayContent {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    width: 66%;
+}
+
+.hideIcon {
+    visibility: hidden;
+}
+
+.backArrow {
+    width: 5%;
+    fill: #ffffff
+}
+
+.icon:hover {
+    fill: #000000;
+    cursor: pointer;
+}
+
+.skillIcon {
+    filter: grayscale(100%);
+}
+
+.skillIcon:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
 }
 
 @keyframes fadein {
