@@ -1,26 +1,12 @@
 .aboutPage {
     max-width: 75vw;
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
 }
 
 .aboutContent {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-    text-align: justify;
-    overflow-y: scroll;
     padding-top: 25px;
     max-width: 75vw;
     max-height: 75vh;
-    margin-left: 29%;
     animation: fadein 1.75s;
-    padding-top: 21%;
     padding-left: 10px;
     padding-right: 10px
 }
@@ -30,16 +16,16 @@
     to {opacity: 1}
 }
 
-.aboutPage h1 {
-    text-align: center;
-}
-
 .aboutContent img {
     width: 100%;
 }
 
+.aboutText {
+    list-style-type: circle;
+}
+
 /* iPad */
-@media only screen and (min-height: 1024px) and (orientation:portrait){
+/* @media only screen and (min-height: 1024px) and (orientation:portrait){
     .About {
         max-height: 65vh
     }
@@ -57,11 +43,11 @@
         padding-left: 20px;
         margin-top: 0% !important
     }
-}
+} */
 
 /* iPad Pro */
 
-@media only screen and (min-width: 1366px) and (orientation:portrait) {
+/* @media only screen and (min-width: 1366px) and (orientation:portrait) {
     .aboutPage h1{
         margin-left: -50px;
         margin-bottom: -15px;
@@ -85,11 +71,11 @@
         margin-left: 23%;
         margin-top: 2%;
     }
-}
+} */
 
 /* phones */
 
-@media only screen and (max-width: 375px) and (max-height: 667px) {
+/* @media only screen and (max-width: 375px) and (max-height: 667px) {
     .aboutContent {
         padding-top: 0%;
     }
@@ -100,9 +86,9 @@
         margin-top: 0% !important;
         padding-top: 46% !important;
     }
-}
+} */
 
-@media only screen and (min-height: 411px) and (max-width:823px) and (orientation:landscape){
+/* @media only screen and (min-height: 411px) and (max-width:823px) and (orientation:landscape){
     .aboutPage h1 {
         margin-left: 20%;
         padding-left: 0%;
@@ -121,9 +107,9 @@
         width: 75%;
         padding-top: 114% !important
     }
-}
+} */
 
-@media only screen and (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
+/* @media only screen and (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
     .aboutPage h1 {
         margin: 0%;
         margin-left: -50% !important;
@@ -136,9 +122,9 @@
     .aboutContent img {
         width: 75%;
     }
-}
+} */
 
-@media only screen and (max-height: 640px) and (max-width:360px) and (orientation: portrait){
+/* @media only screen and (max-height: 640px) and (max-width:360px) and (orientation: portrait){
     .About {
         width: 75vw;
     }
@@ -232,4 +218,4 @@
     .aboutContent {
         padding-top: 25%;
     }
-}
+} */

@@ -20,7 +20,8 @@ export default class ContactContainer extends Component {
         return (
             <div id="contactInfo">
                 <h1 id="contactInfoHeader">Brian DiRito</h1>
-                <h2 id="subHeader">Full-Stack Developer</h2>
+                <h2 className="subHeader">He/Him/His</h2>
+                <h2 className="subHeader">Full-Stack Developer</h2>
                 {icons}
             </div>
         )        
