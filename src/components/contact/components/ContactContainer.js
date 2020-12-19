@@ -10,7 +10,7 @@ import resume from "../../../media/pdfs/resume.pdf"
 export default class ContactContainer extends Component {
     renderContactIcons() {
         const icons = []
-        const photos = require.context("../../../media/icons/", true)
+        const photos = require.context("../../../media/icons/general/", true)
         for (const key in iconData){ 
             let icon = iconData[key]
             if (key === 'resume') icons.push(<ContactIcon key={icon.name} link={resume} image={icon.image} alt={icon.alt} iconPhotos={photos} name={icon.name}/>)
