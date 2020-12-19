@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Home from './Home'
 import About from './About'
+import ProjectContainer from "./ProjectContainer"
 import SkillContainer from "./SkillContainer"
 
 import "../css/contentContainer.css"
@@ -18,7 +19,8 @@ export default class ContentContainer extends Component {
                     <div id="displayContent">
                         {/* <Home /> */}
                         {/* <About /> */}
-                        <SkillContainer icons={skillIconData} images={iconImages} />
+                        <ProjectContainer />
+                        {/* <SkillContainer icons={skillIconData} images={iconImages} /> */}
                     </div>
                 </div>
             </div>

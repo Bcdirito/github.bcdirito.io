@@ -11,7 +11,7 @@ export default class Home extends Component {
             <div className="homeContent">
                 <div className="homeText">
                   <p className="visitPage">ABOUT ME</p>
-                  <p className="visitPage">PROJECTS & PUBLICATIONS</p>
+                  <p className="visitPage">WORKS</p>
                   <p className="visitPage">SKILLS</p>
                 </div>
             </div>

@@ -38,6 +38,10 @@ const skillIconData = {
     "css": {
         name: "css",
         alt: "CSS Icon"
+    },
+    "github": {
+        name: "github",
+        alt: "Github Icon"
     }
 }
 
