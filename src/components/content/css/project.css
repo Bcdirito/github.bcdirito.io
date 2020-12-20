@@ -8,6 +8,10 @@
     padding-bottom: 15px;
 }
 
+.projectImage {
+    width: 75%
+}
+
 .player {
     width: 50vw;
     margin-left: 13vw;

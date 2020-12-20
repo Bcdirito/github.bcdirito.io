@@ -1,5 +1,3 @@
-let images = require.context("../media/photos/publications", true)
-
 const publicationData = [
     {
         name: "Kindling the Fire",
@@ -14,7 +12,8 @@ const publicationData = [
         type: "publication",
         image: "exterminator_photo.jpg",
         card: "exterminator_card.jpg",
-        blurb: "Becoming the Champion Debugger"
+        blurb: "Becoming the Champion Debugger",
+        link: "https://medium.com/@bdirito91/call-me-the-exterminator-17b5a579595b"
     }
 ]
 

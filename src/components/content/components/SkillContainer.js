@@ -5,10 +5,8 @@ export default class SkillContainer extends Component {
         const icons = []
         
         for (const key in iconData) {
-            if (key !== "github") {
-                const icon = iconData[key]
-                icons.push(<img key={key} src={imageData(`./${icon.name}_icon.png`)} alt={icon.alt} className="skillIcon" />)
-            }
+            const icon = iconData[key]
+            icons.push(<img key={key} src={imageData(`./${icon.name}_icon.png`)} alt={icon.alt} className="skillIcon" />)
         }
         
         return icons
