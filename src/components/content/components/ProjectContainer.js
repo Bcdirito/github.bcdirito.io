@@ -53,7 +53,7 @@ export default class ProjectContainer extends Component {
   renderDemoProjects = () => {
     const projectContext = require.context("../../../media/photos/projects")
     const projects = projectData.map(proj => {
-      return <ProjectCard key={proj.name} data={proj} name={proj.name} card={proj.card} blurb={proj.blurb} select={this.featureSelectedProject} context={projectContext}/>
+      return <ProjectCard key={proj.name} data={proj} name={proj.name} card={proj.card} blurb={proj.blurb} select={this.featureSelectedProject} context={projectContext} onClick={(e) => this.renderSelectedProject(e)}/>
     })
 
     return (
@@ -80,10 +80,11 @@ export default class ProjectContainer extends Component {
     target.nextElementSibling.classList.toggle("hideContainer")
   }
 
-  // renderSelectedProject  = () => {
-  //   if (this.state.featuredWork.type === "publication") return <Publication data={this.state.featuredWork}/>
-  //   else return <Project data={this.state.featuredWork}/>
-  // }
+  renderSelectedProject  = (target) => {
+    console.log(target)
+    // if (this.state.featuredWork.type === "publication") return <Publication data={this.state.featuredWork}/>
+    // else return <Project data={this.state.featuredWork}/>
+  }
   
   render() {
     return (

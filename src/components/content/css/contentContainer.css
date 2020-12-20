@@ -24,14 +24,16 @@
     visibility: hidden;
 }
 
-.backArrow {
-    width: 5%;
-    fill: #ffffff
+#backArrow {
+    filter: invert(100%);
+    width: 7%;
 }
 
-.icon:hover {
-    fill: #000000;
+#backArrow:hover {
     cursor: pointer;
+    -webkit-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
 }
 
 .skillIcon {
