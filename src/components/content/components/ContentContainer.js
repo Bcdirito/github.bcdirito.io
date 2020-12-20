@@ -37,7 +37,7 @@ export default class ContentContainer extends Component {
             case "about":
                 return <About />
             case "works":
-                return <ProjectContainer />
+                return <ProjectContainer iconImages={require.context("../../../media/icons/skills")} />
             case "skills":
                 return <SkillContainer icons={skillIconData} images={require.context("../../../media/icons/skills")} />
             default:

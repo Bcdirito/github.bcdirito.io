@@ -2,46 +2,38 @@ import React, { Component } from 'react'
 import "../css/project.css"
 
 export default class Project extends Component {
-  state = {
-    language: ""
+
+  renderDescriptionItems = (description) => {
+    return description.map(desc => {
+      return <li>{desc}</li>
+    })
   }
 
-  enterHandler = e => {
-    this.setState({language: e.target.name})
+  renderSkillIcons = (skills, iconContext) => {
+    return skills.map(skill => {
+      return <img key={skill} src={iconContext(`./${skill}_icon.png`)} alt={`${skill}Icon`} className="skillIcon" />
+    })
   }
 
-  leaveHandler = () => {
-    this.setState({language: ""})
-  }
-
-  renderDetailMessage = () => {
-    if (this.state.language === "Ruby") return `- This app was built in ${this.state.language}. Click here to visit the Repo!`
-    else if (this.state.language === "Ruby on Rails") return `- This back end was built in ${this.state.language}. Click here to visit the Repo!`
-    else if (this.state.language === "JavaScript" || this.state.language === "React") return `- This front end was built in ${this.state.language}. Click here to visit the Repo!`
-    else if (this.state.language === "Heroku") return `- ${this.props.data.name} has been deployed! Click here to check it out!`
-  }
-  
   render() {
-    const data = this.props.data
+    const {data, projectContext, iconContext} = this.props
 
     return (
       <div className="projectContent">
         <h2>{data.name}</h2>
-        <video className="player" controls>
-          <source src={data.video} type="video/mp4" />
-        </video>
+        <img src={projectContext(`./${data.image}`)} alt="projectImage" className="projectImage" />
         <div className="description">
           <div className="descriptionContent">
-            <p>{data.description}</p>
+            <ul className="descriptionItems">
+              {this.renderDescriptionItems(data.description)}
+            </ul>
             <br/>
-            <div className="detailMessage">
-              {data.backRepo.link ? <a href={data.backRepo.link} target="_blank" rel="noopener noreferrer"><img src={data.backRepo.icon} alt="backEndIcon" name={data.backRepo.language} onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a> : null}
-              {data.frontRepo.link ? <a href={data.frontRepo.link} target="_blank" rel="noopener noreferrer"> <img src={data.frontRepo.icon} alt="frontEndIcon" name={data.frontRepo.language} onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a> : null}
-              {!navigator.userAgent.includes("Mobile") && data.deployment.link ? <a href={data.deployment.link} target="_blank" rel="noopener noreferrer"><img src={data.deployment.icon} alt="deploymentIcon" name={data.deployment.language} onMouseEnter={e => this.enterHandler(e)} onMouseLeave={() => this.leaveHandler()} /></a> : null}
-              <br/>
-              <p>{this.state.language !== "" ? this.renderDetailMessage() : <br/>}</p>
-              {navigator.userAgent.includes("Mobile") ? "- Tap an icon to view the Github Repo" : null}
+            <div className="skillContainer">
+              <h3>Built With:</h3>
+              {this.renderSkillIcons(data.skills, iconContext)}
             </div>
+            <p>To view the repo, click <a href={data.repo} target="_blank" rel="noopener noreferrer" className="externalLink">here</a></p>
+            <p>To view the active beta, click <a href={data.deployment} target="_blank" rel="noopener noreferrer" className="externalLink">here</a></p>
           </div>
         </div>
       </div>
