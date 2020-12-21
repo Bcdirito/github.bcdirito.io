@@ -26,7 +26,7 @@
 
 #backArrow {
     filter: invert(100%);
-    width: 7%;
+    width: 5%;
 }
 
 #backArrow:hover {
@@ -38,6 +38,8 @@
 
 .skillIcon {
     filter: grayscale(100%);
+    padding: 2%;
+    width: 15%;
 }
 
 .skillIcon:hover {
