@@ -22,7 +22,7 @@ const projectData = [
         name: "Good Work",
         type: "project",
         card: "good_work_card.jpg",
-        image: "",
+        image: "good_work.png",
         blurb: "Goal Tracking with Partner Accountability for Reducing Stress and Anxiety",
         description: [
             "Reduce stress and anxiety through goal track and partner accountability",
@@ -41,7 +41,7 @@ const projectData = [
         name: "Virtual Met",
         type: "project",
         card: "virtual_met_card.jpg",
-        image: "",
+        image: "virtual_met.png",
         blurb: "Take digital tours of the Met 5th Ave Museum",
         description: [
             "Take procured tours of the prestigious Met 5th Ave Museum",
@@ -59,7 +59,7 @@ const projectData = [
         name: "myBrews",
         type: "project",
         card: "myBrews_card.jpg",
-        image: "",
+        image: "myBrews.png",
         blurb: "A CLI Companion App for Coffee Lovers",
         description: [
             "Create a profile that's unique to you",
@@ -67,7 +67,7 @@ const projectData = [
             "Get randomized selections utilizing the Faker Gem"
         ],
         skills: [
-            "Ruby"
+            "ruby"
         ],
         repo: "https://github.com/Bcdirito/myBrews",
         deployment: ""
