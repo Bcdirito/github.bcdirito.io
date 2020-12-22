@@ -16,7 +16,9 @@ export default class SkillContainer extends Component {
         return (
             <div id="skillContainer">
                 <h1 className="contentHeader">Skills</h1>
-                {this.renderSkillIcons(this.props.icons, this.props.images)}
+                <div id="skillIconContainer">
+                    {this.renderSkillIcons(this.props.icons, this.props.images)}
+                </div>
             </div>
         )
     }

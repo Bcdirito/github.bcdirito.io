@@ -17,6 +17,8 @@
 
 .containerHeader {
     cursor: pointer;
+    font-size: 28px;
+    text-align: center;
 }
 
 .containerHeader:hover {
@@ -26,9 +28,9 @@
 .hideContainer {
     display: none;
 }
-.containerHeader {
-    font-size: 28px;
-    text-align: center;
+
+#worksContainer {
+    animation: fadein 1s;
 }
 
 
