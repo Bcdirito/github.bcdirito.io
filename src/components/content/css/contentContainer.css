@@ -9,6 +9,7 @@
     animation: fadein 1.75s;
     overflow-y: scroll;
     padding: 5%;
+    height: 75%;
 }
 
 #displayContent {
@@ -43,7 +44,6 @@
 }
 
 .skillIcon:hover {
-    cursor: pointer;
     filter: grayscale(0%);
 }
 
