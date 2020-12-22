@@ -43,6 +43,10 @@
     font-size: 42px;
 }
 
+#skillIconContainer {
+    animation: fadein 1s;
+}
+
 .skillIcon {
     filter: grayscale(100%);
     padding: 2%;

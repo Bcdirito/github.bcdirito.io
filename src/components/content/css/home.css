@@ -3,15 +3,6 @@
     max-height: 85vh;
 }
 
-.homeIcons p {
-    margin-left: -15%;
-    margin-right: -10%;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    font-style: italic;
-}
-
 .homeIcons img {
     cursor: pointer;
 }
@@ -20,11 +11,12 @@
     text-align: center;
 }
 
-.homeText p {
+.visitPage {
     text-align: center;
     font-size: 28px
 }
 
-.visitPage {
+.visitPage:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
