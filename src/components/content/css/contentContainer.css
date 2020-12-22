@@ -9,7 +9,7 @@
     animation: fadein 1.75s;
     overflow-y: scroll;
     padding: 5%;
-    height: 75%;
+    height: 80%;
 }
 
 #displayContent {
@@ -18,7 +18,8 @@
     justify-items: center;
     align-content: center;
     align-items: center;
-    width: 66%;
+    margin: auto;
+    width: 75%;
 }
 
 .hideIcon {
@@ -35,6 +36,11 @@
     -webkit-transform: scale(1.25);
     -ms-transform: scale(1.25);
     transform: scale(1.25);
+}
+
+.contentHeader {
+    text-align: center;
+    font-size: 42px;
 }
 
 .skillIcon {

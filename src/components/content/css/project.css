@@ -41,6 +41,10 @@
     filter:grayscale(0%)
 }
 
+.projectHeader {
+    font-style: italic;
+}
+
 .projectHeader, .projectSubheader {
     text-align: center;
 }
