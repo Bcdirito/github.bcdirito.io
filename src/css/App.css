@@ -2,56 +2,5 @@
   height: 100vh;
   max-height: 100vh;
   max-width: 100vw;
-  color: white;
-  overflow-y: scroll;
+  color: #ffffff;
 }
-
-/*
-/* iPad */
-/* @media only screen and (max-width:1024px) and (orientation:landscape){
-  .App {
-    margin-top: 45px;
-    height: 89vh;
-    overflow-y: scroll;
-  }
-}
-
-@media only screen and (min-width: 768px) and (orientation: portrait){
-  .App {
-    margin-top: 67.5px;
-    height: 88vh;
-  } 
-} */
-
-/* iPad Pro */
-/* @media only screen and (min-width: 1024px) and (orientation:portrait){
-  .App {
-    margin-top: 165px;
-    height: 80vh;
-  }
-}
-
-@media only screen and (min-width: 1366px) and (orientation:landscape){
-  .App {
-    margin-top: 8%;
-    height: 80vh;
-  }
-} */
-
-/* phones */
-
-/* @media only screen and (max-width: 992px) {
-  .App {
-    margin-top: 12%;
-    margin-bottom: 0%;
-    height: 85vh;
-  }
-}
-
-@media only screen and (max-width: 992px) and (orientation:landscape){
-  .App {
-    margin-top: 5%;
-    margin-bottom: 0%;
-    height: 85vh;
-  }
-} */

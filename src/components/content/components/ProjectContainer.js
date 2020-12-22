@@ -66,7 +66,7 @@ export default class ProjectContainer extends Component {
   render() {
     return (
       <div className="projectsPage">
-        <h1>Works</h1>
+        <h1 className="contentHeader">Works</h1>
         {this.state.featured === true ? <WorkModal data={this.state.featuredData} exit={this.exitModal} iconImages={this.props.iconImages} /> : null}
         <div id="projectContainer">
           <h3 className="containerHeader" onClick={(e) => this.displayContainer(e.target)}>Projects</h3>

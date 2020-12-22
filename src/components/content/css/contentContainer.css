@@ -9,6 +9,7 @@
     animation: fadein 1.75s;
     overflow-y: scroll;
     padding: 5%;
+    height: 80%;
 }
 
 #displayContent {
@@ -17,7 +18,8 @@
     justify-items: center;
     align-content: center;
     align-items: center;
-    width: 66%;
+    margin: auto;
+    width: 75%;
 }
 
 .hideIcon {
@@ -26,7 +28,7 @@
 
 #backArrow {
     filter: invert(100%);
-    width: 7%;
+    width: 5%;
 }
 
 #backArrow:hover {
@@ -36,12 +38,18 @@
     transform: scale(1.25);
 }
 
+.contentHeader {
+    text-align: center;
+    font-size: 42px;
+}
+
 .skillIcon {
     filter: grayscale(100%);
+    padding: 2%;
+    width: 15%;
 }
 
 .skillIcon:hover {
-    cursor: pointer;
     filter: grayscale(0%);
 }
 

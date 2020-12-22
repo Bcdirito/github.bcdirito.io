@@ -6,8 +6,8 @@ const Publication = (props) =>{
     return (
         <div className="publication">
             <h2>{data.name}</h2>
+            <img src={context(`./${data.image}`)} alt="articleImage" className="articleImage" />
             <div className="publicationContent">
-                <img src={context(`./${data.image}`)} alt="articleImage" className="articleImage" />
                 <p className="description">{data.blurb}</p>
                 <p>Read Article by Clicking <a href={data.link} target="_blank" rel="noopener noreferrer" className="externalLink">here</a></p>
             </div>
