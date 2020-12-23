@@ -29,7 +29,7 @@
     display: none;
 }
 
-#worksContainer {
+#worksContainer, .cardContainer {
     animation: fadein 1s;
 }
 

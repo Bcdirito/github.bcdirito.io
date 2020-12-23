@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import ProjectCard from "./ProjectCard"
 import WorkModal from "./WorkModal"
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 import publicationData from "../../../db/publications"
 import projectData from "../../../db/projects"
@@ -16,28 +18,16 @@ export default class ProjectContainer extends Component {
 
   renderDemoProjects = () => {
     const projectContext = require.context("../../../media/photos/projects")
-    const projects = projectData.map(proj => {
+    return projectData.map(proj => {
       return <ProjectCard key={proj.name} data={proj} name={proj.name} card={proj.card} blurb={proj.blurb} select={this.featureSelectedProject} context={projectContext} onClick={(e) => this.renderSelectedProject(e)}/>
     })
-
-    return (
-      <div className="contentCards">
-          {projects}
-        </div>
-      )
   }
 
   renderPublications = () => {
     const publicationContext = require.context("../../../media/photos/publications")
-    const publications = publicationData.map(pub => {
+    return publicationData.map(pub => {
       return <ProjectCard key={pub.name} data={pub} name={pub.name} card={pub.card} blurb={pub.blurb} select={this.featureSelectedProject} context={publicationContext} />
     })
-
-    return (
-      <div className="contentCards">
-        {publications}
-      </div>
-    )
   }
 
   displayContainer = (target) => {
@@ -72,13 +62,17 @@ export default class ProjectContainer extends Component {
           <div id="projectContainer">
             <h3 className="containerHeader" onClick={(e) => this.displayContainer(e.target)}>Projects</h3>
             <div className="cardContainer hideContainer">
-              {this.renderDemoProjects()}
+              <Carousel>
+                {this.renderDemoProjects()}
+              </Carousel>
             </div>
           </div>
           <div id="publicationContainer">
             <h3 className="containerHeader" onClick={(e) => this.displayContainer(e.target)}>Publications</h3>
             <div className="cardContainer hideContainer">
-              {this.renderPublications()}
+              <Carousel>
+                {this.renderPublications()}
+              </Carousel>
             </div>
           </div>
         </div>

@@ -4,12 +4,6 @@ import ContentContainer from "./components/content/components/ContentContainer"
 import './css/App.css';
 
 class App extends Component {
-
-  state = {
-    component: ""
-  }
-
-
   render() {
     return (
       <div className="App">

@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
     <div className="projectCard" data-name={props.name} onClick={() => props.select(props.data)}>
       <h3 data-name={props.name}>{props.name}</h3>
       <br/>
-      <img data-name={props.name} src={props.context(`./${props.data.card}`)} alt="projectImage"/>
+      <img data-name={props.name} src={props.context(`./${props.data.image}`)} alt="projectImage"/>
       <br/>
       {!navigator.userAgent.includes("Mobile") ? props.blurb : null}
     </div>
