@@ -57,7 +57,41 @@
     filter: grayscale(0%);
 }
 
+.fixedContent {
+    position: fixed;
+}
+
 @keyframes fadein {
     from {opacity: 0}
     to {opacity: 1}
-  }
+}
+
+@media only screen and (max-width: 1023px) {
+    #contentContainer {
+        width: 100vw;
+        float: unset;
+        margin-top: 20vh;
+    }
+
+    #portfolioContent {
+        height: auto;
+    }
+
+    .skillIcon {
+        filter: unset
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #contentContainer {
+        margin-top: 25vh;
+    }
+
+    #backArrow {
+        width: 10%;
+    }
+
+    #displayContent {
+        width: 90%
+    }
+}

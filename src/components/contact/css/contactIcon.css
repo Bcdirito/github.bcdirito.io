@@ -18,3 +18,12 @@
 .contactIcon img:hover {
     filter: invert(100%)
 }
+
+@media only screen and (max-width: 1023px) {
+    #contactInfo {
+        height: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 0% 3% 1%;
+    }
+}

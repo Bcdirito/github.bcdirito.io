@@ -11,3 +11,10 @@
     margin: auto;
     display: grid;
 }
+
+@media only screen and (max-width: 1023px) {
+    #workModal {
+        position: fixed;
+        z-index: 2;
+    }
+}

@@ -32,9 +32,16 @@ export default class ProjectContainer extends Component {
 
   displayContainer = (target) => {
     target.nextElementSibling.classList.toggle("hideContainer")
+    this.hideOtherContainer(target.innerText === "Projects" ? "publicationCardContainer" : "projectCardContainer")
+  }
+
+  hideOtherContainer = (idStr) => {
+    const container = document.getElementById(idStr)
+    if (!Array.from(container.classList).includes("hideContainer")) container.classList.toggle("hideContainer")
   }
 
   featureSelectedProject  = (data) => {
+    document.getElementById("contentContainer").classList.toggle("fixedContent")
     this.setState({
       ...this.state,
       featured: true,
@@ -45,6 +52,7 @@ export default class ProjectContainer extends Component {
 
   exitModal = (classList) => {
     if (!classList.contains("externalLink")) {
+      document.getElementById("contentContainer").classList.toggle("fixedContent")
       this.setState({
         ...this.state,
         featured: false,
@@ -61,7 +69,7 @@ export default class ProjectContainer extends Component {
         <div id="worksContainer">
           <div id="projectContainer">
             <h3 className="containerHeader" onClick={(e) => this.displayContainer(e.target)}>Projects</h3>
-            <div className="cardContainer hideContainer">
+            <div id="projectCardContainer" className="cardContainer hideContainer">
               <Carousel>
                 {this.renderDemoProjects()}
               </Carousel>
@@ -69,7 +77,7 @@ export default class ProjectContainer extends Component {
           </div>
           <div id="publicationContainer">
             <h3 className="containerHeader" onClick={(e) => this.displayContainer(e.target)}>Publications</h3>
-            <div className="cardContainer hideContainer">
+            <div id="publicationCardContainer" className="cardContainer hideContainer">
               <Carousel>
                 {this.renderPublications()}
               </Carousel>
