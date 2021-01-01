@@ -53,3 +53,27 @@
     from {opacity: 0}
     to {opacity: 1}
 }
+
+@media only screen and (max-width: 1023px) {
+    .projectContent {
+        width: 85vw;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .projectContent {
+        width: 100vw;
+    }
+    
+    .textContainer, .skillContainer {
+        float: unset;
+        width: 100%;
+    }
+
+    .iconSpace {
+        display: inline-flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}

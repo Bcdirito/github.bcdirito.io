@@ -4,8 +4,10 @@ import "../css/project.css"
 export default class Project extends Component {
 
   renderDescriptionItems = (description) => {
+    let itemCount = 0
     return description.map(desc => {
-      return <li>{desc}</li>
+      itemCount += 1
+      return <li key={`item${itemCount}`} >{desc}</li>
     })
   }
 
