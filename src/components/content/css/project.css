@@ -63,6 +63,8 @@
 @media only screen and (max-width: 425px) {
     .projectContent {
         width: 100vw;
+        margin-top: 25vh;
+        height: 100vh;
     }
     
     .textContainer, .skillContainer {
