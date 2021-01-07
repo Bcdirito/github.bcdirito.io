@@ -5,7 +5,7 @@
     background-color: rgba(0, 0, 0, .55);
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     cursor: zoom-out;
     overflow-y: scroll;
     margin: auto;

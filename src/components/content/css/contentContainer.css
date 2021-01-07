@@ -59,6 +59,7 @@
 
 .fixedContent {
     position: fixed;
+    right: 0;
 }
 
 @keyframes fadein {
