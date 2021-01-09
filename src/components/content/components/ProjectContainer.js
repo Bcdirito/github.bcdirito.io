@@ -31,7 +31,9 @@ export default class ProjectContainer extends Component {
   }
 
   displayContainer = (target) => {
-    target.nextElementSibling.classList.toggle("hideContainer")
+    if (Array.from(target.classList).includes("projectContainerHeader")) document.getElementById("projectCardContainer").classList.toggle("hideContainer")
+    else document.getElementById("publicationCardContainer").classList.toggle("hideContainer")
+
     this.hideOtherContainer(target.innerText === "Projects" ? "publicationCardContainer" : "projectCardContainer")
   }
 
@@ -68,15 +70,15 @@ export default class ProjectContainer extends Component {
         {this.state.featured === true ? <WorkModal data={this.state.featuredData} exit={this.exitModal} iconImages={this.props.iconImages} /> : null}
         <div id="worksContainer">
           <div id="projectContainer">
-            <h3 className="containerHeader" onClick={(e) => this.displayContainer(e.target)}>Projects</h3>
+            <div className="headerDiv">
+              <span className="containerHeader projectContainerHeader" onClick={(e) => this.displayContainer(e.target)}>Projects</span>&nbsp;&nbsp;&nbsp;
+              <span className="containerHeader publicationContainerHeader" onClick={(e) => this.displayContainer(e.target)}>Publications</span>
+            </div>
             <div id="projectCardContainer" className="cardContainer hideContainer">
               <Carousel>
                 {this.renderDemoProjects()}
               </Carousel>
             </div>
-          </div>
-          <div id="publicationContainer">
-            <h3 className="containerHeader" onClick={(e) => this.displayContainer(e.target)}>Publications</h3>
             <div id="publicationCardContainer" className="cardContainer hideContainer">
               <Carousel>
                 {this.renderPublications()}

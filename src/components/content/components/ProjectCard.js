@@ -8,7 +8,6 @@ const ProjectCard = (props) => {
       <br/>
       <img data-name={props.name} src={props.context(`./${props.data.image}`)} alt="projectImage"/>
       <br/>
-      {!navigator.userAgent.includes("Mobile") ? props.blurb : null}
     </div>
   )
 }
