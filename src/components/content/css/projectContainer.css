@@ -3,6 +3,12 @@
     width: 100%;
 }
 
+.headerDiv {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
 .cardContainer {
     overflow-y: scroll;
 }
@@ -18,7 +24,6 @@
 .containerHeader {
     cursor: pointer;
     font-size: 28px;
-    text-align: center;
 }
 
 .containerHeader:hover {

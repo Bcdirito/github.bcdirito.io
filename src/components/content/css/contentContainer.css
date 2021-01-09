@@ -71,11 +71,18 @@
     #contentContainer {
         width: 100vw;
         float: unset;
-        margin-top: 20vh;
+        height: auto;
     }
 
     #portfolioContent {
         height: auto;
+        margin-top: 20vh;
+        padding-bottom: 0%;
+    }
+
+    #contentContainer.fixedContent {
+        top: 0vh;
+        height: 100vh;
     }
 
     .skillIcon {
@@ -85,8 +92,11 @@
 
 @media only screen and (max-width: 425px) {
     #contentContainer {
-        margin-top: 25vh;
         height: 100vh;
+    }
+
+    #portfolioContent {
+        margin-top: 25vh;
     }
 
     #backArrow {
@@ -95,5 +105,12 @@
 
     #displayContent {
         width: 90%
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .aboutPage {
+        top: 25vh;
+        position: absolute;
     }
 }
