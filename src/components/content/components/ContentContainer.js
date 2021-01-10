@@ -3,11 +3,12 @@ import Home from './Home'
 import About from './About'
 import ProjectContainer from "./ProjectContainer"
 import SkillContainer from "./SkillContainer"
+import LandscapeModal from './LandscapeModal'
 
 import "../css/contentContainer.css"
 
-import backArrow  from "../../../media/icons/back_arrow.png"
-import skillIconData from "../../../db/skillIcons"
+import backArrow  from "../media/icons/general/back_arrow.png"
+import skillIconData from "../db/skillIcons"
 
 export default class ContentContainer extends Component {
     state = {
@@ -37,9 +38,9 @@ export default class ContentContainer extends Component {
             case "about":
                 return <About />
             case "works":
-                return <ProjectContainer iconImages={require.context("../../../media/icons/skills")} />
+                return <ProjectContainer iconImages={require.context("../media/icons/skills")} />
             case "skills":
-                return <SkillContainer icons={skillIconData} images={require.context("../../../media/icons/skills")} />
+                return <SkillContainer icons={skillIconData} images={require.context("../media/icons/skills")} />
             default:
                 return <Home select={this.selectComponent} />
         }
@@ -48,6 +49,7 @@ export default class ContentContainer extends Component {
     render() {
         return (
             <div id="contentContainer">
+                <LandscapeModal />
                 <div id="portfolioContent">
                     <img src={backArrow} className="icon hideIcon" id= "backArrow" alt="Go Back" onClick={() => this.backToHome()} />
                     <div id="displayContent">

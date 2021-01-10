@@ -69,4 +69,8 @@
     .photoCredit {
         font-size: 12px;
     }
+
+    #contactContainer {
+        z-index: 2;
+    }
 }
