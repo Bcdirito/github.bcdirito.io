@@ -4,8 +4,8 @@ import WorkModal from "./WorkModal"
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-import publicationData from "../../../db/publications"
-import projectData from "../../../db/projects"
+import publicationData from "../db/publications"
+import projectData from "../db/projects"
 
 import "../css/projectContainer.css"
 
@@ -17,14 +17,14 @@ export default class ProjectContainer extends Component {
   }
 
   renderDemoProjects = () => {
-    const projectContext = require.context("../../../media/photos/projects")
+    const projectContext = require.context("../media/photos/projects")
     return projectData.map(proj => {
       return <ProjectCard key={proj.name} data={proj} name={proj.name} card={proj.card} blurb={proj.blurb} select={this.featureSelectedProject} context={projectContext} onClick={(e) => this.renderSelectedProject(e)}/>
     })
   }
 
   renderPublications = () => {
-    const publicationContext = require.context("../../../media/photos/publications")
+    const publicationContext = require.context("../media/photos/publications")
     return publicationData.map(pub => {
       return <ProjectCard key={pub.name} data={pub} name={pub.name} card={pub.card} blurb={pub.blurb} select={this.featureSelectedProject} context={publicationContext} />
     })
@@ -75,12 +75,12 @@ export default class ProjectContainer extends Component {
               <span className="containerHeader publicationContainerHeader" onClick={(e) => this.displayContainer(e.target)}>Publications</span>
             </div>
             <div id="projectCardContainer" className="cardContainer hideContainer">
-              <Carousel>
+              <Carousel showThumbs={false}>
                 {this.renderDemoProjects()}
               </Carousel>
             </div>
             <div id="publicationCardContainer" className="cardContainer hideContainer">
-              <Carousel>
+              <Carousel showThumbs={false}>
                 {this.renderPublications()}
               </Carousel>
             </div>

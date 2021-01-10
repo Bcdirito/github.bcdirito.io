@@ -6,8 +6,8 @@ import "../css/workModal.css"
 
 export default class WorkModal extends Component {
     renderWorkModal = (data) => {
-        if (data.type === "project") return <Project data={data} projectContext={require.context("../../../media/photos/projects")} iconContext={this.props.iconImages} />
-        else return <Publication data={this.props.data} context={require.context("../../../media/photos/publications")}/>
+        if (data.type === "project") return <Project data={data} projectContext={require.context("../media/photos/projects")} iconContext={this.props.iconImages} />
+        else return <Publication data={this.props.data} context={require.context("../media/photos/publications")}/>
     }
 
     render() {

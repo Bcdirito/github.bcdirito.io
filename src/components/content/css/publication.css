@@ -45,3 +45,10 @@
         width: 85vw;
     }
 }
+
+@media only screen and (max-width: 325px) {
+    .publication {
+        width: 100vw;
+        margin-top: 35vh;
+    }
+}

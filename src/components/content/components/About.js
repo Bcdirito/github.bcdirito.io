@@ -1,5 +1,4 @@
 import React from 'react'
-import aboutMePhoto from "../media/photos/about_me_photo.jpg"
 import "../css/about.css"
 
 const About = () => {
@@ -7,15 +6,13 @@ const About = () => {
       <div className="aboutPage">
         <h1 className="contentHeader">About Me</h1>
         <div className="aboutContent">
-        <img src={aboutMePhoto} alt="aboutMePhoto"/>
-          <h3 className="aboutHeader">The Basics</h3>
           <ul className="aboutText">
-            <li>Born in Connecticut but raised in South Florida</li>
-            <li>Former professional Actor/Singer/Dancer/Musician</li>
-            <li>Passionate about work that enriches everyday communities</li>
-            <li>Bob's Burgers Super Fan</li>
-            <li>Avid Music Nerd</li>
-            <li>Board Game Enthusiast</li>
+            <li><span role="img" aria-label="baby">👼🏻</span>Born in Connecticut but raised in South Florida</li>
+            <li><span role="img" aria-label="microphone">🎤</span>Former professional Actor/Singer/Dancer/Musician</li>
+            <li><span role="img" aria-label="work">🧑🏻‍💻</span>Passionate about work that enriches everyday communities</li>
+            <li><span role="img" aria-label="burger">🍔</span>Bob's Burgers Super Fan</li>
+            <li><span role="img" aria-label="guitar">🎸</span>Avid Music Nerd</li>
+            <li><span role="img" aria-label="dice">🎲</span>Board Game Enthusiast</li>
           </ul>
         </div>
       </div>

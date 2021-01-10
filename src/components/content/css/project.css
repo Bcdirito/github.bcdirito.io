@@ -4,7 +4,6 @@
     background-color :rgb(245, 245, 245);
     width: 75vw;
     margin: auto;
-    display: grid;
     padding: 2% 0%
 }
 
@@ -54,11 +53,21 @@
     to {opacity: 1}
 }
 
+@media only screen and (min-width: 1024px) {
+    .projectContent {
+        display: grid;
+    }
+}
+
 @media only screen and (max-width: 1023px) {
     .projectContent {
         width: 100vw;
         margin-top: 20vh;
-        height: 80vh;
+        height: calc(100% - 23vh);
+    }
+
+    .projectImage {
+        width: 100%;
     }
 }
 
@@ -66,7 +75,6 @@
     .projectContent {
         width: 100vw;
         margin-top: 25vh;
-        height: 100vh;
     }
     
     .textContainer, .skillContainer {
