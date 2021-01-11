@@ -76,6 +76,7 @@
         width: 100vw;
         margin-top: 25vh;
         overflow-x: hidden;
+        padding-bottom: 5vh;
     }
     
     .textContainer, .skillContainer {
