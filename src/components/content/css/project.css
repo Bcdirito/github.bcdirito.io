@@ -75,6 +75,7 @@
     .projectContent {
         width: 100vw;
         margin-top: 25vh;
+        overflow-x: hidden;
     }
     
     .textContainer, .skillContainer {
@@ -87,5 +88,9 @@
         margin: auto;
         align-items: center;
         justify-content: center;
+    }
+
+    .descriptionLink {
+        display: none;
     }
 }
