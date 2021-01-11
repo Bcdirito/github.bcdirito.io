@@ -76,7 +76,7 @@
         width: 100vw;
         margin-top: 25vh;
         overflow-x: hidden;
-        padding-bottom: 5vh;
+        padding-bottom: 10vh;
     }
     
     .textContainer, .skillContainer {
@@ -92,6 +92,15 @@
     }
 
     .descriptionLink {
+        display: none;
+    }
+
+    .projectContent .skillIcon {
+        width: 25%
+    }
+
+    /* solve asap */
+    .skillContainer {
         display: none;
     }
 }
