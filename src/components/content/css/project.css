@@ -71,12 +71,12 @@
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 435px) {
     .projectContent {
         width: 100vw;
         margin-top: 25vh;
         overflow-x: hidden;
-        padding-bottom: 10vh;
+        height: 61vh;
     }
     
     .textContainer, .skillContainer {
@@ -98,9 +98,10 @@
     .projectContent .skillIcon {
         width: 25%
     }
+}
 
-    /* solve asap */
-    .skillContainer {
-        display: none;
+@media only screen and (max-width: 375px) {
+    .projectContent {
+        height: 61vh;
     }
 }
