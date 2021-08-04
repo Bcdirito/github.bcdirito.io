@@ -16,7 +16,7 @@
     "react-scripts": "^3.4.4",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "tar": "^4.4.13",
+    "tar": "^4.4.15",
     "typescript": "^3.9.7"
   },
   "scripts": {
