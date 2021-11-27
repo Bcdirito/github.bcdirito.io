@@ -5,9 +5,7 @@
 
 #portfolioContent {
     animation: fadein 1.75s;
-    overflow-y: scroll;
     padding: 5%;
-    height: 80%;
 }
 
 #displayContent {
@@ -26,7 +24,7 @@
 
 #backArrow {
     filter: invert(100%);
-    width: 5%;
+    width: 2.5rem;
 }
 
 #backArrow:hover {
@@ -38,7 +36,7 @@
 
 .contentHeader {
     text-align: center;
-    font-size: 42px;
+    font-size: 2.25rem;
 }
 
 #skillIconContainer {

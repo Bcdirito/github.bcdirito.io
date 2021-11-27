@@ -1,0 +1,48 @@
+.aboutPage {
+    max-width: initial;
+    padding-bottom: 1rem;
+    text-align: center;
+
+    h1 {
+        font-size: 1.875rem;
+    }
+
+    span {
+        padding-right: 5px;
+    }
+}
+
+.aboutContent {
+    animation: fadein 1.75s;
+}
+
+.aboutText {
+    list-style-type: none;
+    font-size: 20px;
+    padding-left: 0;
+}
+
+.aboutText li {
+    margin-bottom: 15px;
+}
+
+.aboutText span {
+    margin-right: 5px;
+}
+
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@media only screen and (min-width: 768px) {
+    .aboutPage {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        li {
+            font-size: 1.75rem;
+        }
+    }
+}
