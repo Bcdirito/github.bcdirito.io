@@ -84,17 +84,27 @@
 
 @media only screen and (min-width: 1024px) {
     #contactContainer {
-        width: 35vw;
-        background-position: top;
-        z-index: 0;
-
-        h1, h2, span {
-            text-align: center;
-        }
+        z-index: unset;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
 
         span {
             left: 1rem;
             bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        #section-one {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            background-position-x: center;
+            background-size: cover;
+        }
+
+        #section-two {
+            grid-column-start: 1;
+            grid-row-start: 2;
         }
     }
 }
