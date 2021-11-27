@@ -30,6 +30,17 @@
     margin-right: 5px;
 }
 
+.aboutText a,
+.aboutText a:hover,
+.aboutText a:active,
+.aboutText a:visited {
+    color: white;
+}
+
+.aboutText a:hover {
+    text-decoration: none;
+}
+
 @keyframes fadein {
     from {opacity: 0}
     to {opacity: 1}

@@ -1,15 +1,29 @@
 const projectData = [
     {
+        name: "Moodsic",
+        type: "project",
+        card: "moodsic_card.png",
+        image: "moodsic.png",
+        description: [
+            "Mood quiz that finds a playlist to match your vibe",
+            "Integrates with Spotify for playlists, streaming, and authentication",
+        ],
+        skills: [
+            "react",
+            "node"
+        ],
+        repo: "https://github.com/dianajyoo/moodsic",
+        deployment: "https://separate-field-foxtail.glitch.me/"
+    },
+    {
         name: "Terraforming Mars Resource Card",
         type: "project",
         card: "mars_resource_card.png",
         image: "mars_resource.png",
-        blurb: "Digital Resource Tracking and Management for Terraforming Mars",
         description: [
             "Currently in Active Beta",
             "Digitally manage your resources and income",
             "Calculates your costs and income with each new turn",
-            "Streamline game play and turn speed without needing to count individual pieces"
         ],
         skills: [
             "react",
@@ -19,30 +33,10 @@ const projectData = [
         deployment: "https://mars-resource-card.web.app/"
     },
     {
-        name: "Good Work",
-        type: "project",
-        card: "good_work_card.jpg",
-        image: "good_work.png",
-        blurb: "Goal Tracking with Partner Accountability for Reducing Stress and Anxiety",
-        description: [
-            "Reduce stress and anxiety through goal track and partner accountability",
-            "Break down goals into their smallest pieces to fight feelings of being overwhelmed",
-            "Email notfications for you and your partner when goals are completed",
-        ],
-        skills: [
-            "react",
-            "redux",
-            "rails"
-        ],
-        repo: "https://github.com/Bcdirito/good_work_front",
-        deployment: ""
-    },
-    {
         name: "Virtual Met",
         type: "project",
         card: "virtual_met_card.jpg",
         image: "virtual_met.png",
-        blurb: "Take digital tours of the Met 5th Ave Museum",
         description: [
             "Take procured tours of the prestigious Met 5th Ave Museum",
             "Learn as much as you want from the Met Museum's website and archives",
@@ -55,23 +49,6 @@ const projectData = [
         repo: "https://github.com/Bcdirito/virtual_met_front",
         deployment: "https://virtual-met-front.herokuapp.com"
     },
-    {
-        name: "myBrews",
-        type: "project",
-        card: "myBrews_card.jpg",
-        image: "myBrews.png",
-        blurb: "A CLI Companion App for Coffee Lovers",
-        description: [
-            "Create a profile that's unique to you",
-            "Make notes, track, and rate coffees",
-            "Get randomized selections utilizing the Faker Gem"
-        ],
-        skills: [
-            "ruby"
-        ],
-        repo: "https://github.com/Bcdirito/myBrews",
-        deployment: ""
-    }
 ]
 
 module.exports = projectData

@@ -3,6 +3,10 @@ const skillIconData = {
         name: "javascript",
         alt: "JS Icon"
     },
+    "typescript": {
+        name: "typescript",
+        alt: "TS Icon"
+    },
     "react": {
         name: "react",
         alt: "React.js Icon"
@@ -14,6 +18,14 @@ const skillIconData = {
     "node": {
         name:"node",
         alt: "Node.js Icon"
+    },
+    "golang": {
+        name: "golang",
+        alt: "Golang Icon",
+    },
+    "graphql": {
+        name: "graphql",
+        alt: "GrapQL Icon",
     },
     "python": {
         name: "python",
