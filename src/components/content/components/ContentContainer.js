@@ -5,7 +5,7 @@ import ProjectContainer from "./ProjectContainer"
 import SkillContainer from "./SkillContainer"
 import LandscapeModal from './LandscapeModal'
 
-import "../css/contentContainer.css"
+import "../css/contentContainer.scss"
 
 import backArrow  from "../media/icons/general/back_arrow.png"
 import skillIconData from "../db/skillIcons"

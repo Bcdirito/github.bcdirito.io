@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/contactIcon.css'
+import '../css/contactIcon.scss'
 
 const ContactIcon = (props) => {
     return (

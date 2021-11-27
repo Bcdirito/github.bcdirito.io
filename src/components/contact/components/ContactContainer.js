@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ContactIcon from "./ContactIcon"
-import "../css/contactContainer.css"
+import "../css/contactContainer.scss"
 
 import iconData from "../db/icons"
 
@@ -14,21 +14,25 @@ export default class ContactContainer extends Component {
         }
 
         return (
-            <div id="contactInfo">
-                <h1 id="contactInfoHeader">Brian DiRito</h1>
-                <h2 className="subHeader">He/Him/His</h2>
-                <h2 className="subHeader">Full-Stack Developer</h2>
-                <div className="iconContainer">
-                    {icons}
+            <React.Fragment>
+                <div id="section-one">
+                    <span className="photoCredit">&#169; Photo by Matthew Dain</span>
                 </div>
-            </div>
+                <div id="section-two">
+                    <h1 id="contactInfoHeader">Brian DiRito</h1>
+                    <h2 className="subHeader">He/Him/His</h2>
+                    <h2 className="subHeader">Full-Stack Developer</h2>
+                    <div className="iconContainer">
+                        {icons}
+                    </div>
+                </div>   
+            </React.Fragment>
         )        
     }
     render() {
         return (
             <div id="contactContainer">
                 {this.renderContactInfo()}
-                <span className="photoCredit">&#169; Photo by Matthew Dain</span>
             </div>
         )
     }
