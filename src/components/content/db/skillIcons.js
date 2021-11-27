@@ -23,10 +23,6 @@ const skillIconData = {
         name: "golang",
         alt: "Golang Icon",
     },
-    "graphql": {
-        name: "graphql",
-        alt: "GrapQL Icon",
-    },
     "python": {
         name: "python",
         alt: "Python Icon"

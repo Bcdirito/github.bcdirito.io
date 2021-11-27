@@ -41,16 +41,13 @@
 
 #skillIconContainer {
     animation: fadein 1s;
-}
-
-.skillIcon {
-    filter: grayscale(100%);
-    padding: 2%;
-    width: 15%;
-}
-
-.skillIcon:hover {
-    filter: grayscale(0%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    
+    img {
+        width: 2.5rem;
+    }
 }
 
 .fixedContent {
@@ -63,10 +60,47 @@
     to {opacity: 1}
 }
 
+@media only screen and (min-width: 375px) {
+    #skillIconContainer {
+        gap: 2rem;
+
+        img {
+            width: 3rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #skillIconContainer {
+        img {
+            width: 5rem;
+        }
+    }
+
+    .contentHeader {
+        font-size: 2.5rem;
+    }
+}
+
 @media only screen and (min-width: 1024px) {
     #contentContainer {
         grid-column-start: 2;
         grid-row-start: 1;
+    }
+
+    #skillIconContainer {
+        img {
+            width: 7rem;
+        }
+    }
+
+    .skillIcon {
+        filter: grayscale(100%);
+
+        &:hover {
+            cursor: pointer;
+            filter: grayscale(0%);
+        }
     }
 }
 
