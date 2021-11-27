@@ -13,13 +13,13 @@ export default class ProjectContainer extends Component {
 
   state = {
     featured: false,
-    featuredData: {}
+    featuredData: {},
   }
 
   renderDemoProjects = () => {
     const projectContext = require.context("../media/photos/projects")
     return projectData.map(proj => {
-      return <ProjectCard key={proj.name} data={proj} name={proj.name} card={proj.card} blurb={proj.blurb} select={this.featureSelectedProject} context={projectContext} onClick={(e) => this.renderSelectedProject(e)}/>
+      return <ProjectCard key={proj.name} data={proj} name={proj.name} card={proj.card} select={this.featureSelectedProject} context={projectContext} onClick={(e) => this.renderSelectedProject(e)}/>
     })
   }
 
