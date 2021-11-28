@@ -24,26 +24,6 @@
     }
 }
 
-@media only screen and (min-width: 375px) {
-    #contactContainer {
-        #section-two {
-            padding-top: 0.5rem;
-        }
-    }
-} 
-
-@media only screen and (min-width: 411px) {
-    #contactContainer {
-        h1 {
-            font-size: 2rem;
-        }
-
-        span {
-            font-size: .875rem;
-        }
-    }
-}
-
 @media only screen and (min-width: 768px) {
     .contactContainer {
         display: flex;
@@ -52,10 +32,6 @@
 
         > div {
             flex-basis: 60%;
-        }
-
-        #section-two {
-            padding-right: 1rem;
         }
         
         h1 {
@@ -91,24 +67,6 @@
 
         svg {
             font-size: 1.5rem;
-        }
-
-        span {
-            left: 1rem;
-            bottom: 1rem;
-            font-size: 1rem;
-        }
-
-        #section-one {
-            grid-column-start: 1;
-            grid-row-start: 1;
-            background-position-x: center;
-            background-size: cover;
-        }
-
-        #section-two {
-            grid-column-start: 1;
-            grid-row-start: 2;
         }
     }
 }
