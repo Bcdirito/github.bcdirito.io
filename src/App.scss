@@ -4,14 +4,26 @@
   max-width: 768px;
   margin: 0 auto;
 
+  h1 {
+    font-size: 1.5rem;
+  }
+
   a,
   a:hover,
   a:active,
   a:visited {
     color: white;
   }
+}
 
-  a:hover {
-    text-decoration: none;
+@media only screen and (min-width: 768px) {
+  .App {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 }
