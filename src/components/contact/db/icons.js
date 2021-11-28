@@ -14,11 +14,6 @@ const iconData = {
         alt: "Linkedin Icon",
         linkStr: "https://www.linkedin.com/in/brian-dirito-7a7174145/"
     },
-    "medium": {
-        name: "medium",
-        alt: "Medium Icon",
-        linkStr: "https://medium.com/@bdirito91"
-    },
 }
 
 module.exports = iconData

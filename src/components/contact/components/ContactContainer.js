@@ -1,39 +1,43 @@
-import React, { Component } from 'react'
-import ContactIcon from "./ContactIcon"
+import React from 'react'
 import "../css/contactContainer.scss"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import profileImg from "../media/photos/nin_photo.jpg"
 
-import iconData from "../db/icons"
+const ContactContainer = () => {
+    const renderContactInfo = () => {
 
-export default class ContactContainer extends Component {
-    renderContactInfo() {
-        const icons = []
-        const photos = require.context("../media/icons/", true)
-        for (const key in iconData){ 
-            const icon = iconData[key]
-            icons.push(<ContactIcon key={icon.name} link={icon.linkStr} image={icon.image} alt={icon.alt} iconPhotos={photos} name={icon.name}/>)
-        }
 
         return (
             <React.Fragment>
-                <div id="section-one">
-                    <span className="photoCredit">&#169; Photo by Matthew Dain</span>
-                </div>
-                <div id="section-two">
-                    <h1 id="contactInfoHeader">Brian DiRito</h1>
-                    <h2 className="subHeader">He/Him/His</h2>
-                    <h2 className="subHeader">Full-Stack Developer</h2>
+                {/* <span className="photoCredit">&#169; Photo by Matthew Dain</span> */}
+                <img src={profileImg} alt="profile" />
+                <div>
+                    <h1>Brian DiRito</h1>
+                    <p>Software Engineer @Policygenius</p>
+                    <p>He/Him/His</p>
                     <div className="iconContainer">
-                        {icons}
-                    </div>
-                </div>   
+                        <a href="mailto:bdirito.dev@gmail.com">
+                            <FontAwesomeIcon icon={faEnvelope} />
+                        </a>
+                        <a href="https://github.com/Bcdirito">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                        <a href="https://github.com/Bcdirito">
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+                    </div> 
+                </div>
             </React.Fragment>
         )        
     }
-    render() {
-        return (
-            <div id="contactContainer">
-                {this.renderContactInfo()}
-            </div>
-        )
-    }
+
+    return (
+        <div className="contactContainer">
+            {renderContactInfo()}
+        </div>
+    )
 }
+
+export default ContactContainer
