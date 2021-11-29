@@ -7,7 +7,7 @@ import profileImg from "../../media/images/nin_photo.jpg"
 
 const Contact = () => (
     <div className="contactContainer">
-        <img src={profileImg} alt="profile" />
+        <img src={profileImg} alt="profile" title="&copy; Matthew Dain"/>
             <div>
                 <h1>Brian DiRito</h1>
                 <p>Software Engineer @Policygenius</p>
@@ -18,7 +18,7 @@ const Contact = () => (
                     <a href="https://github.com/Bcdirito">
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
-                    <a href="https://github.com/Bcdirito">
+                    <a href="https://www.linkedin.com/in/briandirito/">
                         <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                 </div> 
