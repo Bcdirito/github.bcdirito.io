@@ -1,0 +1,72 @@
+.contactContainer {
+    width: 100%;
+    padding-bottom: 1rem;
+    
+    h1 {
+        margin: .25rem auto 0 auto;
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 8px auto;
+    }
+
+    > img {
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .iconContainer {
+        display: flex;
+        gap: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contactContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        > div {
+            flex-basis: 60%;
+        }
+        
+        h1 {
+            font-size: 2.75rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        span {
+            left: .75rem;
+            bottom: .75rem;
+            font-size: 1.125rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .contactContainer {
+        > img {
+            width: 8rem;
+            height: 8rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+        }
+
+        .iconContainer {
+            gap: 1rem;
+        }
+
+        svg {
+            font-size: 1.5rem;
+        }
+    }
+}
