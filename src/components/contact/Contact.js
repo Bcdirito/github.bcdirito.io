@@ -3,7 +3,7 @@ import "./contact.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import profileImg from "./media/nin_photo.jpg"
+import profileImg from "../../media/images/nin_photo.jpg"
 
 const Contact = () => (
     <div className="contactContainer">

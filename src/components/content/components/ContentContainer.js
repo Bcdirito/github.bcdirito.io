@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import Home from './Home'
-import About from './About'
 import ProjectContainer from "./ProjectContainer"
-import SkillContainer from "./SkillContainer"
+import SkillContainer from "../../skills/Skills"
 import LandscapeModal from './LandscapeModal'
 
 import "../css/contentContainer.scss"
 
 import backArrow  from "../media/icons/general/back_arrow.png"
-import skillIconData from "../db/skillIcons"
+import skillIconData from "../../../db/skillIcons"
 
 export default class ContentContainer extends Component {
     state = {
@@ -35,8 +34,6 @@ export default class ContentContainer extends Component {
 
     renderComponent = () => {
         switch (this.state.componentDisplay) {
-            case "about":
-                return <About />
             case "works":
                 return <ProjectContainer iconImages={require.context("../media/icons/skills")} />
             case "skills":

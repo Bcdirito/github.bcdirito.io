@@ -3,7 +3,7 @@ import "./about.scss"
 
 const About = () => (
   <div className="aboutPage">
-    <h1 className="contentHeader">About Me</h1>
+    <h1>About Me</h1>
     <div className="aboutContent">
       <ul className="aboutText">
         <li><span role="img" aria-label="gender">🚻</span>He/Him/His</li>

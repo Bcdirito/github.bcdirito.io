@@ -31,15 +31,6 @@
     float: left
 }
 
-.skillContainer {
-    width: 45%;
-    float: right;
-}
-
-.skillContainer .skillIcon {
-    filter:grayscale(0%)
-}
-
 .projectHeader {
     font-style: italic;
 }
