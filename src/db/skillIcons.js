@@ -11,9 +11,9 @@ const skillIconData = {
         name: "react",
         alt: "React.js Icon"
     },
-    "redux": {
-        name: "redux",
-        alt: "Redux Icon"
+    "graphql": {
+        name: "graphQL",
+        alt: "GraphQL Icon"
     },
     "node": {
         name:"node",
