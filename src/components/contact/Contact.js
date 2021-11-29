@@ -15,10 +15,10 @@ const Contact = () => (
                     <a href="mailto:bdirito.dev@gmail.com">
                         <FontAwesomeIcon icon={faEnvelope} />
                     </a>
-                    <a href="https://github.com/Bcdirito">
+                    <a href="https://github.com/Bcdirito" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
-                    <a href="https://www.linkedin.com/in/briandirito/">
+                    <a href="https://www.linkedin.com/in/briandirito/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                 </div> 
