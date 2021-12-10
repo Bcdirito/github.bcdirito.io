@@ -4,8 +4,8 @@
   "private": true,
   "homepage": ".",
   "engines": {
-    "npm": "6.4.1",
-    "node": "11.2.0"
+    "npm": ">=6.4.1",
+    "node": ">=11.2.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
