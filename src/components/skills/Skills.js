@@ -9,8 +9,10 @@ const Skills = () => {
 
         const icons = keys.map(key => {
             const { name, alt } = skillIconData[key]
+            const image = imageData(`./${name}_icon.png`);
+            
             return (
-                <img key={key} src={imageData(`./${name}_icon.png`)} alt={alt} title={name}className="skillIcon" />
+                <img key={key} src={image.default} alt={alt} title={name}className="skillIcon" />
             )
         })
         
