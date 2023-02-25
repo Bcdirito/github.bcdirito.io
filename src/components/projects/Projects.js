@@ -17,12 +17,6 @@ const Projects = () => (
                 </h3>
                 <p>Companion app to manage your resources</p>
             </li>
-            <li>
-                <h3>
-                    <a href="https://virtual-met-front.herokuapp.com" target="_blank" rel="noopener noreferrer">Virtual Met</a>
-                </h3>
-                <p>Procured tours of the Met 5th Ave Museum</p>
-            </li>
         </ul>
     </div>
 )
