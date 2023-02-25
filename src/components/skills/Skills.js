@@ -20,13 +20,13 @@ const Skills = () => (
             <img src={javascript} alt="javascript_icon" title="JavaScript" className="skillIcon" />
             <img src={typescript} alt="typescript_icon" title="TypeScript" className="skillIcon" />
             <img src={react} alt="react_icon" title="React" className="skillIcon" />
-            <img src={graphQL} alt="graphQL_icon" title="GraphQL" className="skillIcon" />
-            <img src={node} alt="node_icon" title="Node" className="skillIcon" />
             <img src={golang} alt="golang_icon" title="Golang" className="skillIcon" />
-            <img src={python} alt="python_icon" title="Python" className="skillIcon" />
-            <img src={django} alt="django_icon" title="Django" className="skillIcon" />
             <img src={ruby} alt="ruby_icon" title="Ruby" className="skillIcon" />
             <img src={rails} alt="rails_icon" title="Ruby on Rails" className="skillIcon" />
+            <img src={graphQL} alt="graphQL_icon" title="GraphQL" className="skillIcon" />
+            <img src={node} alt="node_icon" title="Node" className="skillIcon" />
+            <img src={python} alt="python_icon" title="Python" className="skillIcon" />
+            <img src={django} alt="django_icon" title="Django" className="skillIcon" />
             <img src={html} alt="html_icon" title="HTML5" className="skillIcon" />
             <img src={css} alt="css_icon" title="CSS3" className="skillIcon" />
         </div>
