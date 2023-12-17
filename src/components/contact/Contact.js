@@ -12,13 +12,13 @@ const Contact = () => (
                 <h1>Brian DiRito</h1>
                 <p>Software Engineer @Policygenius</p>
                 <div className="iconContainer">
-                    <a href="mailto:bdirito.dev@gmail.com">
+                    <a href="mailto:bdirito.dev@gmail.com" aria-label="Email Brian">
                         <FontAwesomeIcon icon={faEnvelope} />
                     </a>
-                    <a href="https://github.com/Bcdirito" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Bcdirito" target="_blank" rel="noopener noreferrer" aria-label="See Brian's Github">
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
-                    <a href="https://www.linkedin.com/in/briandirito/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/briandirito/" target="_blank" rel="noopener noreferrer" aria-label="Check out Brian's LinkedIn profile">
                         <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                 </div> 
