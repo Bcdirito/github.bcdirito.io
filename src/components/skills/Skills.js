@@ -17,10 +17,10 @@ const Skills = () => (
     <div className="skillContainer">
         <h1>Skills</h1>
         <div className="iconContainer">
-            <img src={javascript} alt="javascript_icon" title="JavaScript" className="skillIcon" />
+            <img src={golang} alt="golang_icon" title="Golang" className="skillIcon" />
             <img src={typescript} alt="typescript_icon" title="TypeScript" className="skillIcon" />
             <img src={react} alt="react_icon" title="React" className="skillIcon" />
-            <img src={golang} alt="golang_icon" title="Golang" className="skillIcon" />
+            <img src={javascript} alt="javascript_icon" title="JavaScript" className="skillIcon" />
             <img src={ruby} alt="ruby_icon" title="Ruby" className="skillIcon" />
             <img src={rails} alt="rails_icon" title="Ruby on Rails" className="skillIcon" />
             <img src={grpc} alt="django_icon" title="gRPC" className="skillIcon" />
