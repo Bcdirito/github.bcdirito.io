@@ -10,7 +10,7 @@ const Contact = () => (
         <img src={profileImg} alt="profile" title="&copy; Matthew Dain"/>
             <div>
                 <h1>Brian DiRito</h1>
-                <p>Software Engineer @Policygenius</p>
+                <p>Software Engineer @Khan Academy</p>
                 <div className="iconContainer">
                     <a href="mailto:bdirito.dev@gmail.com" aria-label="Email Brian">
                         <FontAwesomeIcon icon={faEnvelope} />
